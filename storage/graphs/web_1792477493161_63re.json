@@ -1,0 +1,878 @@
+{
+  "original_graph": {
+    "nodes": [
+      {
+        "id": "web_1792477493161_63re_e1",
+        "name": "Transformer",
+        "type": "Architecture",
+        "description": "Neural network architecture based on self‑attention that processes sequences in parallel"
+      },
+      {
+        "id": "web_1792477493161_63re_e2",
+        "name": "GPT (Generative Pretrained Transformer)",
+        "type": "Architecture",
+        "description": "Large language model that uses the Transformer decoder stack and is pretrained on massive text corpora"
+      },
+      {
+        "id": "web_1792477493161_63re_e3",
+        "name": "BERT (Bidirectional Encoder Representations from Transformers)",
+        "type": "Architecture",
+        "description": "Transformer‑based encoder model trained with masked language modeling for contextual word representations"
+      },
+      {
+        "id": "web_1792477493161_63re_e4",
+        "name": "Vision Transformer (ViT)",
+        "type": "Architecture",
+        "description": "Applies the Transformer architecture to image patches for image classification"
+      },
+      {
+        "id": "web_1792477493161_63re_e5",
+        "name": "Diffusion Model",
+        "type": "Architecture",
+        "description": "Generative model that iteratively denoises random noise to produce data samples"
+      },
+      {
+        "id": "web_1792477493161_63re_e6",
+        "name": "Large Language Model (LLM)",
+        "type": "Concept",
+        "description": "A class of models with billions of parameters capable of generating coherent natural‑language text"
+      },
+      {
+        "id": "web_1792477493161_63re_e7",
+        "name": "Generative AI",
+        "type": "Concept",
+        "description": "AI systems that create new content such as text, images, audio or video"
+      },
+      {
+        "id": "web_1792477493161_63re_e8",
+        "name": "Reinforcement Learning from Human Feedback (RLHF)",
+        "type": "Method",
+        "description": "Fine‑tuning technique that aligns language models with human preferences using reinforcement learning"
+      },
+      {
+        "id": "web_1792477493161_63re_e9",
+        "name": "Self‑supervised Learning",
+        "type": "Method",
+        "description": "Training paradigm where the data itself provides supervision signals, e.g., predicting masked tokens"
+      },
+      {
+        "id": "web_1792477493161_63re_e10",
+        "name": "Masked Language Modeling (MLM)",
+        "type": "Method",
+        "description": "Self‑supervised objective that masks random tokens and trains the model to predict them"
+      },
+      {
+        "id": "web_1792477493161_63re_e11",
+        "name": "Common Crawl Dataset",
+        "type": "Dataset",
+        "description": "Massive web‑scraped text corpus used for pretraining large language models"
+      },
+      {
+        "id": "web_1792477493161_63re_e12",
+        "name": "Wikipedia Corpus",
+        "type": "Dataset",
+        "description": "Curated collection of Wikipedia articles used for language model pretraining and evaluation"
+      },
+      {
+        "id": "web_1792477493161_63re_e13",
+        "name": "ImageNet Dataset",
+        "type": "Dataset",
+        "description": "Large‑scale image classification benchmark containing 1.2 M labeled images"
+      },
+      {
+        "id": "web_1792477493161_63re_e14",
+        "name": "GLUE Benchmark",
+        "type": "Dataset",
+        "description": "Suite of natural‑language understanding tasks for evaluating language models"
+      },
+      {
+        "id": "web_1792477493161_63re_e15",
+        "name": "Perplexity",
+        "type": "Metric",
+        "description": "Measure of how well a probability model predicts a sample; lower is better"
+      },
+      {
+        "id": "web_1792477493161_63re_e16",
+        "name": "BLEU",
+        "type": "Metric",
+        "description": "Metric for evaluating the quality of machine‑generated text against reference translations"
+      },
+      {
+        "id": "web_1792477493161_63re_e17",
+        "name": "FID (Fréchet Inception Distance)",
+        "type": "Metric",
+        "description": "Metric for assessing the realism of generated images by comparing feature statistics"
+      },
+      {
+        "id": "web_1792477493161_63re_e18",
+        "name": "Top‑1 Accuracy",
+        "type": "Metric",
+        "description": "Proportion of correctly classified instances in image classification tasks"
+      }
+    ],
+    "edges": [
+      {
+        "source": "web_1792477493161_63re_e2",
+        "target": "web_1792477493161_63re_e1",
+        "type": "USES",
+        "weight": 0.95,
+        "provenance": "paper_extraction",
+        "validation_status": "unvalidated_extraction",
+        "is_bridge": false
+      },
+      {
+        "source": "web_1792477493161_63re_e3",
+        "target": "web_1792477493161_63re_e1",
+        "type": "USES",
+        "weight": 0.94,
+        "provenance": "paper_extraction",
+        "validation_status": "unvalidated_extraction",
+        "is_bridge": false
+      },
+      {
+        "source": "web_1792477493161_63re_e4",
+        "target": "web_1792477493161_63re_e1",
+        "type": "USES",
+        "weight": 0.93,
+        "provenance": "paper_extraction",
+        "validation_status": "unvalidated_extraction",
+        "is_bridge": true
+      },
+      {
+        "source": "web_1792477493161_63re_e5",
+        "target": "web_1792477493161_63re_e9",
+        "type": "USES",
+        "weight": 0.9,
+        "provenance": "paper_extraction",
+        "validation_status": "unvalidated_extraction",
+        "is_bridge": true
+      },
+      {
+        "source": "web_1792477493161_63re_e2",
+        "target": "web_1792477493161_63re_e11",
+        "type": "TRAINED_ON",
+        "weight": 0.96,
+        "provenance": "paper_extraction",
+        "validation_status": "unvalidated_extraction",
+        "is_bridge": true
+      },
+      {
+        "source": "web_1792477493161_63re_e2",
+        "target": "web_1792477493161_63re_e12",
+        "type": "TRAINED_ON",
+        "weight": 0.94,
+        "provenance": "paper_extraction",
+        "validation_status": "unvalidated_extraction",
+        "is_bridge": false
+      },
+      {
+        "source": "web_1792477493161_63re_e3",
+        "target": "web_1792477493161_63re_e12",
+        "type": "TRAINED_ON",
+        "weight": 0.95,
+        "provenance": "paper_extraction",
+        "validation_status": "unvalidated_extraction",
+        "is_bridge": false
+      },
+      {
+        "source": "web_1792477493161_63re_e4",
+        "target": "web_1792477493161_63re_e13",
+        "type": "TRAINED_ON",
+        "weight": 0.92,
+        "provenance": "paper_extraction",
+        "validation_status": "unvalidated_extraction",
+        "is_bridge": true
+      },
+      {
+        "source": "web_1792477493161_63re_e2",
+        "target": "web_1792477493161_63re_e15",
+        "type": "EVALUATED_ON",
+        "weight": 0.93,
+        "provenance": "paper_extraction",
+        "validation_status": "unvalidated_extraction",
+        "is_bridge": false
+      },
+      {
+        "source": "web_1792477493161_63re_e3",
+        "target": "web_1792477493161_63re_e14",
+        "type": "EVALUATED_ON",
+        "weight": 0.94,
+        "provenance": "paper_extraction",
+        "validation_status": "unvalidated_extraction",
+        "is_bridge": true
+      },
+      {
+        "source": "web_1792477493161_63re_e3",
+        "target": "web_1792477493161_63re_e16",
+        "type": "EVALUATED_ON",
+        "weight": 0.88,
+        "provenance": "paper_extraction",
+        "validation_status": "unvalidated_extraction",
+        "is_bridge": true
+      },
+      {
+        "source": "web_1792477493161_63re_e4",
+        "target": "web_1792477493161_63re_e18",
+        "type": "EVALUATED_ON",
+        "weight": 0.91,
+        "provenance": "paper_extraction",
+        "validation_status": "unvalidated_extraction",
+        "is_bridge": true
+      },
+      {
+        "source": "web_1792477493161_63re_e5",
+        "target": "web_1792477493161_63re_e17",
+        "type": "EVALUATED_ON",
+        "weight": 0.9,
+        "provenance": "paper_extraction",
+        "validation_status": "unvalidated_extraction",
+        "is_bridge": true
+      },
+      {
+        "source": "web_1792477493161_63re_e8",
+        "target": "web_1792477493161_63re_e2",
+        "type": "IMPROVES_UPON",
+        "weight": 0.96,
+        "provenance": "paper_extraction",
+        "validation_status": "unvalidated_extraction",
+        "is_bridge": false
+      },
+      {
+        "source": "web_1792477493161_63re_e8",
+        "target": "web_1792477493161_63re_e15",
+        "type": "OPTIMIZES_METRIC",
+        "weight": 0.89,
+        "provenance": "paper_extraction",
+        "validation_status": "unvalidated_extraction",
+        "is_bridge": false
+      },
+      {
+        "source": "web_1792477493161_63re_e9",
+        "target": "web_1792477493161_63re_e6",
+        "type": "ENABLED_FOR",
+        "weight": 0.94,
+        "provenance": "paper_extraction",
+        "validation_status": "unvalidated_extraction",
+        "is_bridge": true
+      },
+      {
+        "source": "web_1792477493161_63re_e6",
+        "target": "web_1792477493161_63re_e7",
+        "type": "IS_A",
+        "weight": 0.97,
+        "provenance": "paper_extraction",
+        "validation_status": "unvalidated_extraction",
+        "is_bridge": true
+      },
+      {
+        "source": "web_1792477493161_63re_e10",
+        "target": "web_1792477493161_63re_e3",
+        "type": "USED_IN",
+        "weight": 0.95,
+        "provenance": "paper_extraction",
+        "validation_status": "unvalidated_extraction",
+        "is_bridge": false
+      },
+      {
+        "source": "web_1792477493161_63re_e10",
+        "target": "web_1792477493161_63re_e2",
+        "type": "USED_IN",
+        "weight": 0.89,
+        "provenance": "paper_extraction",
+        "validation_status": "unvalidated_extraction",
+        "is_bridge": false
+      },
+      {
+        "source": "web_1792477493161_63re_e2",
+        "target": "web_1792477493161_63re_e8",
+        "type": "SUPPORTS",
+        "weight": 0.86,
+        "provenance": "paper_extraction",
+        "validation_status": "unvalidated_extraction",
+        "is_bridge": false
+      }
+    ],
+    "node_count": 18,
+    "edge_count": 20,
+    "articulation_points": [
+      "web_1792477493161_63re_e2",
+      "web_1792477493161_63re_e3",
+      "web_1792477493161_63re_e4",
+      "web_1792477493161_63re_e1",
+      "web_1792477493161_63re_e6",
+      "web_1792477493161_63re_e9",
+      "web_1792477493161_63re_e5"
+    ],
+    "bridges": [
+      [
+        "web_1792477493161_63re_e2",
+        "web_1792477493161_63re_e11"
+      ],
+      [
+        "web_1792477493161_63re_e3",
+        "web_1792477493161_63re_e14"
+      ],
+      [
+        "web_1792477493161_63re_e3",
+        "web_1792477493161_63re_e16"
+      ],
+      [
+        "web_1792477493161_63re_e4",
+        "web_1792477493161_63re_e13"
+      ],
+      [
+        "web_1792477493161_63re_e4",
+        "web_1792477493161_63re_e18"
+      ],
+      [
+        "web_1792477493161_63re_e1",
+        "web_1792477493161_63re_e4"
+      ],
+      [
+        "web_1792477493161_63re_e6",
+        "web_1792477493161_63re_e7"
+      ],
+      [
+        "web_1792477493161_63re_e9",
+        "web_1792477493161_63re_e6"
+      ],
+      [
+        "web_1792477493161_63re_e5",
+        "web_1792477493161_63re_e9"
+      ],
+      [
+        "web_1792477493161_63re_e5",
+        "web_1792477493161_63re_e17"
+      ]
+    ]
+  },
+  "compressed_graph": {
+    "nodes": [
+      {
+        "id": "web_1792477493161_63re_e1",
+        "name": "Transformer",
+        "type": "Architecture",
+        "description": "Neural network architecture based on self‑attention that processes sequences in parallel",
+        "is_connector": true
+      },
+      {
+        "id": "web_1792477493161_63re_e11",
+        "name": "Common Crawl Dataset",
+        "type": "Dataset",
+        "description": "Massive web‑scraped text corpus used for pretraining large language models"
+      },
+      {
+        "id": "web_1792477493161_63re_e12",
+        "name": "Wikipedia Corpus",
+        "type": "Dataset",
+        "description": "Curated collection of Wikipedia articles used for language model pretraining and evaluation"
+      },
+      {
+        "id": "web_1792477493161_63re_e15",
+        "name": "Perplexity",
+        "type": "Metric",
+        "description": "Measure of how well a probability model predicts a sample; lower is better"
+      },
+      {
+        "id": "scc_cluster_4_web_1792",
+        "name": "SCC [Reinforcement Cyclic Loop]",
+        "type": "Supernode",
+        "description": "Contracted quotient supernode containing 2 cyclically interdependent components: Reinforcement Learning from Human Feedback (RLHF), GPT (Generative Pretrained Transformer).",
+        "is_supernode": true,
+        "member_count": 2,
+        "member_node_ids": [
+          "web_1792477493161_63re_e8",
+          "web_1792477493161_63re_e2"
+        ],
+        "member_nodes": [
+          {
+            "id": "web_1792477493161_63re_e8",
+            "name": "Reinforcement Learning from Human Feedback (RLHF)",
+            "type": "Method",
+            "description": "Fine‑tuning technique that aligns language models with human preferences using reinforcement learning"
+          },
+          {
+            "id": "web_1792477493161_63re_e2",
+            "name": "GPT (Generative Pretrained Transformer)",
+            "type": "Architecture",
+            "description": "Large language model that uses the Transformer decoder stack and is pretrained on massive text corpora"
+          }
+        ]
+      },
+      {
+        "id": "web_1792477493161_63re_e14",
+        "name": "GLUE Benchmark",
+        "type": "Dataset",
+        "description": "Suite of natural‑language understanding tasks for evaluating language models"
+      },
+      {
+        "id": "web_1792477493161_63re_e16",
+        "name": "BLEU",
+        "type": "Metric",
+        "description": "Metric for evaluating the quality of machine‑generated text against reference translations"
+      },
+      {
+        "id": "web_1792477493161_63re_e3",
+        "name": "BERT (Bidirectional Encoder Representations from Transformers)",
+        "type": "Architecture",
+        "description": "Transformer‑based encoder model trained with masked language modeling for contextual word representations",
+        "is_connector": true
+      },
+      {
+        "id": "web_1792477493161_63re_e13",
+        "name": "ImageNet Dataset",
+        "type": "Dataset",
+        "description": "Large‑scale image classification benchmark containing 1.2 M labeled images"
+      },
+      {
+        "id": "web_1792477493161_63re_e18",
+        "name": "Top‑1 Accuracy",
+        "type": "Metric",
+        "description": "Proportion of correctly classified instances in image classification tasks"
+      },
+      {
+        "id": "web_1792477493161_63re_e4",
+        "name": "Vision Transformer (ViT)",
+        "type": "Architecture",
+        "description": "Applies the Transformer architecture to image patches for image classification",
+        "is_connector": true
+      },
+      {
+        "id": "web_1792477493161_63re_e7",
+        "name": "Generative AI",
+        "type": "Concept",
+        "description": "AI systems that create new content such as text, images, audio or video"
+      },
+      {
+        "id": "web_1792477493161_63re_e6",
+        "name": "Large Language Model (LLM)",
+        "type": "Concept",
+        "description": "A class of models with billions of parameters capable of generating coherent natural‑language text",
+        "is_connector": true
+      },
+      {
+        "id": "web_1792477493161_63re_e9",
+        "name": "Self‑supervised Learning",
+        "type": "Method",
+        "description": "Training paradigm where the data itself provides supervision signals, e.g., predicting masked tokens",
+        "is_connector": true
+      },
+      {
+        "id": "web_1792477493161_63re_e17",
+        "name": "FID (Fréchet Inception Distance)",
+        "type": "Metric",
+        "description": "Metric for assessing the realism of generated images by comparing feature statistics"
+      },
+      {
+        "id": "web_1792477493161_63re_e5",
+        "name": "Diffusion Model",
+        "type": "Architecture",
+        "description": "Generative model that iteratively denoises random noise to produce data samples",
+        "is_connector": true
+      },
+      {
+        "id": "web_1792477493161_63re_e10",
+        "name": "Masked Language Modeling (MLM)",
+        "type": "Method",
+        "description": "Self‑supervised objective that masks random tokens and trains the model to predict them"
+      }
+    ],
+    "edges": [
+      {
+        "source": "scc_cluster_4_web_1792",
+        "target": "web_1792477493161_63re_e1",
+        "type": "USES",
+        "weight": 0.95,
+        "is_bridge": false,
+        "original_relations": [
+          {
+            "source": "web_1792477493161_63re_e2",
+            "target": "web_1792477493161_63re_e1",
+            "type": "USES",
+            "weight": 0.95,
+            "provenance": "paper_extraction",
+            "validation_status": "unvalidated_extraction",
+            "is_bridge": false
+          }
+        ]
+      },
+      {
+        "source": "web_1792477493161_63re_e3",
+        "target": "web_1792477493161_63re_e1",
+        "type": "USES",
+        "weight": 0.94,
+        "is_bridge": false,
+        "original_relations": [
+          {
+            "source": "web_1792477493161_63re_e3",
+            "target": "web_1792477493161_63re_e1",
+            "type": "USES",
+            "weight": 0.94,
+            "provenance": "paper_extraction",
+            "validation_status": "unvalidated_extraction",
+            "is_bridge": false
+          }
+        ]
+      },
+      {
+        "source": "web_1792477493161_63re_e4",
+        "target": "web_1792477493161_63re_e1",
+        "type": "USES",
+        "weight": 0.93,
+        "is_bridge": true,
+        "original_relations": [
+          {
+            "source": "web_1792477493161_63re_e4",
+            "target": "web_1792477493161_63re_e1",
+            "type": "USES",
+            "weight": 0.93,
+            "provenance": "paper_extraction",
+            "validation_status": "unvalidated_extraction",
+            "is_bridge": true
+          }
+        ]
+      },
+      {
+        "source": "web_1792477493161_63re_e5",
+        "target": "web_1792477493161_63re_e9",
+        "type": "USES",
+        "weight": 0.9,
+        "is_bridge": true,
+        "original_relations": [
+          {
+            "source": "web_1792477493161_63re_e5",
+            "target": "web_1792477493161_63re_e9",
+            "type": "USES",
+            "weight": 0.9,
+            "provenance": "paper_extraction",
+            "validation_status": "unvalidated_extraction",
+            "is_bridge": true
+          }
+        ]
+      },
+      {
+        "source": "scc_cluster_4_web_1792",
+        "target": "web_1792477493161_63re_e11",
+        "type": "TRAINED_ON",
+        "weight": 0.96,
+        "is_bridge": true,
+        "original_relations": [
+          {
+            "source": "web_1792477493161_63re_e2",
+            "target": "web_1792477493161_63re_e11",
+            "type": "TRAINED_ON",
+            "weight": 0.96,
+            "provenance": "paper_extraction",
+            "validation_status": "unvalidated_extraction",
+            "is_bridge": true
+          }
+        ]
+      },
+      {
+        "source": "scc_cluster_4_web_1792",
+        "target": "web_1792477493161_63re_e12",
+        "type": "TRAINED_ON",
+        "weight": 0.94,
+        "is_bridge": false,
+        "original_relations": [
+          {
+            "source": "web_1792477493161_63re_e2",
+            "target": "web_1792477493161_63re_e12",
+            "type": "TRAINED_ON",
+            "weight": 0.94,
+            "provenance": "paper_extraction",
+            "validation_status": "unvalidated_extraction",
+            "is_bridge": false
+          }
+        ]
+      },
+      {
+        "source": "web_1792477493161_63re_e3",
+        "target": "web_1792477493161_63re_e12",
+        "type": "TRAINED_ON",
+        "weight": 0.95,
+        "is_bridge": false,
+        "original_relations": [
+          {
+            "source": "web_1792477493161_63re_e3",
+            "target": "web_1792477493161_63re_e12",
+            "type": "TRAINED_ON",
+            "weight": 0.95,
+            "provenance": "paper_extraction",
+            "validation_status": "unvalidated_extraction",
+            "is_bridge": false
+          }
+        ]
+      },
+      {
+        "source": "web_1792477493161_63re_e4",
+        "target": "web_1792477493161_63re_e13",
+        "type": "TRAINED_ON",
+        "weight": 0.92,
+        "is_bridge": true,
+        "original_relations": [
+          {
+            "source": "web_1792477493161_63re_e4",
+            "target": "web_1792477493161_63re_e13",
+            "type": "TRAINED_ON",
+            "weight": 0.92,
+            "provenance": "paper_extraction",
+            "validation_status": "unvalidated_extraction",
+            "is_bridge": true
+          }
+        ]
+      },
+      {
+        "source": "scc_cluster_4_web_1792",
+        "target": "web_1792477493161_63re_e15",
+        "type": "EVALUATED_ON",
+        "weight": 1.82,
+        "is_bridge": false,
+        "original_relations": [
+          {
+            "source": "web_1792477493161_63re_e2",
+            "target": "web_1792477493161_63re_e15",
+            "type": "EVALUATED_ON",
+            "weight": 0.93,
+            "provenance": "paper_extraction",
+            "validation_status": "unvalidated_extraction",
+            "is_bridge": false
+          },
+          {
+            "source": "web_1792477493161_63re_e8",
+            "target": "web_1792477493161_63re_e15",
+            "type": "OPTIMIZES_METRIC",
+            "weight": 0.89,
+            "provenance": "paper_extraction",
+            "validation_status": "unvalidated_extraction",
+            "is_bridge": false
+          }
+        ]
+      },
+      {
+        "source": "web_1792477493161_63re_e3",
+        "target": "web_1792477493161_63re_e14",
+        "type": "EVALUATED_ON",
+        "weight": 0.94,
+        "is_bridge": true,
+        "original_relations": [
+          {
+            "source": "web_1792477493161_63re_e3",
+            "target": "web_1792477493161_63re_e14",
+            "type": "EVALUATED_ON",
+            "weight": 0.94,
+            "provenance": "paper_extraction",
+            "validation_status": "unvalidated_extraction",
+            "is_bridge": true
+          }
+        ]
+      },
+      {
+        "source": "web_1792477493161_63re_e3",
+        "target": "web_1792477493161_63re_e16",
+        "type": "EVALUATED_ON",
+        "weight": 0.88,
+        "is_bridge": true,
+        "original_relations": [
+          {
+            "source": "web_1792477493161_63re_e3",
+            "target": "web_1792477493161_63re_e16",
+            "type": "EVALUATED_ON",
+            "weight": 0.88,
+            "provenance": "paper_extraction",
+            "validation_status": "unvalidated_extraction",
+            "is_bridge": true
+          }
+        ]
+      },
+      {
+        "source": "web_1792477493161_63re_e4",
+        "target": "web_1792477493161_63re_e18",
+        "type": "EVALUATED_ON",
+        "weight": 0.91,
+        "is_bridge": true,
+        "original_relations": [
+          {
+            "source": "web_1792477493161_63re_e4",
+            "target": "web_1792477493161_63re_e18",
+            "type": "EVALUATED_ON",
+            "weight": 0.91,
+            "provenance": "paper_extraction",
+            "validation_status": "unvalidated_extraction",
+            "is_bridge": true
+          }
+        ]
+      },
+      {
+        "source": "web_1792477493161_63re_e5",
+        "target": "web_1792477493161_63re_e17",
+        "type": "EVALUATED_ON",
+        "weight": 0.9,
+        "is_bridge": true,
+        "original_relations": [
+          {
+            "source": "web_1792477493161_63re_e5",
+            "target": "web_1792477493161_63re_e17",
+            "type": "EVALUATED_ON",
+            "weight": 0.9,
+            "provenance": "paper_extraction",
+            "validation_status": "unvalidated_extraction",
+            "is_bridge": true
+          }
+        ]
+      },
+      {
+        "source": "web_1792477493161_63re_e9",
+        "target": "web_1792477493161_63re_e6",
+        "type": "ENABLED_FOR",
+        "weight": 0.94,
+        "is_bridge": true,
+        "original_relations": [
+          {
+            "source": "web_1792477493161_63re_e9",
+            "target": "web_1792477493161_63re_e6",
+            "type": "ENABLED_FOR",
+            "weight": 0.94,
+            "provenance": "paper_extraction",
+            "validation_status": "unvalidated_extraction",
+            "is_bridge": true
+          }
+        ]
+      },
+      {
+        "source": "web_1792477493161_63re_e6",
+        "target": "web_1792477493161_63re_e7",
+        "type": "IS_A",
+        "weight": 0.97,
+        "is_bridge": true,
+        "original_relations": [
+          {
+            "source": "web_1792477493161_63re_e6",
+            "target": "web_1792477493161_63re_e7",
+            "type": "IS_A",
+            "weight": 0.97,
+            "provenance": "paper_extraction",
+            "validation_status": "unvalidated_extraction",
+            "is_bridge": true
+          }
+        ]
+      },
+      {
+        "source": "web_1792477493161_63re_e10",
+        "target": "web_1792477493161_63re_e3",
+        "type": "USED_IN",
+        "weight": 0.95,
+        "is_bridge": false,
+        "original_relations": [
+          {
+            "source": "web_1792477493161_63re_e10",
+            "target": "web_1792477493161_63re_e3",
+            "type": "USED_IN",
+            "weight": 0.95,
+            "provenance": "paper_extraction",
+            "validation_status": "unvalidated_extraction",
+            "is_bridge": false
+          }
+        ]
+      },
+      {
+        "source": "web_1792477493161_63re_e10",
+        "target": "scc_cluster_4_web_1792",
+        "type": "USED_IN",
+        "weight": 0.89,
+        "is_bridge": false,
+        "original_relations": [
+          {
+            "source": "web_1792477493161_63re_e10",
+            "target": "web_1792477493161_63re_e2",
+            "type": "USED_IN",
+            "weight": 0.89,
+            "provenance": "paper_extraction",
+            "validation_status": "unvalidated_extraction",
+            "is_bridge": false
+          }
+        ]
+      }
+    ],
+    "node_count": 17,
+    "edge_count": 17,
+    "articulation_points": [
+      "web_1792477493161_63re_e2",
+      "web_1792477493161_63re_e3",
+      "web_1792477493161_63re_e4",
+      "web_1792477493161_63re_e1",
+      "web_1792477493161_63re_e6",
+      "web_1792477493161_63re_e9",
+      "web_1792477493161_63re_e5"
+    ],
+    "bridges": [
+      [
+        "web_1792477493161_63re_e2",
+        "web_1792477493161_63re_e11"
+      ],
+      [
+        "web_1792477493161_63re_e3",
+        "web_1792477493161_63re_e14"
+      ],
+      [
+        "web_1792477493161_63re_e3",
+        "web_1792477493161_63re_e16"
+      ],
+      [
+        "web_1792477493161_63re_e4",
+        "web_1792477493161_63re_e13"
+      ],
+      [
+        "web_1792477493161_63re_e4",
+        "web_1792477493161_63re_e18"
+      ],
+      [
+        "web_1792477493161_63re_e1",
+        "web_1792477493161_63re_e4"
+      ],
+      [
+        "web_1792477493161_63re_e6",
+        "web_1792477493161_63re_e7"
+      ],
+      [
+        "web_1792477493161_63re_e9",
+        "web_1792477493161_63re_e6"
+      ],
+      [
+        "web_1792477493161_63re_e5",
+        "web_1792477493161_63re_e9"
+      ],
+      [
+        "web_1792477493161_63re_e5",
+        "web_1792477493161_63re_e17"
+      ]
+    ],
+    "compression_ratio": 0.944,
+    "diagnostics": {
+      "total_nodes": 18,
+      "num_sccs": 17,
+      "scc_sizes": [
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "max_scc_size": 2,
+      "max_scc_ratio": 0.111,
+      "has_giant_scc": false
+    }
+  }
+}

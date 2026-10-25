@@ -1,0 +1,769 @@
+{
+  "original_graph": {
+    "nodes": [
+      {
+        "id": "arxiv_math_0602191v4_e1",
+        "name": "Maximum Number of Cliques in a Graph",
+        "type": "Task",
+        "description": "Determines the extremal count of cliques for various graph classes"
+      },
+      {
+        "id": "arxiv_math_0602191v4_e2",
+        "name": "Extremal Graph Theory",
+        "type": "Concept",
+        "description": "Study of maximal/minimal graph parameters under constraints"
+      },
+      {
+        "id": "arxiv_math_0602191v4_e3",
+        "name": "Turán's Theorem",
+        "type": "Theory",
+        "description": "Gives the maximum number of edges in a K_{k+1}-free graph"
+      },
+      {
+        "id": "arxiv_math_0602191v4_e4",
+        "name": "Zykov's Theorem",
+        "type": "Theory",
+        "description": "Generalizes Turán's result to counts of ℓ‑cliques"
+      },
+      {
+        "id": "arxiv_math_0602191v4_e5",
+        "name": "d‑degenerate Graphs",
+        "type": "Concept",
+        "description": "Graphs where every subgraph has a vertex of degree ≤ d"
+      },
+      {
+        "id": "arxiv_math_0602191v4_e6",
+        "name": "Planar Graphs",
+        "type": "Concept",
+        "description": "Graphs that can be embedded in the plane without edge crossings"
+      },
+      {
+        "id": "arxiv_math_0602191v4_e7",
+        "name": "K5‑minor‑free Graphs",
+        "type": "Concept",
+        "description": "Graphs that do not contain K5 as a minor"
+      },
+      {
+        "id": "arxiv_math_0602191v4_e8",
+        "name": "K3,3‑minor‑free Graphs",
+        "type": "Concept",
+        "description": "Graphs that do not contain K3,3 as a minor"
+      },
+      {
+        "id": "arxiv_math_0602191v4_e9",
+        "name": "Inductive Proof Method",
+        "type": "Method",
+        "description": "Proof technique based on induction over graph size"
+      },
+      {
+        "id": "arxiv_math_0602191v4_e10",
+        "name": "Pasting Lemma",
+        "type": "Method",
+        "description": "Combines two graphs on a shared subgraph to bound clique numbers"
+      },
+      {
+        "id": "arxiv_math_0602191v4_e11",
+        "name": "Lemma 1",
+        "type": "Method",
+        "description": "Provides a bound on cliques when pasting graphs"
+      },
+      {
+        "id": "arxiv_math_0602191v4_e12",
+        "name": "Corollary 1",
+        "type": "Method",
+        "description": "Special case of Lemma 1 for pasting on a k‑clique"
+      },
+      {
+        "id": "arxiv_math_0602191v4_e13",
+        "name": "Upper Bound Derivation",
+        "type": "Method",
+        "description": "Derives the maximal possible number of cliques for given graph parameters"
+      },
+      {
+        "id": "arxiv_math_0602191v4_e14",
+        "name": "Lower Bound Construction",
+        "type": "Method",
+        "description": "Constructs graphs that achieve the derived upper bound"
+      },
+      {
+        "id": "arxiv_math_0602191v4_e15",
+        "name": "Clique Enumeration in Minor‑Closed Families",
+        "type": "Method",
+        "description": "Algorithmic technique using graph minor theory to count cliques"
+      },
+      {
+        "id": "arxiv_math_0602191v4_e16",
+        "name": "Graph Minor Theory",
+        "type": "Concept",
+        "description": "Framework for studying graphs closed under taking minors"
+      }
+    ],
+    "edges": [
+      {
+        "source": "arxiv_math_0602191v4_e1",
+        "target": "arxiv_math_0602191v4_e13",
+        "type": "PROVES",
+        "weight": 0.9,
+        "provenance": "paper_extraction",
+        "validation_status": "unvalidated_extraction",
+        "is_bridge": false
+      },
+      {
+        "source": "arxiv_math_0602191v4_e1",
+        "target": "arxiv_math_0602191v4_e14",
+        "type": "PROVES",
+        "weight": 0.9,
+        "provenance": "paper_extraction",
+        "validation_status": "unvalidated_extraction",
+        "is_bridge": false
+      },
+      {
+        "source": "arxiv_math_0602191v4_e13",
+        "target": "arxiv_math_0602191v4_e9",
+        "type": "USES",
+        "weight": 0.85,
+        "provenance": "paper_extraction",
+        "validation_status": "unvalidated_extraction",
+        "is_bridge": false
+      },
+      {
+        "source": "arxiv_math_0602191v4_e14",
+        "target": "arxiv_math_0602191v4_e9",
+        "type": "USES",
+        "weight": 0.85,
+        "provenance": "paper_extraction",
+        "validation_status": "unvalidated_extraction",
+        "is_bridge": false
+      },
+      {
+        "source": "arxiv_math_0602191v4_e13",
+        "target": "arxiv_math_0602191v4_e11",
+        "type": "USES",
+        "weight": 0.8,
+        "provenance": "paper_extraction",
+        "validation_status": "unvalidated_extraction",
+        "is_bridge": false
+      },
+      {
+        "source": "arxiv_math_0602191v4_e14",
+        "target": "arxiv_math_0602191v4_e12",
+        "type": "USES",
+        "weight": 0.8,
+        "provenance": "paper_extraction",
+        "validation_status": "unvalidated_extraction",
+        "is_bridge": true
+      },
+      {
+        "source": "arxiv_math_0602191v4_e11",
+        "target": "arxiv_math_0602191v4_e10",
+        "type": "USES",
+        "weight": 0.8,
+        "provenance": "paper_extraction",
+        "validation_status": "unvalidated_extraction",
+        "is_bridge": false
+      },
+      {
+        "source": "arxiv_math_0602191v4_e10",
+        "target": "arxiv_math_0602191v4_e2",
+        "type": "GENERALIZES",
+        "weight": 0.7,
+        "provenance": "paper_extraction",
+        "validation_status": "unvalidated_extraction",
+        "is_bridge": false
+      },
+      {
+        "source": "arxiv_math_0602191v4_e9",
+        "target": "arxiv_math_0602191v4_e2",
+        "type": "GENERALIZES",
+        "weight": 0.7,
+        "provenance": "paper_extraction",
+        "validation_status": "unvalidated_extraction",
+        "is_bridge": false
+      },
+      {
+        "source": "arxiv_math_0602191v4_e3",
+        "target": "arxiv_math_0602191v4_e1",
+        "type": "INFORMS",
+        "weight": 0.9,
+        "provenance": "paper_extraction",
+        "validation_status": "unvalidated_extraction",
+        "is_bridge": true
+      },
+      {
+        "source": "arxiv_math_0602191v4_e4",
+        "target": "arxiv_math_0602191v4_e1",
+        "type": "INFORMS",
+        "weight": 0.9,
+        "provenance": "paper_extraction",
+        "validation_status": "unvalidated_extraction",
+        "is_bridge": true
+      },
+      {
+        "source": "arxiv_math_0602191v4_e5",
+        "target": "arxiv_math_0602191v4_e1",
+        "type": "APPLIES_TO",
+        "weight": 0.85,
+        "provenance": "paper_extraction",
+        "validation_status": "unvalidated_extraction",
+        "is_bridge": true
+      },
+      {
+        "source": "arxiv_math_0602191v4_e6",
+        "target": "arxiv_math_0602191v4_e1",
+        "type": "APPLIES_TO",
+        "weight": 0.85,
+        "provenance": "paper_extraction",
+        "validation_status": "unvalidated_extraction",
+        "is_bridge": true
+      },
+      {
+        "source": "arxiv_math_0602191v4_e7",
+        "target": "arxiv_math_0602191v4_e1",
+        "type": "APPLIES_TO",
+        "weight": 0.8,
+        "provenance": "paper_extraction",
+        "validation_status": "unvalidated_extraction",
+        "is_bridge": true
+      },
+      {
+        "source": "arxiv_math_0602191v4_e8",
+        "target": "arxiv_math_0602191v4_e1",
+        "type": "APPLIES_TO",
+        "weight": 0.8,
+        "provenance": "paper_extraction",
+        "validation_status": "unvalidated_extraction",
+        "is_bridge": true
+      },
+      {
+        "source": "arxiv_math_0602191v4_e15",
+        "target": "arxiv_math_0602191v4_e16",
+        "type": "USES",
+        "weight": 0.75,
+        "provenance": "paper_extraction",
+        "validation_status": "unvalidated_extraction",
+        "is_bridge": true
+      },
+      {
+        "source": "arxiv_math_0602191v4_e1",
+        "target": "arxiv_math_0602191v4_e15",
+        "type": "COMPARES_WITH",
+        "weight": 0.6,
+        "provenance": "paper_extraction",
+        "validation_status": "unvalidated_extraction",
+        "is_bridge": true
+      },
+      {
+        "source": "arxiv_math_0602191v4_e1",
+        "target": "arxiv_math_0602191v4_e3",
+        "type": "EXTENDS",
+        "weight": 0.9,
+        "provenance": "paper_extraction",
+        "validation_status": "unvalidated_extraction",
+        "is_bridge": true
+      },
+      {
+        "source": "arxiv_math_0602191v4_e1",
+        "target": "arxiv_math_0602191v4_e4",
+        "type": "EXTENDS",
+        "weight": 0.9,
+        "provenance": "paper_extraction",
+        "validation_status": "unvalidated_extraction",
+        "is_bridge": true
+      },
+      {
+        "source": "arxiv_math_0602191v4_e13",
+        "target": "arxiv_math_0602191v4_e1",
+        "type": "FEEDS_INTO",
+        "weight": 0.7,
+        "provenance": "paper_extraction",
+        "validation_status": "unvalidated_extraction",
+        "is_bridge": false
+      }
+    ],
+    "node_count": 16,
+    "edge_count": 20,
+    "articulation_points": [
+      "arxiv_math_0602191v4_e14",
+      "arxiv_math_0602191v4_e15",
+      "arxiv_math_0602191v4_e1"
+    ],
+    "bridges": [
+      [
+        "arxiv_math_0602191v4_e14",
+        "arxiv_math_0602191v4_e12"
+      ],
+      [
+        "arxiv_math_0602191v4_e1",
+        "arxiv_math_0602191v4_e3"
+      ],
+      [
+        "arxiv_math_0602191v4_e1",
+        "arxiv_math_0602191v4_e4"
+      ],
+      [
+        "arxiv_math_0602191v4_e1",
+        "arxiv_math_0602191v4_e5"
+      ],
+      [
+        "arxiv_math_0602191v4_e1",
+        "arxiv_math_0602191v4_e6"
+      ],
+      [
+        "arxiv_math_0602191v4_e1",
+        "arxiv_math_0602191v4_e7"
+      ],
+      [
+        "arxiv_math_0602191v4_e1",
+        "arxiv_math_0602191v4_e8"
+      ],
+      [
+        "arxiv_math_0602191v4_e15",
+        "arxiv_math_0602191v4_e16"
+      ],
+      [
+        "arxiv_math_0602191v4_e1",
+        "arxiv_math_0602191v4_e15"
+      ]
+    ]
+  },
+  "compressed_graph": {
+    "nodes": [
+      {
+        "id": "arxiv_math_0602191v4_e2",
+        "name": "Extremal Graph Theory",
+        "type": "Concept",
+        "description": "Study of maximal/minimal graph parameters under constraints"
+      },
+      {
+        "id": "arxiv_math_0602191v4_e9",
+        "name": "Inductive Proof Method",
+        "type": "Method",
+        "description": "Proof technique based on induction over graph size"
+      },
+      {
+        "id": "arxiv_math_0602191v4_e10",
+        "name": "Pasting Lemma",
+        "type": "Method",
+        "description": "Combines two graphs on a shared subgraph to bound clique numbers"
+      },
+      {
+        "id": "arxiv_math_0602191v4_e11",
+        "name": "Lemma 1",
+        "type": "Method",
+        "description": "Provides a bound on cliques when pasting graphs"
+      },
+      {
+        "id": "arxiv_math_0602191v4_e12",
+        "name": "Corollary 1",
+        "type": "Method",
+        "description": "Special case of Lemma 1 for pasting on a k‑clique"
+      },
+      {
+        "id": "arxiv_math_0602191v4_e14",
+        "name": "Lower Bound Construction",
+        "type": "Method",
+        "description": "Constructs graphs that achieve the derived upper bound",
+        "is_connector": true
+      },
+      {
+        "id": "arxiv_math_0602191v4_e16",
+        "name": "Graph Minor Theory",
+        "type": "Concept",
+        "description": "Framework for studying graphs closed under taking minors"
+      },
+      {
+        "id": "arxiv_math_0602191v4_e15",
+        "name": "Clique Enumeration in Minor‑Closed Families",
+        "type": "Method",
+        "description": "Algorithmic technique using graph minor theory to count cliques",
+        "is_connector": true
+      },
+      {
+        "id": "scc_cluster_8_arxiv_ma",
+        "name": "SCC [Zykov's Cyclic Loop]",
+        "type": "Supernode",
+        "description": "Contracted quotient supernode containing 4 cyclically interdependent components: Zykov's Theorem, Turán's Theorem, Upper Bound Derivation, Maximum Number of Cliques in a Graph.",
+        "is_supernode": true,
+        "member_count": 4,
+        "member_node_ids": [
+          "arxiv_math_0602191v4_e4",
+          "arxiv_math_0602191v4_e3",
+          "arxiv_math_0602191v4_e13",
+          "arxiv_math_0602191v4_e1"
+        ],
+        "member_nodes": [
+          {
+            "id": "arxiv_math_0602191v4_e4",
+            "name": "Zykov's Theorem",
+            "type": "Theory",
+            "description": "Generalizes Turán's result to counts of ℓ‑cliques"
+          },
+          {
+            "id": "arxiv_math_0602191v4_e3",
+            "name": "Turán's Theorem",
+            "type": "Theory",
+            "description": "Gives the maximum number of edges in a K_{k+1}-free graph"
+          },
+          {
+            "id": "arxiv_math_0602191v4_e13",
+            "name": "Upper Bound Derivation",
+            "type": "Method",
+            "description": "Derives the maximal possible number of cliques for given graph parameters"
+          },
+          {
+            "id": "arxiv_math_0602191v4_e1",
+            "name": "Maximum Number of Cliques in a Graph",
+            "type": "Task",
+            "description": "Determines the extremal count of cliques for various graph classes"
+          }
+        ]
+      },
+      {
+        "id": "arxiv_math_0602191v4_e5",
+        "name": "d‑degenerate Graphs",
+        "type": "Concept",
+        "description": "Graphs where every subgraph has a vertex of degree ≤ d"
+      },
+      {
+        "id": "arxiv_math_0602191v4_e6",
+        "name": "Planar Graphs",
+        "type": "Concept",
+        "description": "Graphs that can be embedded in the plane without edge crossings"
+      },
+      {
+        "id": "arxiv_math_0602191v4_e7",
+        "name": "K5‑minor‑free Graphs",
+        "type": "Concept",
+        "description": "Graphs that do not contain K5 as a minor"
+      },
+      {
+        "id": "arxiv_math_0602191v4_e8",
+        "name": "K3,3‑minor‑free Graphs",
+        "type": "Concept",
+        "description": "Graphs that do not contain K3,3 as a minor"
+      }
+    ],
+    "edges": [
+      {
+        "source": "scc_cluster_8_arxiv_ma",
+        "target": "arxiv_math_0602191v4_e14",
+        "type": "PROVES",
+        "weight": 0.9,
+        "is_bridge": false,
+        "original_relations": [
+          {
+            "source": "arxiv_math_0602191v4_e1",
+            "target": "arxiv_math_0602191v4_e14",
+            "type": "PROVES",
+            "weight": 0.9,
+            "provenance": "paper_extraction",
+            "validation_status": "unvalidated_extraction",
+            "is_bridge": false
+          }
+        ]
+      },
+      {
+        "source": "scc_cluster_8_arxiv_ma",
+        "target": "arxiv_math_0602191v4_e9",
+        "type": "USES",
+        "weight": 0.85,
+        "is_bridge": false,
+        "original_relations": [
+          {
+            "source": "arxiv_math_0602191v4_e13",
+            "target": "arxiv_math_0602191v4_e9",
+            "type": "USES",
+            "weight": 0.85,
+            "provenance": "paper_extraction",
+            "validation_status": "unvalidated_extraction",
+            "is_bridge": false
+          }
+        ]
+      },
+      {
+        "source": "arxiv_math_0602191v4_e14",
+        "target": "arxiv_math_0602191v4_e9",
+        "type": "USES",
+        "weight": 0.85,
+        "is_bridge": false,
+        "original_relations": [
+          {
+            "source": "arxiv_math_0602191v4_e14",
+            "target": "arxiv_math_0602191v4_e9",
+            "type": "USES",
+            "weight": 0.85,
+            "provenance": "paper_extraction",
+            "validation_status": "unvalidated_extraction",
+            "is_bridge": false
+          }
+        ]
+      },
+      {
+        "source": "scc_cluster_8_arxiv_ma",
+        "target": "arxiv_math_0602191v4_e11",
+        "type": "USES",
+        "weight": 0.8,
+        "is_bridge": false,
+        "original_relations": [
+          {
+            "source": "arxiv_math_0602191v4_e13",
+            "target": "arxiv_math_0602191v4_e11",
+            "type": "USES",
+            "weight": 0.8,
+            "provenance": "paper_extraction",
+            "validation_status": "unvalidated_extraction",
+            "is_bridge": false
+          }
+        ]
+      },
+      {
+        "source": "arxiv_math_0602191v4_e14",
+        "target": "arxiv_math_0602191v4_e12",
+        "type": "USES",
+        "weight": 0.8,
+        "is_bridge": true,
+        "original_relations": [
+          {
+            "source": "arxiv_math_0602191v4_e14",
+            "target": "arxiv_math_0602191v4_e12",
+            "type": "USES",
+            "weight": 0.8,
+            "provenance": "paper_extraction",
+            "validation_status": "unvalidated_extraction",
+            "is_bridge": true
+          }
+        ]
+      },
+      {
+        "source": "arxiv_math_0602191v4_e11",
+        "target": "arxiv_math_0602191v4_e10",
+        "type": "USES",
+        "weight": 0.8,
+        "is_bridge": false,
+        "original_relations": [
+          {
+            "source": "arxiv_math_0602191v4_e11",
+            "target": "arxiv_math_0602191v4_e10",
+            "type": "USES",
+            "weight": 0.8,
+            "provenance": "paper_extraction",
+            "validation_status": "unvalidated_extraction",
+            "is_bridge": false
+          }
+        ]
+      },
+      {
+        "source": "arxiv_math_0602191v4_e10",
+        "target": "arxiv_math_0602191v4_e2",
+        "type": "GENERALIZES",
+        "weight": 0.7,
+        "is_bridge": false,
+        "original_relations": [
+          {
+            "source": "arxiv_math_0602191v4_e10",
+            "target": "arxiv_math_0602191v4_e2",
+            "type": "GENERALIZES",
+            "weight": 0.7,
+            "provenance": "paper_extraction",
+            "validation_status": "unvalidated_extraction",
+            "is_bridge": false
+          }
+        ]
+      },
+      {
+        "source": "arxiv_math_0602191v4_e9",
+        "target": "arxiv_math_0602191v4_e2",
+        "type": "GENERALIZES",
+        "weight": 0.7,
+        "is_bridge": false,
+        "original_relations": [
+          {
+            "source": "arxiv_math_0602191v4_e9",
+            "target": "arxiv_math_0602191v4_e2",
+            "type": "GENERALIZES",
+            "weight": 0.7,
+            "provenance": "paper_extraction",
+            "validation_status": "unvalidated_extraction",
+            "is_bridge": false
+          }
+        ]
+      },
+      {
+        "source": "arxiv_math_0602191v4_e5",
+        "target": "scc_cluster_8_arxiv_ma",
+        "type": "APPLIES_TO",
+        "weight": 0.85,
+        "is_bridge": true,
+        "original_relations": [
+          {
+            "source": "arxiv_math_0602191v4_e5",
+            "target": "arxiv_math_0602191v4_e1",
+            "type": "APPLIES_TO",
+            "weight": 0.85,
+            "provenance": "paper_extraction",
+            "validation_status": "unvalidated_extraction",
+            "is_bridge": true
+          }
+        ]
+      },
+      {
+        "source": "arxiv_math_0602191v4_e6",
+        "target": "scc_cluster_8_arxiv_ma",
+        "type": "APPLIES_TO",
+        "weight": 0.85,
+        "is_bridge": true,
+        "original_relations": [
+          {
+            "source": "arxiv_math_0602191v4_e6",
+            "target": "arxiv_math_0602191v4_e1",
+            "type": "APPLIES_TO",
+            "weight": 0.85,
+            "provenance": "paper_extraction",
+            "validation_status": "unvalidated_extraction",
+            "is_bridge": true
+          }
+        ]
+      },
+      {
+        "source": "arxiv_math_0602191v4_e7",
+        "target": "scc_cluster_8_arxiv_ma",
+        "type": "APPLIES_TO",
+        "weight": 0.8,
+        "is_bridge": true,
+        "original_relations": [
+          {
+            "source": "arxiv_math_0602191v4_e7",
+            "target": "arxiv_math_0602191v4_e1",
+            "type": "APPLIES_TO",
+            "weight": 0.8,
+            "provenance": "paper_extraction",
+            "validation_status": "unvalidated_extraction",
+            "is_bridge": true
+          }
+        ]
+      },
+      {
+        "source": "arxiv_math_0602191v4_e8",
+        "target": "scc_cluster_8_arxiv_ma",
+        "type": "APPLIES_TO",
+        "weight": 0.8,
+        "is_bridge": true,
+        "original_relations": [
+          {
+            "source": "arxiv_math_0602191v4_e8",
+            "target": "arxiv_math_0602191v4_e1",
+            "type": "APPLIES_TO",
+            "weight": 0.8,
+            "provenance": "paper_extraction",
+            "validation_status": "unvalidated_extraction",
+            "is_bridge": true
+          }
+        ]
+      },
+      {
+        "source": "arxiv_math_0602191v4_e15",
+        "target": "arxiv_math_0602191v4_e16",
+        "type": "USES",
+        "weight": 0.75,
+        "is_bridge": true,
+        "original_relations": [
+          {
+            "source": "arxiv_math_0602191v4_e15",
+            "target": "arxiv_math_0602191v4_e16",
+            "type": "USES",
+            "weight": 0.75,
+            "provenance": "paper_extraction",
+            "validation_status": "unvalidated_extraction",
+            "is_bridge": true
+          }
+        ]
+      },
+      {
+        "source": "scc_cluster_8_arxiv_ma",
+        "target": "arxiv_math_0602191v4_e15",
+        "type": "COMPARES_WITH",
+        "weight": 0.6,
+        "is_bridge": true,
+        "original_relations": [
+          {
+            "source": "arxiv_math_0602191v4_e1",
+            "target": "arxiv_math_0602191v4_e15",
+            "type": "COMPARES_WITH",
+            "weight": 0.6,
+            "provenance": "paper_extraction",
+            "validation_status": "unvalidated_extraction",
+            "is_bridge": true
+          }
+        ]
+      }
+    ],
+    "node_count": 13,
+    "edge_count": 14,
+    "articulation_points": [
+      "arxiv_math_0602191v4_e14",
+      "arxiv_math_0602191v4_e15",
+      "arxiv_math_0602191v4_e1"
+    ],
+    "bridges": [
+      [
+        "arxiv_math_0602191v4_e14",
+        "arxiv_math_0602191v4_e12"
+      ],
+      [
+        "arxiv_math_0602191v4_e1",
+        "arxiv_math_0602191v4_e3"
+      ],
+      [
+        "arxiv_math_0602191v4_e1",
+        "arxiv_math_0602191v4_e4"
+      ],
+      [
+        "arxiv_math_0602191v4_e1",
+        "arxiv_math_0602191v4_e5"
+      ],
+      [
+        "arxiv_math_0602191v4_e1",
+        "arxiv_math_0602191v4_e6"
+      ],
+      [
+        "arxiv_math_0602191v4_e1",
+        "arxiv_math_0602191v4_e7"
+      ],
+      [
+        "arxiv_math_0602191v4_e1",
+        "arxiv_math_0602191v4_e8"
+      ],
+      [
+        "arxiv_math_0602191v4_e15",
+        "arxiv_math_0602191v4_e16"
+      ],
+      [
+        "arxiv_math_0602191v4_e1",
+        "arxiv_math_0602191v4_e15"
+      ]
+    ],
+    "compression_ratio": 0.813,
+    "diagnostics": {
+      "total_nodes": 16,
+      "num_sccs": 13,
+      "scc_sizes": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        4,
+        1,
+        1,
+        1,
+        1
+      ],
+      "max_scc_size": 4,
+      "max_scc_ratio": 0.25,
+      "has_giant_scc": false
+    }
+  }
+}

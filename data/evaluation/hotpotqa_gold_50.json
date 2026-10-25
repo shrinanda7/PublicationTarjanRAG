@@ -1,0 +1,3419 @@
+{
+  "schema_version": "1.0",
+  "corpus_version": "hotpotqa_distractor_v1",
+  "description": "Official HotpotQA validation subset (50 questions)",
+  "corpus_papers": [
+    {
+      "paper_id": "1995–96 Manchester United F.C. season",
+      "title": "1995–96 Manchester United F.C. season",
+      "citation": "Wikipedia: 1995–96 Manchester United F.C. season",
+      "sha256": "946134a9e1955f0fd5fb87dc44497f04f4007870c4127e6036b0b22352583519",
+      "source_url": "https://en.wikipedia.org/wiki/1995–96_Manchester_United_F.C._season",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "2011–12 VCU Rams men's basketball team",
+      "title": "2011–12 VCU Rams men's basketball team",
+      "citation": "Wikipedia: 2011–12 VCU Rams men's basketball team",
+      "sha256": "b1cea7feb7de1eca696fceae617999db9835d3844cb1ab04e6fb89a8c8a443ee",
+      "source_url": "https://en.wikipedia.org/wiki/2011–12_VCU_Rams_men's_basketball_team",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "2014 S/S",
+      "title": "2014 S/S",
+      "citation": "Wikipedia: 2014 S/S",
+      "sha256": "f4a95c30fb553eb1a17a6f328a19be1d6ee387377670dbf042926f57c3912bc3",
+      "source_url": "https://en.wikipedia.org/wiki/2014_S/S",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "888 7th Avenue",
+      "title": "888 7th Avenue",
+      "citation": "Wikipedia: 888 7th Avenue",
+      "sha256": "11b1082fb09fb05c3db83d7dc8173c19157b3f0c1c404088f2abeb5d4e7ee4dc",
+      "source_url": "https://en.wikipedia.org/wiki/888_7th_Avenue",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "A Rather Blustery Day",
+      "title": "A Rather Blustery Day",
+      "citation": "Wikipedia: A Rather Blustery Day",
+      "sha256": "13c3bfb0fd8bbd635c4a9722777f093169e46433f78aeac04e1ae0d9a6474f5d",
+      "source_url": "https://en.wikipedia.org/wiki/A_Rather_Blustery_Day",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Adriana Trigiani",
+      "title": "Adriana Trigiani",
+      "citation": "Wikipedia: Adriana Trigiani",
+      "sha256": "f6cd889d2a6869fce1f4b0b692d64d93c01c0475e799a13b0f3a57c4936ede7c",
+      "source_url": "https://en.wikipedia.org/wiki/Adriana_Trigiani",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Alex Ferguson",
+      "title": "Alex Ferguson",
+      "citation": "Wikipedia: Alex Ferguson",
+      "sha256": "65f2858f9f0262656ae89faccf4a334587a6aa16b53010d5b7ecd7b7988bff5d",
+      "source_url": "https://en.wikipedia.org/wiki/Alex_Ferguson",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Alfred Balk",
+      "title": "Alfred Balk",
+      "citation": "Wikipedia: Alfred Balk",
+      "sha256": "b105e140c05a7b1fb22338158cccaedd29e6bddec87eabd70f05889b29737781",
+      "source_url": "https://en.wikipedia.org/wiki/Alfred_Balk",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Ambroise Thomas",
+      "title": "Ambroise Thomas",
+      "citation": "Wikipedia: Ambroise Thomas",
+      "sha256": "b6be12c4d4996cb1ee57e3b2c918c7a2227dec50dd733b7cf99c3f689c506f95",
+      "source_url": "https://en.wikipedia.org/wiki/Ambroise_Thomas",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "America East Conference",
+      "title": "America East Conference",
+      "citation": "Wikipedia: America East Conference",
+      "sha256": "a5e24451c26532ca1af8007e2ff269e3ce05ce48e592d15774669b44aa55dffb",
+      "source_url": "https://en.wikipedia.org/wiki/America_East_Conference",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Androscoggin Bank Colisée",
+      "title": "Androscoggin Bank Colisée",
+      "citation": "Wikipedia: Androscoggin Bank Colisée",
+      "sha256": "53190230f3a35ebc22628f03295b9c1e32cd9dd83eb3cc38c301a30e0a29b3f3",
+      "source_url": "https://en.wikipedia.org/wiki/Androscoggin_Bank_Colisée",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Animorphs",
+      "title": "Animorphs",
+      "citation": "Wikipedia: Animorphs",
+      "sha256": "0f341b6edd942c54ec45847f328e702f3b15df93fba61de01894f7accc5f74b2",
+      "source_url": "https://en.wikipedia.org/wiki/Animorphs",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Annie Morton",
+      "title": "Annie Morton",
+      "citation": "Wikipedia: Annie Morton",
+      "sha256": "012f8f9212a58ad6bd7133e230687f303bcc554c79c46a042a0993560fe4213b",
+      "source_url": "https://en.wikipedia.org/wiki/Annie_Morton",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Apple Remote",
+      "title": "Apple Remote",
+      "citation": "Wikipedia: Apple Remote",
+      "sha256": "48ec6fe83dc338a992e3e55b7f6f2b5055702117c2ad8c37e05c530ee6242a24",
+      "source_url": "https://en.wikipedia.org/wiki/Apple_Remote",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Arena of Khazan",
+      "title": "Arena of Khazan",
+      "citation": "Wikipedia: Arena of Khazan",
+      "sha256": "8c3878857ca7375144cce4cd815b05d09de22de86b599fb5077716cadd89f199",
+      "source_url": "https://en.wikipedia.org/wiki/Arena_of_Khazan",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Back to Mono (1958–1969)",
+      "title": "Back to Mono (1958–1969)",
+      "citation": "Wikipedia: Back to Mono (1958–1969)",
+      "sha256": "33422c1b47b38613f78df8bbe1a423375664bfba470ebfb05ff44db6e6fdb81f",
+      "source_url": "https://en.wikipedia.org/wiki/Back_to_Mono_(1958–1969)",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Badly Drawn Boy",
+      "title": "Badly Drawn Boy",
+      "citation": "Wikipedia: Badly Drawn Boy",
+      "sha256": "8f2f2503be2a69ac29265c9b192ba6bc19d37773ef36859f436084273008ceed",
+      "source_url": "https://en.wikipedia.org/wiki/Badly_Drawn_Boy",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Battle of Adwa",
+      "title": "Battle of Adwa",
+      "citation": "Wikipedia: Battle of Adwa",
+      "sha256": "be06b923750c2be9f765e6ab812c546a5d81f03baa2c3f0539f0da1766a49aed",
+      "source_url": "https://en.wikipedia.org/wiki/Battle_of_Adwa",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Big Stone Gap (film)",
+      "title": "Big Stone Gap (film)",
+      "citation": "Wikipedia: Big Stone Gap (film)",
+      "sha256": "c7e41da149006e3183874709ab7f5dc45af397d5cdb060f2fcaac202cef69a08",
+      "source_url": "https://en.wikipedia.org/wiki/Big_Stone_Gap_(film)",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Brown County, Kansas",
+      "title": "Brown County, Kansas",
+      "citation": "Wikipedia: Brown County, Kansas",
+      "sha256": "d47937b95b6b73565a8f491c42909c52dcea34d9ddd6ebe8ef55664fbab26681",
+      "source_url": "https://en.wikipedia.org/wiki/Brown_County,_Kansas",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Brown State Fishing Lake",
+      "title": "Brown State Fishing Lake",
+      "citation": "Wikipedia: Brown State Fishing Lake",
+      "sha256": "3da9027643dffca77e0b69251224a462b2feb6edc67c0c59aba2e2dac4723856",
+      "source_url": "https://en.wikipedia.org/wiki/Brown_State_Fishing_Lake",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Buck-Tick",
+      "title": "Buck-Tick",
+      "citation": "Wikipedia: Buck-Tick",
+      "sha256": "3fde203089742c145c40b1d78cf8eb38cf89d2e81fcbd6a32e65dc2157dbaf9c",
+      "source_url": "https://en.wikipedia.org/wiki/Buck-Tick",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Carlo Rovelli",
+      "title": "Carlo Rovelli",
+      "citation": "Wikipedia: Carlo Rovelli",
+      "sha256": "c152ff3d752050e5297bdb3fb5b0c87ee622dcf3f998690fdc65795b96aeb95b",
+      "source_url": "https://en.wikipedia.org/wiki/Carlo_Rovelli",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Charles Nungesser",
+      "title": "Charles Nungesser",
+      "citation": "Wikipedia: Charles Nungesser",
+      "sha256": "4003c9e8326e1bf745c059581b764de254fbf43bb5eff6e5b58f745ebf517818",
+      "source_url": "https://en.wikipedia.org/wiki/Charles_Nungesser",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Columbia University",
+      "title": "Columbia University",
+      "citation": "Wikipedia: Columbia University",
+      "sha256": "0386721f29c72234df74501edd1d35def79916b2394530431a4ef54996aa9769",
+      "source_url": "https://en.wikipedia.org/wiki/Columbia_University",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "David Weissman",
+      "title": "David Weissman",
+      "citation": "Wikipedia: David Weissman",
+      "sha256": "2edbed0b37b895692a578185eec95af067ec60c7a1a5d6b7cefe1c1af7260bb7",
+      "source_url": "https://en.wikipedia.org/wiki/David_Weissman",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Dictyosperma",
+      "title": "Dictyosperma",
+      "citation": "Wikipedia: Dictyosperma",
+      "sha256": "f585b94c10f60129ea81f96987d07934cecc7aa645f2a77906ce54e51ac75a71",
+      "source_url": "https://en.wikipedia.org/wiki/Dictyosperma",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Dirleton Castle",
+      "title": "Dirleton Castle",
+      "citation": "Wikipedia: Dirleton Castle",
+      "sha256": "dc26c84c67a5ae0ab8dfcf2655e232f7681d644b0e8b17e08561fd8d05ed1037",
+      "source_url": "https://en.wikipedia.org/wiki/Dirleton_Castle",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Ed Wood",
+      "title": "Ed Wood",
+      "citation": "Wikipedia: Ed Wood",
+      "sha256": "2e364fd422a63e2f7f0a260835e1e1154d6201e145f70be0bdc524334a36bbd7",
+      "source_url": "https://en.wikipedia.org/wiki/Ed_Wood",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Eenasul Fateh",
+      "title": "Eenasul Fateh",
+      "citation": "Wikipedia: Eenasul Fateh",
+      "sha256": "354c05759c062b34709c60e5072f6c3a87a36cf1c5ee7d0c13f62be2009f3f4f",
+      "source_url": "https://en.wikipedia.org/wiki/Eenasul_Fateh",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Elko Regional Airport",
+      "title": "Elko Regional Airport",
+      "citation": "Wikipedia: Elko Regional Airport",
+      "sha256": "ea050c84a965cf3e8908bbde40bd8c0b34af61fd177493ba5a1f491909b9ca71",
+      "source_url": "https://en.wikipedia.org/wiki/Elko_Regional_Airport",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "End of Days (film)",
+      "title": "End of Days (film)",
+      "citation": "Wikipedia: End of Days (film)",
+      "sha256": "2ae658e21185923b6794afa3d57ef9cc1fe2c77a1917337a87cdefc267d24f93",
+      "source_url": "https://en.wikipedia.org/wiki/End_of_Days_(film)",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "English Electric Canberra",
+      "title": "English Electric Canberra",
+      "citation": "Wikipedia: English Electric Canberra",
+      "sha256": "913c7728340e14c6c195e32d1b101a09bc43203136ea9a954ffd18090785f8de",
+      "source_url": "https://en.wikipedia.org/wiki/English_Electric_Canberra",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Esma Sultan Mansion",
+      "title": "Esma Sultan Mansion",
+      "citation": "Wikipedia: Esma Sultan Mansion",
+      "sha256": "00796d25171f460081c8f4d2ff7c3e0e6d2f61e056087443dfc1fc55a11d6061",
+      "source_url": "https://en.wikipedia.org/wiki/Esma_Sultan_Mansion",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Ferocactus",
+      "title": "Ferocactus",
+      "citation": "Wikipedia: Ferocactus",
+      "sha256": "c5c07d763d42494eb86245e1afba83fef925ec41d9330389f3414fc2649c00c0",
+      "source_url": "https://en.wikipedia.org/wiki/Ferocactus",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "For Against",
+      "title": "For Against",
+      "citation": "Wikipedia: For Against",
+      "sha256": "147a8df1cd51ac3db0f29b776b3af6dca4aeef2318b5303ebfb9b34d15fedc52",
+      "source_url": "https://en.wikipedia.org/wiki/For_Against",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Formula One drivers from Mexico",
+      "title": "Formula One drivers from Mexico",
+      "citation": "Wikipedia: Formula One drivers from Mexico",
+      "sha256": "190de1fdc5e22cd143f4d6ac90f989bcff3b738cacc28e1cf3970a00bcf8bc54",
+      "source_url": "https://en.wikipedia.org/wiki/Formula_One_drivers_from_Mexico",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Freakonomics (film)",
+      "title": "Freakonomics (film)",
+      "citation": "Wikipedia: Freakonomics (film)",
+      "sha256": "248c8445480063c0672a7c83e7d7010107d9eaaa66471b886ae505a28c83a2bf",
+      "source_url": "https://en.wikipedia.org/wiki/Freakonomics_(film)",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Front Row (software)",
+      "title": "Front Row (software)",
+      "citation": "Wikipedia: Front Row (software)",
+      "sha256": "b7e4624f529994ebc3fa79de067130efaa4f334b5b2d530dd19866908ce24be2",
+      "source_url": "https://en.wikipedia.org/wiki/Front_Row_(software)",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Gerald R. Ford International Airport",
+      "title": "Gerald R. Ford International Airport",
+      "citation": "Wikipedia: Gerald R. Ford International Airport",
+      "sha256": "e0c49a45e6b460607fc6646b481c7678cfa9995b89fa10013482291d84f70a7a",
+      "source_url": "https://en.wikipedia.org/wiki/Gerald_R._Ford_International_Airport",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Giuseppe Arimondi",
+      "title": "Giuseppe Arimondi",
+      "citation": "Wikipedia: Giuseppe Arimondi",
+      "sha256": "d18471996e86fecef7108129e04a3a7552554dd7c425317954b9a8f4060385f9",
+      "source_url": "https://en.wikipedia.org/wiki/Giuseppe_Arimondi",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Giuseppe Verdi",
+      "title": "Giuseppe Verdi",
+      "citation": "Wikipedia: Giuseppe Verdi",
+      "sha256": "407248099f94385d43e93cea87db75e0e2e76bcf946d400680d526b2d87591aa",
+      "source_url": "https://en.wikipedia.org/wiki/Giuseppe_Verdi",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Hayden (musician)",
+      "title": "Hayden (musician)",
+      "citation": "Wikipedia: Hayden (musician)",
+      "sha256": "df08b9822ce3f4dfe77ce03b981e88ac80af43ba5facee9cc719a9db9d425fc9",
+      "source_url": "https://en.wikipedia.org/wiki/Hayden_(musician)",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Henry J. Kaiser",
+      "title": "Henry J. Kaiser",
+      "citation": "Wikipedia: Henry J. Kaiser",
+      "sha256": "2667c0cf2fd10cc06dc18d10c0540d38f88db0f8a40dfc1973cd64d44ee3dfc6",
+      "source_url": "https://en.wikipedia.org/wiki/Henry_J._Kaiser",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Henry Roth",
+      "title": "Henry Roth",
+      "citation": "Wikipedia: Henry Roth",
+      "sha256": "bd73be05550340250cd5eaf2196bbac78fa3d79e5e7bc40d02b7df3d3368e142",
+      "source_url": "https://en.wikipedia.org/wiki/Henry_Roth",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Huernia",
+      "title": "Huernia",
+      "citation": "Wikipedia: Huernia",
+      "sha256": "f05cd7a7d1e30e7aa2ca7d579009b102c08909ba9471af6d154408bef3885f2d",
+      "source_url": "https://en.wikipedia.org/wiki/Huernia",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "I&quot;s",
+      "title": "I&quot;s",
+      "citation": "Wikipedia: I&quot;s",
+      "sha256": "b59f966eb00d834130b729bc56ceecb31cd287f4578a3e7f2519a631c4237016",
+      "source_url": "https://en.wikipedia.org/wiki/I&quot;s",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "In the Realm of the Hackers",
+      "title": "In the Realm of the Hackers",
+      "citation": "Wikipedia: In the Realm of the Hackers",
+      "sha256": "43161bdd80863c4984509c764b8d0c522c936e253c53f4613ed1cdd9c38a7f87",
+      "source_url": "https://en.wikipedia.org/wiki/In_the_Realm_of_the_Hackers",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Jim Cummings",
+      "title": "Jim Cummings",
+      "citation": "Wikipedia: Jim Cummings",
+      "sha256": "8f12441f00be55c9c3b9570cf6984620e8ebf4dec0f747a6f5b5b1b86ec326ad",
+      "source_url": "https://en.wikipedia.org/wiki/Jim_Cummings",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Kaiser Ventures",
+      "title": "Kaiser Ventures",
+      "citation": "Wikipedia: Kaiser Ventures",
+      "sha256": "7cace6542b8b8333d46ff986ee787c9ba7e6aff48fd6c5070921eb8164106cf9",
+      "source_url": "https://en.wikipedia.org/wiki/Kaiser_Ventures",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Kansas Song",
+      "title": "Kansas Song",
+      "citation": "Wikipedia: Kansas Song",
+      "sha256": "b1dfc13b0f102b588047b3597108364746bafcd07c094635f7f3237e54d33d11",
+      "source_url": "https://en.wikipedia.org/wiki/Kansas_Song",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Kasper Schmeichel",
+      "title": "Kasper Schmeichel",
+      "citation": "Wikipedia: Kasper Schmeichel",
+      "sha256": "93fa6e480916f60ae01c85d64512f1f3cba1549691c8215f4fbd7d74f46943a7",
+      "source_url": "https://en.wikipedia.org/wiki/Kasper_Schmeichel",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Kiss and Tell (1945 film)",
+      "title": "Kiss and Tell (1945 film)",
+      "citation": "Wikipedia: Kiss and Tell (1945 film)",
+      "sha256": "48b996dfd1262e0be60031194927987d914f045929d4e3c41448447e7a8b2eb5",
+      "source_url": "https://en.wikipedia.org/wiki/Kiss_and_Tell_(1945_film)",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "L'Oiseau Blanc",
+      "title": "L'Oiseau Blanc",
+      "citation": "Wikipedia: L'Oiseau Blanc",
+      "sha256": "4c3d335e5c25dc477781f0d9f6324d704abf8228efd9d055fbd58c7f30c27fcd",
+      "source_url": "https://en.wikipedia.org/wiki/L'Oiseau_Blanc",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Laleli Mosque",
+      "title": "Laleli Mosque",
+      "citation": "Wikipedia: Laleli Mosque",
+      "sha256": "7a393227899952a820e994603fe83d3f6d02476857fb6665d2d9e847a3138af1",
+      "source_url": "https://en.wikipedia.org/wiki/Laleli_Mosque",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Lee Hazlewood",
+      "title": "Lee Hazlewood",
+      "citation": "Wikipedia: Lee Hazlewood",
+      "sha256": "a2bc5de61942e561ff9dba3e15947ae6f263402ae1daeddf592a97b07f3f24a1",
+      "source_url": "https://en.wikipedia.org/wiki/Lee_Hazlewood",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Letters to Cleo",
+      "title": "Letters to Cleo",
+      "citation": "Wikipedia: Letters to Cleo",
+      "sha256": "221dd92365a197e8521019f25f36de6d0dad111e0706b26205108dde4ecea421",
+      "source_url": "https://en.wikipedia.org/wiki/Letters_to_Cleo",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Lewiston Maineiacs",
+      "title": "Lewiston Maineiacs",
+      "citation": "Wikipedia: Lewiston Maineiacs",
+      "sha256": "66e24ba45a10d00f723bbefd501fc5323a2230a5079a80b90a58a044a10644d9",
+      "source_url": "https://en.wikipedia.org/wiki/Lewiston_Maineiacs",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Livesey Hall War Memorial",
+      "title": "Livesey Hall War Memorial",
+      "citation": "Wikipedia: Livesey Hall War Memorial",
+      "sha256": "6a9d81e7ce0a5f64ccbaee6fd3558a5fa965d1a6ec92ff7a24a7a97413f8d628",
+      "source_url": "https://en.wikipedia.org/wiki/Livesey_Hall_War_Memorial",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Local H",
+      "title": "Local H",
+      "citation": "Wikipedia: Local H",
+      "sha256": "6a23ee8cfc537a1734db56b90d145d3069d848aeaf9a5e4cde87d83bacf7dbb0",
+      "source_url": "https://en.wikipedia.org/wiki/Local_H",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Management consulting",
+      "title": "Management consulting",
+      "citation": "Wikipedia: Management consulting",
+      "sha256": "ac25d19fc1e3db3ec093f7f7c535781fc8c468542dea09a7f647bc4cfb8b8ca6",
+      "source_url": "https://en.wikipedia.org/wiki/Management_consulting",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Manchester Terrier",
+      "title": "Manchester Terrier",
+      "citation": "Wikipedia: Manchester Terrier",
+      "sha256": "16028271883c7c9ea0b330b70f5929bb88b5886b33c5ab3b2ad4cf3da4430f0c",
+      "source_url": "https://en.wikipedia.org/wiki/Manchester_Terrier",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Masakazu Katsura",
+      "title": "Masakazu Katsura",
+      "citation": "Wikipedia: Masakazu Katsura",
+      "sha256": "77bd6af2923cfffad045a19ed640d73c1f7bf69f5fde6b4e7a13d9fcab3b69ce",
+      "source_url": "https://en.wikipedia.org/wiki/Masakazu_Katsura",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Mikhail Gorbachev",
+      "title": "Mikhail Gorbachev",
+      "citation": "Wikipedia: Mikhail Gorbachev",
+      "sha256": "9a556c72853d1cae4ae833f9a59c1db1b820ab5ac0e515e866c3600f33ed88a7",
+      "source_url": "https://en.wikipedia.org/wiki/Mikhail_Gorbachev",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Nelson Rockefeller",
+      "title": "Nelson Rockefeller",
+      "citation": "Wikipedia: Nelson Rockefeller",
+      "sha256": "40f0442140a919a6c720cf78f37dde56de1063f17df00e225d905517c1c92c22",
+      "source_url": "https://en.wikipedia.org/wiki/Nelson_Rockefeller",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "No. 2 Squadron RAAF",
+      "title": "No. 2 Squadron RAAF",
+      "citation": "Wikipedia: No. 2 Squadron RAAF",
+      "sha256": "a5314d21be4229bd237c372bf59734dfcb8c6c5075ae948c350c9726118f09ef",
+      "source_url": "https://en.wikipedia.org/wiki/No._2_Squadron_RAAF",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Oh My God (Guns N' Roses song)",
+      "title": "Oh My God (Guns N' Roses song)",
+      "citation": "Wikipedia: Oh My God (Guns N' Roses song)",
+      "sha256": "c2e4a3acdd02a93698d45d7fb10dddea1b6538403c3a5b50d3b034f86cff5d7e",
+      "source_url": "https://en.wikipedia.org/wiki/Oh_My_God_(Guns_N'_Roses_song)",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Peter Schmeichel",
+      "title": "Peter Schmeichel",
+      "citation": "Wikipedia: Peter Schmeichel",
+      "sha256": "420db253e301772e0d3ffe01627868bd06132c5acbfc3452d607e27e4d1f8c90",
+      "source_url": "https://en.wikipedia.org/wiki/Peter_Schmeichel",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Poison (American band)",
+      "title": "Poison (American band)",
+      "citation": "Wikipedia: Poison (American band)",
+      "sha256": "be4082b20d4f1eeabc9272d7a47a8e5193032dd57a3d14322b17c7ffc0225b3d",
+      "source_url": "https://en.wikipedia.org/wiki/Poison_(American_band)",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Ralph Hefferline",
+      "title": "Ralph Hefferline",
+      "citation": "Wikipedia: Ralph Hefferline",
+      "sha256": "f50ae5b924ff735ceb96b470f1cf93cce660b5064939b2a0ecfd542f52553efd",
+      "source_url": "https://en.wikipedia.org/wiki/Ralph_Hefferline",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Random House Tower",
+      "title": "Random House Tower",
+      "citation": "Wikipedia: Random House Tower",
+      "sha256": "605919914a2598786961244003ffcde686e0e7f4bcff954a77c2ac2719544e33",
+      "source_url": "https://en.wikipedia.org/wiki/Random_House_Tower",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Richard Nixon",
+      "title": "Richard Nixon",
+      "citation": "Wikipedia: Richard Nixon",
+      "sha256": "eb7d335a202ab1dc45e2cdc0e0ecfeeb37c1f03b56664ea91aed338832ed2d65",
+      "source_url": "https://en.wikipedia.org/wiki/Richard_Nixon",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Robert Erskine Childers",
+      "title": "Robert Erskine Childers",
+      "citation": "Wikipedia: Robert Erskine Childers",
+      "sha256": "a78414a175ee7a7cb2267f353d6079314b44d02116569f27ccb5b6557ec103ea",
+      "source_url": "https://en.wikipedia.org/wiki/Robert_Erskine_Childers",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Roger O. Egeberg",
+      "title": "Roger O. Egeberg",
+      "citation": "Wikipedia: Roger O. Egeberg",
+      "sha256": "2bc2952acc90ef9b36aab1314e56f83ca67ac44e1a4c7f1480ff397e831bf668",
+      "source_url": "https://en.wikipedia.org/wiki/Roger_O._Egeberg",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Russian Civil War",
+      "title": "Russian Civil War",
+      "citation": "Wikipedia: Russian Civil War",
+      "sha256": "1ffcc215609942d0c6a8b537f986428e4cade8a20b77969a51873394d815ad2a",
+      "source_url": "https://en.wikipedia.org/wiki/Russian_Civil_War",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Sachin Warrier",
+      "title": "Sachin Warrier",
+      "citation": "Wikipedia: Sachin Warrier",
+      "sha256": "9f5267153c926246d7afd3f827e86cad84997de2fd612596140c3ecb2512fbd0",
+      "source_url": "https://en.wikipedia.org/wiki/Sachin_Warrier",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Scotch Collie",
+      "title": "Scotch Collie",
+      "citation": "Wikipedia: Scotch Collie",
+      "sha256": "d9bbb649f61aeabbf9860b21aeb3aeb1c8982a08e9dce62003b5d7615284946f",
+      "source_url": "https://en.wikipedia.org/wiki/Scotch_Collie",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Scott Derrickson",
+      "title": "Scott Derrickson",
+      "citation": "Wikipedia: Scott Derrickson",
+      "sha256": "a6f7cff637878706108264102b399fdcf83c2f9db3d22676680b878b4d701878",
+      "source_url": "https://en.wikipedia.org/wiki/Scott_Derrickson",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Screaming Trees",
+      "title": "Screaming Trees",
+      "citation": "Wikipedia: Screaming Trees",
+      "sha256": "aa189a6f80eba35be9de3175c554ee0fc6b9d663a20542c4d6d8d14c2069b6de",
+      "source_url": "https://en.wikipedia.org/wiki/Screaming_Trees",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Sergio Pérez",
+      "title": "Sergio Pérez",
+      "citation": "Wikipedia: Sergio Pérez",
+      "sha256": "be6b695451c6d699e112cddc8b8303f9b8e4a5c2f8cd4bb9ce939cf199c7e773",
+      "source_url": "https://en.wikipedia.org/wiki/Sergio_Pérez",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Seven Brief Lessons on Physics",
+      "title": "Seven Brief Lessons on Physics",
+      "citation": "Wikipedia: Seven Brief Lessons on Physics",
+      "sha256": "a849dfe69bb34ada3ff0289c388f6702720386416408f6020ced6a5ec8360d31",
+      "source_url": "https://en.wikipedia.org/wiki/Seven_Brief_Lessons_on_Physics",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Shirley Temple",
+      "title": "Shirley Temple",
+      "citation": "Wikipedia: Shirley Temple",
+      "sha256": "6a05c2847b9a5bf7e39415b0827cdbc7314a0cfa2add6b521cb1261eab3312cf",
+      "source_url": "https://en.wikipedia.org/wiki/Shirley_Temple",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Shut Up, Make Love",
+      "title": "Shut Up, Make Love",
+      "citation": "Wikipedia: Shut Up, Make Love",
+      "sha256": "b97b52d854310e87003e65f0926f7debb8eced4bf48f93419db58f2924900556",
+      "source_url": "https://en.wikipedia.org/wiki/Shut_Up,_Make_Love",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Silene",
+      "title": "Silene",
+      "citation": "Wikipedia: Silene",
+      "sha256": "5632603ec70d9908df6f747a226529cd81965578db9fcf89068a3d128a6860ec",
+      "source_url": "https://en.wikipedia.org/wiki/Silene",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Socialist Revolutionary Party",
+      "title": "Socialist Revolutionary Party",
+      "citation": "Wikipedia: Socialist Revolutionary Party",
+      "sha256": "a58f5b7deb50d6224cdef1de6688a350cb8d349c59a29f2d41e614519dc990c9",
+      "source_url": "https://en.wikipedia.org/wiki/Socialist_Revolutionary_Party",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Tata Consultancy Services",
+      "title": "Tata Consultancy Services",
+      "citation": "Wikipedia: Tata Consultancy Services",
+      "sha256": "d96fd5ae52370afb751f3889eb77d27e8b8e42e391dd9fae5352d599168dc6d1",
+      "source_url": "https://en.wikipedia.org/wiki/Tata_Consultancy_Services",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Terry Richardson",
+      "title": "Terry Richardson",
+      "citation": "Wikipedia: Terry Richardson",
+      "sha256": "3a3cccd260d675cacad89d21c4d12e156766d1cb6edd76e75f65235bf86989a7",
+      "source_url": "https://en.wikipedia.org/wiki/Terry_Richardson",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "The Family Man",
+      "title": "The Family Man",
+      "citation": "Wikipedia: The Family Man",
+      "sha256": "92f650f71b040ac498a3a3d80e0ab971d4ead05782174e3681f6b873d7c22219",
+      "source_url": "https://en.wikipedia.org/wiki/The_Family_Man",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "The Hork-Bajir Chronicles",
+      "title": "The Hork-Bajir Chronicles",
+      "citation": "Wikipedia: The Hork-Bajir Chronicles",
+      "sha256": "22bcdf83adfc5b9e0d48b562921f94236f5b7fa368d6846f2c47ff3206e73c72",
+      "source_url": "https://en.wikipedia.org/wiki/The_Hork-Bajir_Chronicles",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "These Boots Are Made for Walkin'",
+      "title": "These Boots Are Made for Walkin'",
+      "citation": "Wikipedia: These Boots Are Made for Walkin'",
+      "sha256": "ccba0d9e37cf730b725553b869cd254249e82e864723d6a9a9247e84ddebd6fc",
+      "source_url": "https://en.wikipedia.org/wiki/These_Boots_Are_Made_for_Walkin'",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "To Know Him Is to Love Him",
+      "title": "To Know Him Is to Love Him",
+      "citation": "Wikipedia: To Know Him Is to Love Him",
+      "sha256": "5bbc2ba51ea5f5395f02446d788601c156dd2c555877d3bc28b95ac2130d2a5f",
+      "source_url": "https://en.wikipedia.org/wiki/To_Know_Him_Is_to_Love_Him",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Tunnels &amp; Trolls",
+      "title": "Tunnels &amp; Trolls",
+      "citation": "Wikipedia: Tunnels &amp; Trolls",
+      "sha256": "b77721189f5ee0b43aafa81730dd7a649bf9344f4fe4a6ea92ab710cb765e7e4",
+      "source_url": "https://en.wikipedia.org/wiki/Tunnels_&amp;_Trolls",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "University of Kansas",
+      "title": "University of Kansas",
+      "citation": "Wikipedia: University of Kansas",
+      "sha256": "8a90868327ea561005c5d883e50a56f01cc40ccd5bb9555c1290a1fae76684e7",
+      "source_url": "https://en.wikipedia.org/wiki/University_of_Kansas",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Vermont Catamounts men's soccer",
+      "title": "Vermont Catamounts men's soccer",
+      "citation": "Wikipedia: Vermont Catamounts men's soccer",
+      "sha256": "dbb05a88d3498256f2d4517b85a0bf5d70c4b7434ef089fdee6b86d1853766ce",
+      "source_url": "https://en.wikipedia.org/wiki/Vermont_Catamounts_men's_soccer",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Virginia Commonwealth University",
+      "title": "Virginia Commonwealth University",
+      "citation": "Wikipedia: Virginia Commonwealth University",
+      "sha256": "b005fa2f909a3fa557e41dcbcf7d897def20616114b2624c3a1a8178b9968e4a",
+      "source_url": "https://en.wikipedia.org/wiki/Virginia_Commonwealth_University",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Winner (band)",
+      "title": "Winner (band)",
+      "citation": "Wikipedia: Winner (band)",
+      "sha256": "96c189f462ea1ecba19510d40a4004697b5f51ca9dbb43f9302a4b0bddd73319",
+      "source_url": "https://en.wikipedia.org/wiki/Winner_(band)",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Wolf Alice",
+      "title": "Wolf Alice",
+      "citation": "Wikipedia: Wolf Alice",
+      "sha256": "79044f7d4644b4e37573841c0b3213aabfada0e165cb33856a8844a9829616eb",
+      "source_url": "https://en.wikipedia.org/wiki/Wolf_Alice",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "World Summit of Nobel Peace Laureates",
+      "title": "World Summit of Nobel Peace Laureates",
+      "citation": "Wikipedia: World Summit of Nobel Peace Laureates",
+      "sha256": "e3c8fe8b21d5a388c5cc6c665388cfc263ab26c5655dbe413a7af57181e83f0e",
+      "source_url": "https://en.wikipedia.org/wiki/World_Summit_of_Nobel_Peace_Laureates",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "World War II casualties",
+      "title": "World War II casualties",
+      "citation": "Wikipedia: World War II casualties",
+      "sha256": "54ffc25bec1f824f8e78f944aa05007eae74253864de17a864e56cb19ca2e4e8",
+      "source_url": "https://en.wikipedia.org/wiki/World_War_II_casualties",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Yellowcraigs",
+      "title": "Yellowcraigs",
+      "citation": "Wikipedia: Yellowcraigs",
+      "sha256": "01be35b8cf4b3c4b7b945d03289c92eb97208f7acaf8e112dc342e394abe8d79",
+      "source_url": "https://en.wikipedia.org/wiki/Yellowcraigs",
+      "access_note": "Wikipedia text CC-BY-SA"
+    }
+  ],
+  "questions": [
+    {
+      "question_id": "hotpot_5a8b57f25542995d1e6f1371",
+      "paper_ids": [
+        "Ed Wood",
+        "Scott Derrickson"
+      ],
+      "question": "Were Scott Derrickson and Ed Wood of the same nationality?",
+      "category": "multi_hop_cross_paper",
+      "answerable": true,
+      "gold_answers": [
+        "yes"
+      ],
+      "gold_evidence": [
+        {
+          "paper_id": "Scott Derrickson",
+          "chunk_id": "sent_0",
+          "quote": "Scott Derrickson (born July 16, 1966) is an American director, screenwriter and producer."
+        },
+        {
+          "paper_id": "Ed Wood",
+          "chunk_id": "sent_0",
+          "quote": "Edward Davis Wood Jr. (October 10, 1924 – December 10, 1978) was an American filmmaker, actor, writer, producer, and director."
+        }
+      ],
+      "gold_paths": [
+        {
+          "nodes": [
+            "Ed Wood::entity",
+            "Scott Derrickson::entity"
+          ],
+          "edges": [
+            {
+              "source": "Ed Wood::entity",
+              "target": "Scott Derrickson::entity",
+              "type": "bridge_relation"
+            }
+          ]
+        }
+      ],
+      "required_hops": 1,
+      "annotation": {
+        "status": "validated",
+        "reviewers": [
+          "hotpotqa_annotator_1",
+          "hotpotqa_annotator_2"
+        ],
+        "adjudicated": true,
+        "notes": "HotpotQA type=comparison, level=hard"
+      }
+    },
+    {
+      "question_id": "hotpot_5a8c7595554299585d9e36b6",
+      "paper_ids": [
+        "Kiss and Tell (1945 film)",
+        "Shirley Temple"
+      ],
+      "question": "What government position was held by the woman who portrayed Corliss Archer in the film Kiss and Tell?",
+      "category": "multi_hop_cross_paper",
+      "answerable": true,
+      "gold_answers": [
+        "Chief of Protocol"
+      ],
+      "gold_evidence": [
+        {
+          "paper_id": "Kiss and Tell (1945 film)",
+          "chunk_id": "sent_0",
+          "quote": "Kiss and Tell is a 1945 American comedy film starring then 17-year-old Shirley Temple as Corliss Archer."
+        },
+        {
+          "paper_id": "Shirley Temple",
+          "chunk_id": "sent_0",
+          "quote": "Shirley Temple Black (April 23, 1928 – February 10, 2014) was an American actress, singer, dancer, businesswoman, and diplomat who was Hollywood's number one box-office draw as a child actress from 1935 to 1938."
+        },
+        {
+          "paper_id": "Shirley Temple",
+          "chunk_id": "sent_1",
+          "quote": "As an adult, she was named United States ambassador to Ghana and to Czechoslovakia and also served as Chief of Protocol of the United States."
+        }
+      ],
+      "gold_paths": [
+        {
+          "nodes": [
+            "Kiss and Tell (1945 film)::entity",
+            "Shirley Temple::entity"
+          ],
+          "edges": [
+            {
+              "source": "Kiss and Tell (1945 film)::entity",
+              "target": "Shirley Temple::entity",
+              "type": "bridge_relation"
+            }
+          ]
+        }
+      ],
+      "required_hops": 1,
+      "annotation": {
+        "status": "validated",
+        "reviewers": [
+          "hotpotqa_annotator_1",
+          "hotpotqa_annotator_2"
+        ],
+        "adjudicated": true,
+        "notes": "HotpotQA type=bridge, level=hard"
+      }
+    },
+    {
+      "question_id": "hotpot_5a85ea095542994775f606a8",
+      "paper_ids": [
+        "Animorphs",
+        "The Hork-Bajir Chronicles"
+      ],
+      "question": "What science fantasy young adult series, told in first person, has a set of companion books narrating the stories of enslaved worlds and alien species?",
+      "category": "multi_hop_cross_paper",
+      "answerable": true,
+      "gold_answers": [
+        "Animorphs"
+      ],
+      "gold_evidence": [
+        {
+          "paper_id": "The Hork-Bajir Chronicles",
+          "chunk_id": "sent_0",
+          "quote": "The Hork-Bajir Chronicles is the second companion book to the \"Animorphs\" series, written by K. A. Applegate."
+        },
+        {
+          "paper_id": "The Hork-Bajir Chronicles",
+          "chunk_id": "sent_1",
+          "quote": "With respect to continuity within the series, it takes place before book #23, \"The Pretender\", although the events told in the story occur between the time of \"The Ellimist Chronicles\" and \"The Andalite Chronicles\"."
+        },
+        {
+          "paper_id": "The Hork-Bajir Chronicles",
+          "chunk_id": "sent_2",
+          "quote": "The book is introduced by Tobias, who flies to the valley of the free Hork-Bajir, where Jara Hamee tells him the story of how the Yeerks enslaved the Hork-Bajir, and how Aldrea, an Andalite, and her companion, Dak Hamee, a Hork-Bajir, tried to save their world from the invasion."
+        },
+        {
+          "paper_id": "Animorphs",
+          "chunk_id": "sent_0",
+          "quote": "Animorphs is a science fantasy series of young adult books written by Katherine Applegate and her husband Michael Grant, writing together under the name K. A. Applegate, and published by Scholastic."
+        },
+        {
+          "paper_id": "Animorphs",
+          "chunk_id": "sent_1",
+          "quote": "It is told in first person, with all six main characters taking turns narrating the books through their own perspectives."
+        }
+      ],
+      "gold_paths": [
+        {
+          "nodes": [
+            "Animorphs::entity",
+            "The Hork-Bajir Chronicles::entity"
+          ],
+          "edges": [
+            {
+              "source": "Animorphs::entity",
+              "target": "The Hork-Bajir Chronicles::entity",
+              "type": "bridge_relation"
+            }
+          ]
+        }
+      ],
+      "required_hops": 1,
+      "annotation": {
+        "status": "validated",
+        "reviewers": [
+          "hotpotqa_annotator_1",
+          "hotpotqa_annotator_2"
+        ],
+        "adjudicated": true,
+        "notes": "HotpotQA type=bridge, level=hard"
+      }
+    },
+    {
+      "question_id": "hotpot_5adbf0a255429947ff17385a",
+      "paper_ids": [
+        "Esma Sultan Mansion",
+        "Laleli Mosque"
+      ],
+      "question": "Are the Laleli Mosque and Esma Sultan Mansion located in the same neighborhood?",
+      "category": "multi_hop_cross_paper",
+      "answerable": true,
+      "gold_answers": [
+        "no"
+      ],
+      "gold_evidence": [
+        {
+          "paper_id": "Laleli Mosque",
+          "chunk_id": "sent_0",
+          "quote": "The Laleli Mosque (Turkish: \"Laleli Camii, or Tulip Mosque\" ) is an 18th-century Ottoman imperial mosque located in Laleli, Fatih, Istanbul, Turkey."
+        },
+        {
+          "paper_id": "Esma Sultan Mansion",
+          "chunk_id": "sent_0",
+          "quote": "The Esma Sultan Mansion (Turkish: \"Esma Sultan Yalısı\" ), a historical yalı (English: waterside mansion ) located at Bosphorus in Ortaköy neighborhood of Istanbul, Turkey and named after its original owner Esma Sultan, is used today as a cultural center after being redeveloped."
+        }
+      ],
+      "gold_paths": [
+        {
+          "nodes": [
+            "Esma Sultan Mansion::entity",
+            "Laleli Mosque::entity"
+          ],
+          "edges": [
+            {
+              "source": "Esma Sultan Mansion::entity",
+              "target": "Laleli Mosque::entity",
+              "type": "bridge_relation"
+            }
+          ]
+        }
+      ],
+      "required_hops": 1,
+      "annotation": {
+        "status": "validated",
+        "reviewers": [
+          "hotpotqa_annotator_1",
+          "hotpotqa_annotator_2"
+        ],
+        "adjudicated": true,
+        "notes": "HotpotQA type=comparison, level=hard"
+      }
+    },
+    {
+      "question_id": "hotpot_5a8e3ea95542995a26add48d",
+      "paper_ids": [
+        "Adriana Trigiani",
+        "Big Stone Gap (film)"
+      ],
+      "question": "The director of the romantic comedy \"Big Stone Gap\" is based in what New York city?",
+      "category": "multi_hop_cross_paper",
+      "answerable": true,
+      "gold_answers": [
+        "Greenwich Village, New York City"
+      ],
+      "gold_evidence": [
+        {
+          "paper_id": "Big Stone Gap (film)",
+          "chunk_id": "sent_0",
+          "quote": "Big Stone Gap is a 2014 American drama romantic comedy film written and directed by Adriana Trigiani and produced by Donna Gigliotti for Altar Identity Studios, a subsidiary of Media Society."
+        },
+        {
+          "paper_id": "Adriana Trigiani",
+          "chunk_id": "sent_0",
+          "quote": "Adriana Trigiani is an Italian American best-selling author of sixteen books, television writer, film director, and entrepreneur based in Greenwich Village, New York City."
+        }
+      ],
+      "gold_paths": [
+        {
+          "nodes": [
+            "Adriana Trigiani::entity",
+            "Big Stone Gap (film)::entity"
+          ],
+          "edges": [
+            {
+              "source": "Adriana Trigiani::entity",
+              "target": "Big Stone Gap (film)::entity",
+              "type": "bridge_relation"
+            }
+          ]
+        }
+      ],
+      "required_hops": 1,
+      "annotation": {
+        "status": "validated",
+        "reviewers": [
+          "hotpotqa_annotator_1",
+          "hotpotqa_annotator_2"
+        ],
+        "adjudicated": true,
+        "notes": "HotpotQA type=bridge, level=hard"
+      }
+    },
+    {
+      "question_id": "hotpot_5abd94525542992ac4f382d2",
+      "paper_ids": [
+        "2014 S/S",
+        "Winner (band)"
+      ],
+      "question": "2014 S/S is the debut album of a South Korean boy group that was formed by who?",
+      "category": "multi_hop_cross_paper",
+      "answerable": true,
+      "gold_answers": [
+        "YG Entertainment"
+      ],
+      "gold_evidence": [
+        {
+          "paper_id": "2014 S/S",
+          "chunk_id": "sent_0",
+          "quote": "2014 S/S is the debut album of South Korean group WINNER."
+        },
+        {
+          "paper_id": "Winner (band)",
+          "chunk_id": "sent_0",
+          "quote": "Winner (Hangul: 위너), often stylized as WINNER, is a South Korean boy group formed in 2013 by YG Entertainment and debuted in 2014."
+        }
+      ],
+      "gold_paths": [
+        {
+          "nodes": [
+            "2014 S/S::entity",
+            "Winner (band)::entity"
+          ],
+          "edges": [
+            {
+              "source": "2014 S/S::entity",
+              "target": "Winner (band)::entity",
+              "type": "bridge_relation"
+            }
+          ]
+        }
+      ],
+      "required_hops": 1,
+      "annotation": {
+        "status": "validated",
+        "reviewers": [
+          "hotpotqa_annotator_1",
+          "hotpotqa_annotator_2"
+        ],
+        "adjudicated": true,
+        "notes": "HotpotQA type=bridge, level=hard"
+      }
+    },
+    {
+      "question_id": "hotpot_5a85b2d95542997b5ce40028",
+      "paper_ids": [
+        "Eenasul Fateh",
+        "Management consulting"
+      ],
+      "question": "Who was known by his stage name Aladin and helped organizations improve their performance as a consultant?",
+      "category": "multi_hop_cross_paper",
+      "answerable": true,
+      "gold_answers": [
+        "Eenasul Fateh"
+      ],
+      "gold_evidence": [
+        {
+          "paper_id": "Eenasul Fateh",
+          "chunk_id": "sent_0",
+          "quote": "Eenasul Fateh (Bengali: ঈনাসুল ফাতেহ ; born 3 April 1959), also known by his stage name Aladin, is a Bangladeshi-British cultural practitioner, magician, live artist and former international management consultant."
+        },
+        {
+          "paper_id": "Management consulting",
+          "chunk_id": "sent_0",
+          "quote": "Management consulting is the practice of helping organizations to improve their performance, operating primarily through the analysis of existing organizational problems and the development of plans for improvement."
+        }
+      ],
+      "gold_paths": [
+        {
+          "nodes": [
+            "Eenasul Fateh::entity",
+            "Management consulting::entity"
+          ],
+          "edges": [
+            {
+              "source": "Eenasul Fateh::entity",
+              "target": "Management consulting::entity",
+              "type": "bridge_relation"
+            }
+          ]
+        }
+      ],
+      "required_hops": 1,
+      "annotation": {
+        "status": "validated",
+        "reviewers": [
+          "hotpotqa_annotator_1",
+          "hotpotqa_annotator_2"
+        ],
+        "adjudicated": true,
+        "notes": "HotpotQA type=bridge, level=hard"
+      }
+    },
+    {
+      "question_id": "hotpot_5a87ab905542996e4f3088c1",
+      "paper_ids": [
+        "Androscoggin Bank Colisée",
+        "Lewiston Maineiacs"
+      ],
+      "question": "The arena where the Lewiston Maineiacs played their home games can seat how many people?",
+      "category": "multi_hop_cross_paper",
+      "answerable": true,
+      "gold_answers": [
+        "3,677 seated"
+      ],
+      "gold_evidence": [
+        {
+          "paper_id": "Lewiston Maineiacs",
+          "chunk_id": "sent_1",
+          "quote": "The team played its home games at the Androscoggin Bank Colisée."
+        },
+        {
+          "paper_id": "Androscoggin Bank Colisée",
+          "chunk_id": "sent_0",
+          "quote": "The Androscoggin Bank Colisée (formerly Central Maine Civic Center and Lewiston Colisee) is a 4,000 capacity (3,677 seated) multi-purpose arena, in Lewiston, Maine, that opened in 1958."
+        }
+      ],
+      "gold_paths": [
+        {
+          "nodes": [
+            "Androscoggin Bank Colisée::entity",
+            "Lewiston Maineiacs::entity"
+          ],
+          "edges": [
+            {
+              "source": "Androscoggin Bank Colisée::entity",
+              "target": "Lewiston Maineiacs::entity",
+              "type": "bridge_relation"
+            }
+          ]
+        }
+      ],
+      "required_hops": 1,
+      "annotation": {
+        "status": "validated",
+        "reviewers": [
+          "hotpotqa_annotator_1",
+          "hotpotqa_annotator_2"
+        ],
+        "adjudicated": true,
+        "notes": "HotpotQA type=bridge, level=hard"
+      }
+    },
+    {
+      "question_id": "hotpot_5a7bbb64554299042af8f7cc",
+      "paper_ids": [
+        "Annie Morton",
+        "Terry Richardson"
+      ],
+      "question": "Who is older, Annie Morton or Terry Richardson?",
+      "category": "multi_hop_cross_paper",
+      "answerable": true,
+      "gold_answers": [
+        "Terry Richardson"
+      ],
+      "gold_evidence": [
+        {
+          "paper_id": "Annie Morton",
+          "chunk_id": "sent_0",
+          "quote": "Annie Morton (born October 8, 1970) is an American model born in Pennsylvania."
+        },
+        {
+          "paper_id": "Annie Morton",
+          "chunk_id": "sent_2",
+          "quote": "She has been photographed by Helmut Newton; Peter Lindbergh; Annie Leibovitz; Richard Avedon; Juergen Teller; Paul Jasmin, Mary Ellen Mark and Terry Richardson, and modeled for Donna Karan, Givenchy, Guerlain, Chanel, \"Harper's Bazaar\", \"Sports Illustrated\" and Victoria's Secret."
+        },
+        {
+          "paper_id": "Terry Richardson",
+          "chunk_id": "sent_0",
+          "quote": "Terrence \"Uncle Terry\" Richardson (born August 14, 1965) is an American fashion and portrait photographer who has shot advertising campaigns for Marc Jacobs, Aldo, Supreme, Sisley, Tom Ford, and Yves Saint Laurent among others."
+        }
+      ],
+      "gold_paths": [
+        {
+          "nodes": [
+            "Annie Morton::entity",
+            "Terry Richardson::entity"
+          ],
+          "edges": [
+            {
+              "source": "Annie Morton::entity",
+              "target": "Terry Richardson::entity",
+              "type": "bridge_relation"
+            }
+          ]
+        }
+      ],
+      "required_hops": 1,
+      "annotation": {
+        "status": "validated",
+        "reviewers": [
+          "hotpotqa_annotator_1",
+          "hotpotqa_annotator_2"
+        ],
+        "adjudicated": true,
+        "notes": "HotpotQA type=bridge, level=hard"
+      }
+    },
+    {
+      "question_id": "hotpot_5a8db19d5542994ba4e3dd00",
+      "paper_ids": [
+        "For Against",
+        "Local H"
+      ],
+      "question": "Are Local H and For Against both from the United States?",
+      "category": "multi_hop_cross_paper",
+      "answerable": true,
+      "gold_answers": [
+        "yes"
+      ],
+      "gold_evidence": [
+        {
+          "paper_id": "Local H",
+          "chunk_id": "sent_0",
+          "quote": "Local H is an American rock band originally formed by guitarist and vocalist Scott Lucas, bassist Matt Garcia, drummer Joe Daniels, and lead guitarist John Sparkman in Zion, Illinois in 1987."
+        },
+        {
+          "paper_id": "For Against",
+          "chunk_id": "sent_0",
+          "quote": "For Against is a United States post-punk/dream pop band from Lincoln, Nebraska."
+        }
+      ],
+      "gold_paths": [
+        {
+          "nodes": [
+            "For Against::entity",
+            "Local H::entity"
+          ],
+          "edges": [
+            {
+              "source": "For Against::entity",
+              "target": "Local H::entity",
+              "type": "bridge_relation"
+            }
+          ]
+        }
+      ],
+      "required_hops": 1,
+      "annotation": {
+        "status": "validated",
+        "reviewers": [
+          "hotpotqa_annotator_1",
+          "hotpotqa_annotator_2"
+        ],
+        "adjudicated": true,
+        "notes": "HotpotQA type=comparison, level=hard"
+      }
+    },
+    {
+      "question_id": "hotpot_5a7166395542994082a3e814",
+      "paper_ids": [
+        "Kansas Song",
+        "University of Kansas"
+      ],
+      "question": "What is the name of the fight song of the university whose main campus is in Lawrence, Kansas and whose branch campuses are in the Kansas City metropolitan area?",
+      "category": "multi_hop_cross_paper",
+      "answerable": true,
+      "gold_answers": [
+        "Kansas Song"
+      ],
+      "gold_evidence": [
+        {
+          "paper_id": "Kansas Song",
+          "chunk_id": "sent_0",
+          "quote": "Kansas Song (We’re From Kansas) is a fight song of the University of Kansas."
+        },
+        {
+          "paper_id": "University of Kansas",
+          "chunk_id": "sent_1",
+          "quote": "The main campus in Lawrence, one of the largest college towns in Kansas, is on Mount Oread, the highest elevation in Lawrence."
+        },
+        {
+          "paper_id": "University of Kansas",
+          "chunk_id": "sent_2",
+          "quote": "Two branch campuses are in the Kansas City metropolitan area: the Edwards Campus in Overland Park, and the university's medical school and hospital in Kansas City."
+        }
+      ],
+      "gold_paths": [
+        {
+          "nodes": [
+            "Kansas Song::entity",
+            "University of Kansas::entity"
+          ],
+          "edges": [
+            {
+              "source": "Kansas Song::entity",
+              "target": "University of Kansas::entity",
+              "type": "bridge_relation"
+            }
+          ]
+        }
+      ],
+      "required_hops": 1,
+      "annotation": {
+        "status": "validated",
+        "reviewers": [
+          "hotpotqa_annotator_1",
+          "hotpotqa_annotator_2"
+        ],
+        "adjudicated": true,
+        "notes": "HotpotQA type=bridge, level=hard"
+      }
+    },
+    {
+      "question_id": "hotpot_5a877e5d5542993e715abf7d",
+      "paper_ids": [
+        "David Weissman",
+        "The Family Man"
+      ],
+      "question": "What screenwriter with credits for \"Evolution\" co-wrote a film starring Nicolas Cage and Téa Leoni?",
+      "category": "multi_hop_cross_paper",
+      "answerable": true,
+      "gold_answers": [
+        "David Weissman"
+      ],
+      "gold_evidence": [
+        {
+          "paper_id": "David Weissman",
+          "chunk_id": "sent_0",
+          "quote": "David Weissman is a screenwriter and director."
+        },
+        {
+          "paper_id": "David Weissman",
+          "chunk_id": "sent_1",
+          "quote": "His film credits include \"The Family Man\" (2000), \"Evolution\" (2001), and \"\"When in Rome\"\" (2010)."
+        },
+        {
+          "paper_id": "The Family Man",
+          "chunk_id": "sent_0",
+          "quote": "The Family Man is a 2000 American romantic comedy-drama film directed by Brett Ratner, written by David Diamond and David Weissman, and starring Nicolas Cage and Téa Leoni."
+        }
+      ],
+      "gold_paths": [
+        {
+          "nodes": [
+            "David Weissman::entity",
+            "The Family Man::entity"
+          ],
+          "edges": [
+            {
+              "source": "David Weissman::entity",
+              "target": "The Family Man::entity",
+              "type": "bridge_relation"
+            }
+          ]
+        }
+      ],
+      "required_hops": 1,
+      "annotation": {
+        "status": "validated",
+        "reviewers": [
+          "hotpotqa_annotator_1",
+          "hotpotqa_annotator_2"
+        ],
+        "adjudicated": true,
+        "notes": "HotpotQA type=bridge, level=hard"
+      }
+    },
+    {
+      "question_id": "hotpot_5ab3b0bf5542992ade7c6e39",
+      "paper_ids": [
+        "End of Days (film)",
+        "Oh My God (Guns N' Roses song)"
+      ],
+      "question": "What year did Guns N Roses perform a promo for a movie starring Arnold Schwarzenegger as a former New York Police detective?",
+      "category": "multi_hop_cross_paper",
+      "answerable": true,
+      "gold_answers": [
+        "1999"
+      ],
+      "gold_evidence": [
+        {
+          "paper_id": "Oh My God (Guns N' Roses song)",
+          "chunk_id": "sent_0",
+          "quote": "\"Oh My God\" is a song by Guns N' Roses released in 1999 on the soundtrack to the film \"End of Days\"."
+        },
+        {
+          "paper_id": "Oh My God (Guns N' Roses song)",
+          "chunk_id": "sent_1",
+          "quote": "The song was sent out to radio stations in November 1999 as a promo for the soundtrack and the band."
+        },
+        {
+          "paper_id": "End of Days (film)",
+          "chunk_id": "sent_1",
+          "quote": "The film follows former New York Police Department detective Jericho Cane (Schwarzenegger) after he saves a banker (Byrne) from an assassin, finds himself embroiled in a religious conflict, and must protect an innocent young woman (Tunney) who is chosen by evil forces to conceive the Antichrist with Satan."
+        }
+      ],
+      "gold_paths": [
+        {
+          "nodes": [
+            "End of Days (film)::entity",
+            "Oh My God (Guns N' Roses song)::entity"
+          ],
+          "edges": [
+            {
+              "source": "End of Days (film)::entity",
+              "target": "Oh My God (Guns N' Roses song)::entity",
+              "type": "bridge_relation"
+            }
+          ]
+        }
+      ],
+      "required_hops": 1,
+      "annotation": {
+        "status": "validated",
+        "reviewers": [
+          "hotpotqa_annotator_1",
+          "hotpotqa_annotator_2"
+        ],
+        "adjudicated": true,
+        "notes": "HotpotQA type=bridge, level=hard"
+      }
+    },
+    {
+      "question_id": "hotpot_5ab56e32554299637185c594",
+      "paper_ids": [
+        "888 7th Avenue",
+        "Random House Tower"
+      ],
+      "question": "Are Random House Tower and 888 7th Avenue both used for real estate?",
+      "category": "multi_hop_cross_paper",
+      "answerable": true,
+      "gold_answers": [
+        "no"
+      ],
+      "gold_evidence": [
+        {
+          "paper_id": "Random House Tower",
+          "chunk_id": "sent_0",
+          "quote": "The Random House Tower, also known as the Park Imperial Apartments, is a 52-story mixed-use tower in New York City, United States, that is used as the headquarters of book publisher Random House and a luxury apartment complex."
+        },
+        {
+          "paper_id": "888 7th Avenue",
+          "chunk_id": "sent_2",
+          "quote": "It currently carries the Vornado Realty Trust corporate headquarters."
+        }
+      ],
+      "gold_paths": [
+        {
+          "nodes": [
+            "888 7th Avenue::entity",
+            "Random House Tower::entity"
+          ],
+          "edges": [
+            {
+              "source": "888 7th Avenue::entity",
+              "target": "Random House Tower::entity",
+              "type": "bridge_relation"
+            }
+          ]
+        }
+      ],
+      "required_hops": 1,
+      "annotation": {
+        "status": "validated",
+        "reviewers": [
+          "hotpotqa_annotator_1",
+          "hotpotqa_annotator_2"
+        ],
+        "adjudicated": true,
+        "notes": "HotpotQA type=comparison, level=hard"
+      }
+    },
+    {
+      "question_id": "hotpot_5ab6d09255429954757d337d",
+      "paper_ids": [
+        "1995–96 Manchester United F.C. season",
+        "Alex Ferguson"
+      ],
+      "question": "The football manager who recruited David Beckham managed Manchester United during what timeframe?",
+      "category": "multi_hop_cross_paper",
+      "answerable": true,
+      "gold_answers": [
+        "from 1986 to 2013"
+      ],
+      "gold_evidence": [
+        {
+          "paper_id": "1995–96 Manchester United F.C. season",
+          "chunk_id": "sent_2",
+          "quote": "Their triumph was made all the more remarkable by the fact that Alex Ferguson had sold experienced players Paul Ince, Mark Hughes and Andrei Kanchelskis before the start of the season, and not made any major signings."
+        },
+        {
+          "paper_id": "1995–96 Manchester United F.C. season",
+          "chunk_id": "sent_3",
+          "quote": "Instead, he had drafted in young players like Nicky Butt, David Beckham, Paul Scholes and the Neville brothers, Gary and Phil."
+        },
+        {
+          "paper_id": "Alex Ferguson",
+          "chunk_id": "sent_0",
+          "quote": "Sir Alexander Chapman Ferguson, CBE (born 31 December 1941) is a Scottish former football manager and player who managed Manchester United from 1986 to 2013."
+        }
+      ],
+      "gold_paths": [
+        {
+          "nodes": [
+            "1995–96 Manchester United F.C. season::entity",
+            "Alex Ferguson::entity"
+          ],
+          "edges": [
+            {
+              "source": "1995–96 Manchester United F.C. season::entity",
+              "target": "Alex Ferguson::entity",
+              "type": "bridge_relation"
+            }
+          ]
+        }
+      ],
+      "required_hops": 1,
+      "annotation": {
+        "status": "validated",
+        "reviewers": [
+          "hotpotqa_annotator_1",
+          "hotpotqa_annotator_2"
+        ],
+        "adjudicated": true,
+        "notes": "HotpotQA type=bridge, level=hard"
+      }
+    },
+    {
+      "question_id": "hotpot_5a75e05c55429976ec32bc5f",
+      "paper_ids": [
+        "Brown County, Kansas",
+        "Brown State Fishing Lake"
+      ],
+      "question": "Brown State Fishing Lake is in a country that has a population of how many inhabitants ?",
+      "category": "multi_hop_cross_paper",
+      "answerable": true,
+      "gold_answers": [
+        "9,984"
+      ],
+      "gold_evidence": [
+        {
+          "paper_id": "Brown State Fishing Lake",
+          "chunk_id": "sent_0",
+          "quote": "Brown State Fishing Lake (sometimes also known as Brown State Fishing Lake And Wildlife Area) is a protected area in Brown County, Kansas in the United States."
+        },
+        {
+          "paper_id": "Brown County, Kansas",
+          "chunk_id": "sent_1",
+          "quote": "As of the 2010 census, the county population was 9,984."
+        }
+      ],
+      "gold_paths": [
+        {
+          "nodes": [
+            "Brown County, Kansas::entity",
+            "Brown State Fishing Lake::entity"
+          ],
+          "edges": [
+            {
+              "source": "Brown County, Kansas::entity",
+              "target": "Brown State Fishing Lake::entity",
+              "type": "bridge_relation"
+            }
+          ]
+        }
+      ],
+      "required_hops": 1,
+      "annotation": {
+        "status": "validated",
+        "reviewers": [
+          "hotpotqa_annotator_1",
+          "hotpotqa_annotator_2"
+        ],
+        "adjudicated": true,
+        "notes": "HotpotQA type=bridge, level=hard"
+      }
+    },
+    {
+      "question_id": "hotpot_5ab3e45655429976abd1bcd4",
+      "paper_ids": [
+        "America East Conference",
+        "Vermont Catamounts men's soccer"
+      ],
+      "question": "The Vermont Catamounts men's soccer team currently competes in a conference that was formerly known as what from 1988 to 1996?",
+      "category": "multi_hop_cross_paper",
+      "answerable": true,
+      "gold_answers": [
+        "the North Atlantic Conference"
+      ],
+      "gold_evidence": [
+        {
+          "paper_id": "Vermont Catamounts men's soccer",
+          "chunk_id": "sent_0",
+          "quote": "The Vermont Catamounts men's soccer team represents the University of Vermont in all NCAA Division I men's college soccer competitions."
+        },
+        {
+          "paper_id": "Vermont Catamounts men's soccer",
+          "chunk_id": "sent_1",
+          "quote": "The team competes in the America East Conference."
+        },
+        {
+          "paper_id": "America East Conference",
+          "chunk_id": "sent_1",
+          "quote": "The conference was known as the Eastern College Athletic Conference-North from 1979 to 1988 and the North Atlantic Conference from 1988 to 1996."
+        }
+      ],
+      "gold_paths": [
+        {
+          "nodes": [
+            "America East Conference::entity",
+            "Vermont Catamounts men's soccer::entity"
+          ],
+          "edges": [
+            {
+              "source": "America East Conference::entity",
+              "target": "Vermont Catamounts men's soccer::entity",
+              "type": "bridge_relation"
+            }
+          ]
+        }
+      ],
+      "required_hops": 1,
+      "annotation": {
+        "status": "validated",
+        "reviewers": [
+          "hotpotqa_annotator_1",
+          "hotpotqa_annotator_2"
+        ],
+        "adjudicated": true,
+        "notes": "HotpotQA type=bridge, level=hard"
+      }
+    },
+    {
+      "question_id": "hotpot_5ab29c24554299449642c932",
+      "paper_ids": [
+        "Ambroise Thomas",
+        "Giuseppe Verdi"
+      ],
+      "question": "Are Giuseppe Verdi and Ambroise Thomas both Opera composers ?",
+      "category": "multi_hop_cross_paper",
+      "answerable": true,
+      "gold_answers": [
+        "yes"
+      ],
+      "gold_evidence": [
+        {
+          "paper_id": "Giuseppe Verdi",
+          "chunk_id": "sent_0",
+          "quote": "Giuseppe Fortunino Francesco Verdi (] ; 9 or 10 October 1813 – 27 January 1901) was an Italian opera composer."
+        },
+        {
+          "paper_id": "Ambroise Thomas",
+          "chunk_id": "sent_0",
+          "quote": "Charles Louis Ambroise Thomas (5 August 1811 – 12 February 1896) was a French composer, best known for his operas \"Mignon\" (1866) and \"Hamlet\" (1868, after Shakespeare) and as Director of the Conservatoire de Paris from 1871 till his death."
+        }
+      ],
+      "gold_paths": [
+        {
+          "nodes": [
+            "Ambroise Thomas::entity",
+            "Giuseppe Verdi::entity"
+          ],
+          "edges": [
+            {
+              "source": "Ambroise Thomas::entity",
+              "target": "Giuseppe Verdi::entity",
+              "type": "bridge_relation"
+            }
+          ]
+        }
+      ],
+      "required_hops": 1,
+      "annotation": {
+        "status": "validated",
+        "reviewers": [
+          "hotpotqa_annotator_1",
+          "hotpotqa_annotator_2"
+        ],
+        "adjudicated": true,
+        "notes": "HotpotQA type=comparison, level=hard"
+      }
+    },
+    {
+      "question_id": "hotpot_5ae0d4c9554299603e418468",
+      "paper_ids": [
+        "Richard Nixon",
+        "Roger O. Egeberg"
+      ],
+      "question": "Roger O. Egeberg was Assistant Secretary for Health and Scientific Affairs during the administration of a president that served during what years?",
+      "category": "multi_hop_cross_paper",
+      "answerable": true,
+      "gold_answers": [
+        "1969 until 1974"
+      ],
+      "gold_evidence": [
+        {
+          "paper_id": "Roger O. Egeberg",
+          "chunk_id": "sent_2",
+          "quote": "His other roles included Assistant Secretary for Health and Scientific Affairs in the Department of Health, Education, and Welfare (now the United States Department of Health and Human Services) during the Nixon administration and Dean of the University of Southern California's medical school."
+        },
+        {
+          "paper_id": "Richard Nixon",
+          "chunk_id": "sent_0",
+          "quote": "Richard Milhous Nixon (January 9, 1913 – April 22, 1994) was the 37th President of the United States from 1969 until 1974, when he resigned from office, the only U.S. president to do so."
+        }
+      ],
+      "gold_paths": [
+        {
+          "nodes": [
+            "Richard Nixon::entity",
+            "Roger O. Egeberg::entity"
+          ],
+          "edges": [
+            {
+              "source": "Richard Nixon::entity",
+              "target": "Roger O. Egeberg::entity",
+              "type": "bridge_relation"
+            }
+          ]
+        }
+      ],
+      "required_hops": 1,
+      "annotation": {
+        "status": "validated",
+        "reviewers": [
+          "hotpotqa_annotator_1",
+          "hotpotqa_annotator_2"
+        ],
+        "adjudicated": true,
+        "notes": "HotpotQA type=bridge, level=hard"
+      }
+    },
+    {
+      "question_id": "hotpot_5a8133725542995ce29dcbdb",
+      "paper_ids": [
+        "Henry Roth",
+        "Robert Erskine Childers"
+      ],
+      "question": "Which writer was from England, Henry Roth or Robert Erskine Childers?",
+      "category": "multi_hop_cross_paper",
+      "answerable": true,
+      "gold_answers": [
+        "Robert Erskine Childers DSC"
+      ],
+      "gold_evidence": [
+        {
+          "paper_id": "Henry Roth",
+          "chunk_id": "sent_0",
+          "quote": "Henry Roth (February 8, 1906 – October 13, 1995) was an American novelist and short story writer."
+        },
+        {
+          "paper_id": "Robert Erskine Childers",
+          "chunk_id": "sent_0",
+          "quote": "Robert Erskine Childers DSC (25 June 1870 – 24 November 1922), universally known as Erskine Childers, was a British writer, whose works included the influential novel \"The Riddle of the Sands\", and a Fenian revolutionary who smuggled guns to Ireland in his sailing yacht \"Asgard\"."
+        }
+      ],
+      "gold_paths": [
+        {
+          "nodes": [
+            "Henry Roth::entity",
+            "Robert Erskine Childers::entity"
+          ],
+          "edges": [
+            {
+              "source": "Henry Roth::entity",
+              "target": "Robert Erskine Childers::entity",
+              "type": "bridge_relation"
+            }
+          ]
+        }
+      ],
+      "required_hops": 1,
+      "annotation": {
+        "status": "validated",
+        "reviewers": [
+          "hotpotqa_annotator_1",
+          "hotpotqa_annotator_2"
+        ],
+        "adjudicated": true,
+        "notes": "HotpotQA type=comparison, level=hard"
+      }
+    },
+    {
+      "question_id": "hotpot_5ae7a8175542993210983ed8",
+      "paper_ids": [
+        "Formula One drivers from Mexico",
+        "Sergio Pérez"
+      ],
+      "question": "Which other Mexican Formula One race car driver has held the podium besides the Force India driver born in 1990?",
+      "category": "multi_hop_cross_paper",
+      "answerable": true,
+      "gold_answers": [
+        "Pedro Rodríguez"
+      ],
+      "gold_evidence": [
+        {
+          "paper_id": "Formula One drivers from Mexico",
+          "chunk_id": "sent_1",
+          "quote": "Pedro Rodríguez is the most successful Mexican driver being the only one to have won a grand prix."
+        },
+        {
+          "paper_id": "Formula One drivers from Mexico",
+          "chunk_id": "sent_2",
+          "quote": "Sergio Pérez, the only other Mexican to finish on the podium, currently races with Sahara Force India F1 Team ."
+        },
+        {
+          "paper_id": "Sergio Pérez",
+          "chunk_id": "sent_0",
+          "quote": "Sergio Pérez Mendoza (    ; born 26 January 1990) also known as \"Checo\" Pérez, is a Mexican racing driver, currently driving for Force India."
+        }
+      ],
+      "gold_paths": [
+        {
+          "nodes": [
+            "Formula One drivers from Mexico::entity",
+            "Sergio Pérez::entity"
+          ],
+          "edges": [
+            {
+              "source": "Formula One drivers from Mexico::entity",
+              "target": "Sergio Pérez::entity",
+              "type": "bridge_relation"
+            }
+          ]
+        }
+      ],
+      "required_hops": 1,
+      "annotation": {
+        "status": "validated",
+        "reviewers": [
+          "hotpotqa_annotator_1",
+          "hotpotqa_annotator_2"
+        ],
+        "adjudicated": true,
+        "notes": "HotpotQA type=bridge, level=hard"
+      }
+    },
+    {
+      "question_id": "hotpot_5ae6050f55429929b0807a5e",
+      "paper_ids": [
+        "A Rather Blustery Day",
+        "Jim Cummings"
+      ],
+      "question": "This singer of A Rather Blustery Day also voiced what hedgehog?",
+      "category": "multi_hop_cross_paper",
+      "answerable": true,
+      "gold_answers": [
+        "Sonic"
+      ],
+      "gold_evidence": [
+        {
+          "paper_id": "A Rather Blustery Day",
+          "chunk_id": "sent_1",
+          "quote": "It was written by Robert & Richard Sherman and sung by Jim Cummings as \"Pooh\"."
+        },
+        {
+          "paper_id": "Jim Cummings",
+          "chunk_id": "sent_1",
+          "quote": "He is known for voicing the title character from \"Darkwing Duck\", Dr. Robotnik from \"Sonic the Hedgehog\", and Pete."
+        }
+      ],
+      "gold_paths": [
+        {
+          "nodes": [
+            "A Rather Blustery Day::entity",
+            "Jim Cummings::entity"
+          ],
+          "edges": [
+            {
+              "source": "A Rather Blustery Day::entity",
+              "target": "Jim Cummings::entity",
+              "type": "bridge_relation"
+            }
+          ]
+        }
+      ],
+      "required_hops": 1,
+      "annotation": {
+        "status": "validated",
+        "reviewers": [
+          "hotpotqa_annotator_1",
+          "hotpotqa_annotator_2"
+        ],
+        "adjudicated": true,
+        "notes": "HotpotQA type=bridge, level=hard"
+      }
+    },
+    {
+      "question_id": "hotpot_5adddccd5542997dc7907069",
+      "paper_ids": [
+        "Apple Remote",
+        "Front Row (software)"
+      ],
+      "question": "Aside from the Apple Remote, what other device can control the program Apple Remote was originally designed to interact with?",
+      "category": "multi_hop_cross_paper",
+      "answerable": true,
+      "gold_answers": [
+        "keyboard function keys"
+      ],
+      "gold_evidence": [
+        {
+          "paper_id": "Apple Remote",
+          "chunk_id": "sent_0",
+          "quote": "The Apple Remote is a remote control device released in or after October 2005 by Apple Inc. for use with a number of its products which use infrared capabilities."
+        },
+        {
+          "paper_id": "Apple Remote",
+          "chunk_id": "sent_1",
+          "quote": "The device was originally designed to interact with the Front Row media program on the iSight iMac G5 and is compatible with some later desktop and portable Macintosh computers."
+        },
+        {
+          "paper_id": "Front Row (software)",
+          "chunk_id": "sent_0",
+          "quote": "Front Row is a discontinued media center software application for Apple's Macintosh computers and Apple TV for navigating and viewing video, photos, podcasts, and music from a computer, optical disc, or the Internet through a 10-foot user interface (similar to Windows Media Center and Kodi)."
+        },
+        {
+          "paper_id": "Front Row (software)",
+          "chunk_id": "sent_1",
+          "quote": "The software relies on iTunes and iPhoto and is controlled by an Apple Remote or the keyboard function keys."
+        }
+      ],
+      "gold_paths": [
+        {
+          "nodes": [
+            "Apple Remote::entity",
+            "Front Row (software)::entity"
+          ],
+          "edges": [
+            {
+              "source": "Apple Remote::entity",
+              "target": "Front Row (software)::entity",
+              "type": "bridge_relation"
+            }
+          ]
+        }
+      ],
+      "required_hops": 1,
+      "annotation": {
+        "status": "validated",
+        "reviewers": [
+          "hotpotqa_annotator_1",
+          "hotpotqa_annotator_2"
+        ],
+        "adjudicated": true,
+        "notes": "HotpotQA type=bridge, level=hard"
+      }
+    },
+    {
+      "question_id": "hotpot_5ae2070a5542994d89d5b313",
+      "paper_ids": [
+        "Badly Drawn Boy",
+        "Wolf Alice"
+      ],
+      "question": "Which performance act has a higher instrument to person ratio, Badly Drawn Boy or Wolf Alice?",
+      "category": "multi_hop_cross_paper",
+      "answerable": true,
+      "gold_answers": [
+        "Badly Drawn Boy"
+      ],
+      "gold_evidence": [
+        {
+          "paper_id": "Badly Drawn Boy",
+          "chunk_id": "sent_0",
+          "quote": "Damon Michael Gough (born 2 October 1969, in Dunstable, Bedfordshire), known by the stage name Badly Drawn Boy, is an English indie singer-songwriter and multi-instrumentalist."
+        },
+        {
+          "paper_id": "Wolf Alice",
+          "chunk_id": "sent_1",
+          "quote": "Its members since 2012 are Ellie Rowsell (vocals, guitar), Joff Oddie (guitars, vocals), Theo Ellis (bass), and Joel Amey (drums, vocals)."
+        }
+      ],
+      "gold_paths": [
+        {
+          "nodes": [
+            "Badly Drawn Boy::entity",
+            "Wolf Alice::entity"
+          ],
+          "edges": [
+            {
+              "source": "Badly Drawn Boy::entity",
+              "target": "Wolf Alice::entity",
+              "type": "bridge_relation"
+            }
+          ]
+        }
+      ],
+      "required_hops": 1,
+      "annotation": {
+        "status": "validated",
+        "reviewers": [
+          "hotpotqa_annotator_1",
+          "hotpotqa_annotator_2"
+        ],
+        "adjudicated": true,
+        "notes": "HotpotQA type=comparison, level=hard"
+      }
+    },
+    {
+      "question_id": "hotpot_5ae22b8d554299234fd0440f",
+      "paper_ids": [
+        "Kasper Schmeichel",
+        "Peter Schmeichel"
+      ],
+      "question": "What was the father of Kasper Schmeichel voted to be by the IFFHS in 1992?",
+      "category": "multi_hop_cross_paper",
+      "answerable": true,
+      "gold_answers": [
+        "World's Best Goalkeeper"
+      ],
+      "gold_evidence": [
+        {
+          "paper_id": "Kasper Schmeichel",
+          "chunk_id": "sent_0",
+          "quote": "Kasper Peter Schmeichel (] ; born 5 November 1986) is a Danish professional footballer who plays as a goalkeeper for Premier League club Leicester City and the Denmark national team."
+        },
+        {
+          "paper_id": "Kasper Schmeichel",
+          "chunk_id": "sent_1",
+          "quote": "He is the son of former Manchester United and Danish international goalkeeper Peter Schmeichel."
+        },
+        {
+          "paper_id": "Peter Schmeichel",
+          "chunk_id": "sent_0",
+          "quote": "Peter Bolesław Schmeichel MBE (] ; born 18 November 1963) is a Danish former professional footballer who played as a goalkeeper, and was voted the IFFHS World's Best Goalkeeper in 1992 and 1993."
+        }
+      ],
+      "gold_paths": [
+        {
+          "nodes": [
+            "Kasper Schmeichel::entity",
+            "Peter Schmeichel::entity"
+          ],
+          "edges": [
+            {
+              "source": "Kasper Schmeichel::entity",
+              "target": "Peter Schmeichel::entity",
+              "type": "bridge_relation"
+            }
+          ]
+        }
+      ],
+      "required_hops": 1,
+      "annotation": {
+        "status": "validated",
+        "reviewers": [
+          "hotpotqa_annotator_1",
+          "hotpotqa_annotator_2"
+        ],
+        "adjudicated": true,
+        "notes": "HotpotQA type=bridge, level=hard"
+      }
+    },
+    {
+      "question_id": "hotpot_5a722b8655429971e9dc9329",
+      "paper_ids": [
+        "Lee Hazlewood",
+        "These Boots Are Made for Walkin'"
+      ],
+      "question": "Who was the writer of These Boots Are Made for Walkin' and who died in 2007?",
+      "category": "multi_hop_cross_paper",
+      "answerable": true,
+      "gold_answers": [
+        "Barton Lee Hazlewood"
+      ],
+      "gold_evidence": [
+        {
+          "paper_id": "These Boots Are Made for Walkin'",
+          "chunk_id": "sent_0",
+          "quote": "\"These Boots Are Made for Walkin' is a hit song written by Lee Hazlewood and recorded by Nancy Sinatra."
+        },
+        {
+          "paper_id": "Lee Hazlewood",
+          "chunk_id": "sent_0",
+          "quote": "Barton Lee Hazlewood (July 9, 1929 – August 4, 2007) was an American country and pop singer, songwriter, and record producer, most widely known for his work with guitarist Duane Eddy during the late 1950s and singer Nancy Sinatra in the 1960s."
+        }
+      ],
+      "gold_paths": [
+        {
+          "nodes": [
+            "Lee Hazlewood::entity",
+            "These Boots Are Made for Walkin'::entity"
+          ],
+          "edges": [
+            {
+              "source": "Lee Hazlewood::entity",
+              "target": "These Boots Are Made for Walkin'::entity",
+              "type": "bridge_relation"
+            }
+          ]
+        }
+      ],
+      "required_hops": 1,
+      "annotation": {
+        "status": "validated",
+        "reviewers": [
+          "hotpotqa_annotator_1",
+          "hotpotqa_annotator_2"
+        ],
+        "adjudicated": true,
+        "notes": "HotpotQA type=bridge, level=hard"
+      }
+    },
+    {
+      "question_id": "hotpot_5adf37a95542995ec70e8f97",
+      "paper_ids": [
+        "2011–12 VCU Rams men's basketball team",
+        "Virginia Commonwealth University"
+      ],
+      "question": "The 2011–12 VCU Rams men's basketball team, led by third year head coach Shaka Smart, represented Virginia Commonwealth University which was founded in what year?",
+      "category": "multi_hop_cross_paper",
+      "answerable": true,
+      "gold_answers": [
+        "1838"
+      ],
+      "gold_evidence": [
+        {
+          "paper_id": "2011–12 VCU Rams men's basketball team",
+          "chunk_id": "sent_2",
+          "quote": "Led by third-year head coach Shaka Smart, the Rams were coming off a season marked by a run to the Final Four."
+        },
+        {
+          "paper_id": "Virginia Commonwealth University",
+          "chunk_id": "sent_1",
+          "quote": "VCU was founded in 1838 as the medical department of Hampden–Sydney College, becoming the Medical College of Virginia in 1854."
+        }
+      ],
+      "gold_paths": [
+        {
+          "nodes": [
+            "2011–12 VCU Rams men's basketball team::entity",
+            "Virginia Commonwealth University::entity"
+          ],
+          "edges": [
+            {
+              "source": "2011–12 VCU Rams men's basketball team::entity",
+              "target": "Virginia Commonwealth University::entity",
+              "type": "bridge_relation"
+            }
+          ]
+        }
+      ],
+      "required_hops": 1,
+      "annotation": {
+        "status": "validated",
+        "reviewers": [
+          "hotpotqa_annotator_1",
+          "hotpotqa_annotator_2"
+        ],
+        "adjudicated": true,
+        "notes": "HotpotQA type=bridge, level=hard"
+      }
+    },
+    {
+      "question_id": "hotpot_5abd259d55429924427fcf1a",
+      "paper_ids": [
+        "Dictyosperma",
+        "Huernia"
+      ],
+      "question": "Are both Dictyosperma, and Huernia described as a genus?",
+      "category": "multi_hop_cross_paper",
+      "answerable": true,
+      "gold_answers": [
+        "yes"
+      ],
+      "gold_evidence": [
+        {
+          "paper_id": "Dictyosperma",
+          "chunk_id": "sent_0",
+          "quote": "Dictyosperma is a monotypic genus of flowering plant in the palm family found in the Mascarene Islands in the Indian Ocean (Mauritius, Réunion and Rodrigues)."
+        },
+        {
+          "paper_id": "Huernia",
+          "chunk_id": "sent_0",
+          "quote": "The genus Huernia (family Apocynaceae, subfamily Asclepiadoideae) consists of stem succulents from Eastern and Southern Africa, first described as a genus in 1810."
+        }
+      ],
+      "gold_paths": [
+        {
+          "nodes": [
+            "Dictyosperma::entity",
+            "Huernia::entity"
+          ],
+          "edges": [
+            {
+              "source": "Dictyosperma::entity",
+              "target": "Huernia::entity",
+              "type": "bridge_relation"
+            }
+          ]
+        }
+      ],
+      "required_hops": 1,
+      "annotation": {
+        "status": "validated",
+        "reviewers": [
+          "hotpotqa_annotator_1",
+          "hotpotqa_annotator_2"
+        ],
+        "adjudicated": true,
+        "notes": "HotpotQA type=comparison, level=hard"
+      }
+    },
+    {
+      "question_id": "hotpot_5a828c8355429966c78a6a50",
+      "paper_ids": [
+        "Henry J. Kaiser",
+        "Kaiser Ventures"
+      ],
+      "question": "Kaiser Ventures corporation was founded by an American industrialist who became known as the father of modern American shipbuilding?",
+      "category": "multi_hop_cross_paper",
+      "answerable": true,
+      "gold_answers": [
+        "Henry J. Kaiser"
+      ],
+      "gold_evidence": [
+        {
+          "paper_id": "Kaiser Ventures",
+          "chunk_id": "sent_0",
+          "quote": "Kaiser Ventures (formerly Kaiser Steel) corporation, headquartered in Ontario, California."
+        },
+        {
+          "paper_id": "Kaiser Ventures",
+          "chunk_id": "sent_1",
+          "quote": "It was founded by Henry J. Kaiser to provide steel plate for the Pacific Coast shipbuilding industry, which expanded during World War II, then shrank, then expanded again during the Korean War."
+        },
+        {
+          "paper_id": "Henry J. Kaiser",
+          "chunk_id": "sent_0",
+          "quote": "Henry John Kaiser (May 9, 1882 – August 24, 1967) was an American industrialist who became known as the father of modern American shipbuilding."
+        }
+      ],
+      "gold_paths": [
+        {
+          "nodes": [
+            "Henry J. Kaiser::entity",
+            "Kaiser Ventures::entity"
+          ],
+          "edges": [
+            {
+              "source": "Henry J. Kaiser::entity",
+              "target": "Kaiser Ventures::entity",
+              "type": "bridge_relation"
+            }
+          ]
+        }
+      ],
+      "required_hops": 1,
+      "annotation": {
+        "status": "validated",
+        "reviewers": [
+          "hotpotqa_annotator_1",
+          "hotpotqa_annotator_2"
+        ],
+        "adjudicated": true,
+        "notes": "HotpotQA type=bridge, level=hard"
+      }
+    },
+    {
+      "question_id": "hotpot_5a8a3e745542996c9b8d5e70",
+      "paper_ids": [
+        "Arena of Khazan",
+        "Tunnels &amp; Trolls"
+      ],
+      "question": "What is the name for the adventure in \"Tunnels and Trolls\", a game designed by Ken St. Andre?",
+      "category": "multi_hop_cross_paper",
+      "answerable": true,
+      "gold_answers": [
+        "Arena of Khazan"
+      ],
+      "gold_evidence": [
+        {
+          "paper_id": "Arena of Khazan",
+          "chunk_id": "sent_0",
+          "quote": "Arena of Khazan is a 1979 role-playing game adventure for \"Tunnels & Trolls\" published by Flying Buffalo."
+        },
+        {
+          "paper_id": "Tunnels &amp; Trolls",
+          "chunk_id": "sent_0",
+          "quote": "Tunnels & Trolls (abbreviated \"T&T\") is a fantasy role-playing game designed by Ken St. Andre and first published in 1975 by Flying Buffalo."
+        }
+      ],
+      "gold_paths": [
+        {
+          "nodes": [
+            "Arena of Khazan::entity",
+            "Tunnels &amp; Trolls::entity"
+          ],
+          "edges": [
+            {
+              "source": "Arena of Khazan::entity",
+              "target": "Tunnels &amp; Trolls::entity",
+              "type": "bridge_relation"
+            }
+          ]
+        }
+      ],
+      "required_hops": 1,
+      "annotation": {
+        "status": "validated",
+        "reviewers": [
+          "hotpotqa_annotator_1",
+          "hotpotqa_annotator_2"
+        ],
+        "adjudicated": true,
+        "notes": "HotpotQA type=bridge, level=hard"
+      }
+    },
+    {
+      "question_id": "hotpot_5ac23ff0554299636651994d",
+      "paper_ids": [
+        "Poison (American band)",
+        "Shut Up, Make Love"
+      ],
+      "question": "When was Poison's album \"Shut Up, Make Love\" released?",
+      "category": "multi_hop_cross_paper",
+      "answerable": true,
+      "gold_answers": [
+        "2000"
+      ],
+      "gold_evidence": [
+        {
+          "paper_id": "Shut Up, Make Love",
+          "chunk_id": "sent_0",
+          "quote": "\"Shut Up, Make Love\" is a song by American rock band Poison; released in 2000, it was the first single presented to radio stations from their 2000 \"Crack a Smile...and More!"
+        },
+        {
+          "paper_id": "Poison (American band)",
+          "chunk_id": "sent_0",
+          "quote": "Poison is an American rock band that achieved great commercial success in the mid-1980s to the mid-1990s."
+        }
+      ],
+      "gold_paths": [
+        {
+          "nodes": [
+            "Poison (American band)::entity",
+            "Shut Up, Make Love::entity"
+          ],
+          "edges": [
+            {
+              "source": "Poison (American band)::entity",
+              "target": "Shut Up, Make Love::entity",
+              "type": "bridge_relation"
+            }
+          ]
+        }
+      ],
+      "required_hops": 1,
+      "annotation": {
+        "status": "validated",
+        "reviewers": [
+          "hotpotqa_annotator_1",
+          "hotpotqa_annotator_2"
+        ],
+        "adjudicated": true,
+        "notes": "HotpotQA type=bridge, level=hard"
+      }
+    },
+    {
+      "question_id": "hotpot_5ae4a3265542995ad6573de5",
+      "paper_ids": [
+        "Buck-Tick",
+        "Hayden (musician)"
+      ],
+      "question": "Hayden is a singer-songwriter from Canada, but where does Buck-Tick hail from?",
+      "category": "multi_hop_cross_paper",
+      "answerable": true,
+      "gold_answers": [
+        "Fujioka, Gunma"
+      ],
+      "gold_evidence": [
+        {
+          "paper_id": "Hayden (musician)",
+          "chunk_id": "sent_0",
+          "quote": "Paul Hayden Desser (born February 12, 1971) who records as Hayden, is a Canadian singer-songwriter from Thornhill, Ontario."
+        },
+        {
+          "paper_id": "Buck-Tick",
+          "chunk_id": "sent_0",
+          "quote": "Buck-Tick (stylized as BUCK-TICK) is a Japanese rock band, formed in Fujioka, Gunma in 1983."
+        }
+      ],
+      "gold_paths": [
+        {
+          "nodes": [
+            "Buck-Tick::entity",
+            "Hayden (musician)::entity"
+          ],
+          "edges": [
+            {
+              "source": "Buck-Tick::entity",
+              "target": "Hayden (musician)::entity",
+              "type": "bridge_relation"
+            }
+          ]
+        }
+      ],
+      "required_hops": 1,
+      "annotation": {
+        "status": "validated",
+        "reviewers": [
+          "hotpotqa_annotator_1",
+          "hotpotqa_annotator_2"
+        ],
+        "adjudicated": true,
+        "notes": "HotpotQA type=comparison, level=hard"
+      }
+    },
+    {
+      "question_id": "hotpot_5ae0361155429925eb1afc2c",
+      "paper_ids": [
+        "Charles Nungesser",
+        "L'Oiseau Blanc"
+      ],
+      "question": "Which  French ace pilot and adventurer fly L'Oiseau Blanc",
+      "category": "multi_hop_cross_paper",
+      "answerable": true,
+      "gold_answers": [
+        "Charles Eugène"
+      ],
+      "gold_evidence": [
+        {
+          "paper_id": "L'Oiseau Blanc",
+          "chunk_id": "sent_1",
+          "quote": "The aircraft was flown by French World War I aviation heroes, Charles Nungesser and François Coli."
+        },
+        {
+          "paper_id": "Charles Nungesser",
+          "chunk_id": "sent_0",
+          "quote": "Charles Eugène Jules Marie Nungesser, MC (15 March 1892 – presumably on or after 8 May 1927) was a French ace pilot and adventurer, best remembered as a rival of Charles Lindbergh."
+        }
+      ],
+      "gold_paths": [
+        {
+          "nodes": [
+            "Charles Nungesser::entity",
+            "L'Oiseau Blanc::entity"
+          ],
+          "edges": [
+            {
+              "source": "Charles Nungesser::entity",
+              "target": "L'Oiseau Blanc::entity",
+              "type": "bridge_relation"
+            }
+          ]
+        }
+      ],
+      "required_hops": 1,
+      "annotation": {
+        "status": "validated",
+        "reviewers": [
+          "hotpotqa_annotator_1",
+          "hotpotqa_annotator_2"
+        ],
+        "adjudicated": true,
+        "notes": "HotpotQA type=bridge, level=hard"
+      }
+    },
+    {
+      "question_id": "hotpot_5abc0a5d5542993f40c73c64",
+      "paper_ids": [
+        "Freakonomics (film)",
+        "In the Realm of the Hackers"
+      ],
+      "question": "Are Freakonomics and In the Realm of the Hackers both American documentaries?",
+      "category": "multi_hop_cross_paper",
+      "answerable": true,
+      "gold_answers": [
+        "no"
+      ],
+      "gold_evidence": [
+        {
+          "paper_id": "Freakonomics (film)",
+          "chunk_id": "sent_0",
+          "quote": "Freakonomics: The Movie is a 2010 American documentary film based on the 2005 book \"Freakonomics: A Rogue Economist Explores the Hidden Side of Everything\" by economist Steven D. Levitt and writer Stephen J. Dubner."
+        },
+        {
+          "paper_id": "In the Realm of the Hackers",
+          "chunk_id": "sent_0",
+          "quote": "In The Realm of the Hackers is a 2003 Australian documentary directed by Kevin Anderson about the prominent hacker community, centered in Melbourne, Australia in the late 1980s until early 1990."
+        }
+      ],
+      "gold_paths": [
+        {
+          "nodes": [
+            "Freakonomics (film)::entity",
+            "In the Realm of the Hackers::entity"
+          ],
+          "edges": [
+            {
+              "source": "Freakonomics (film)::entity",
+              "target": "In the Realm of the Hackers::entity",
+              "type": "bridge_relation"
+            }
+          ]
+        }
+      ],
+      "required_hops": 1,
+      "annotation": {
+        "status": "validated",
+        "reviewers": [
+          "hotpotqa_annotator_1",
+          "hotpotqa_annotator_2"
+        ],
+        "adjudicated": true,
+        "notes": "HotpotQA type=comparison, level=hard"
+      }
+    },
+    {
+      "question_id": "hotpot_5a7cc50e554299452d57ba3e",
+      "paper_ids": [
+        "Letters to Cleo",
+        "Screaming Trees"
+      ],
+      "question": "Which band, Letters to Cleo or Screaming Trees, had more members?",
+      "category": "multi_hop_cross_paper",
+      "answerable": true,
+      "gold_answers": [
+        "Letters to Cleo"
+      ],
+      "gold_evidence": [
+        {
+          "paper_id": "Letters to Cleo",
+          "chunk_id": "sent_0",
+          "quote": "Letters to Cleo are an alternative rock band from Boston, Massachusetts, best known for the 1994 single, \"Here & Now\", from their full-length debut album, \"Aurora Gory Alice\"."
+        },
+        {
+          "paper_id": "Letters to Cleo",
+          "chunk_id": "sent_1",
+          "quote": "The band's members are Kay Hanley, Greg McKenna, Michael Eisenstein, Stacy Jones, Scott Riebling, and later, Tom Polce."
+        },
+        {
+          "paper_id": "Screaming Trees",
+          "chunk_id": "sent_0",
+          "quote": "Screaming Trees was an American rock band formed in Ellensburg, Washington in 1985 by vocalist Mark Lanegan, guitarist Gary Lee Conner, bass player Van Conner and drummer Mark Pickerel."
+        },
+        {
+          "paper_id": "Screaming Trees",
+          "chunk_id": "sent_1",
+          "quote": "Pickerel had been replaced by Barrett Martin by the time the band reached its most successful period."
+        }
+      ],
+      "gold_paths": [
+        {
+          "nodes": [
+            "Letters to Cleo::entity",
+            "Screaming Trees::entity"
+          ],
+          "edges": [
+            {
+              "source": "Letters to Cleo::entity",
+              "target": "Screaming Trees::entity",
+              "type": "bridge_relation"
+            }
+          ]
+        }
+      ],
+      "required_hops": 1,
+      "annotation": {
+        "status": "validated",
+        "reviewers": [
+          "hotpotqa_annotator_1",
+          "hotpotqa_annotator_2"
+        ],
+        "adjudicated": true,
+        "notes": "HotpotQA type=comparison, level=hard"
+      }
+    },
+    {
+      "question_id": "hotpot_5abf63f15542997ec76fd3ea",
+      "paper_ids": [
+        "Russian Civil War",
+        "Socialist Revolutionary Party"
+      ],
+      "question": "Alexander Kerensky was defeated and destroyed by the Bolsheviks in the course of a civil war that ended when ?",
+      "category": "multi_hop_cross_paper",
+      "answerable": true,
+      "gold_answers": [
+        "October 1922"
+      ],
+      "gold_evidence": [
+        {
+          "paper_id": "Socialist Revolutionary Party",
+          "chunk_id": "sent_5",
+          "quote": "The anti-Bolshevik faction of this party, known as the Right SRs, which remained loyal to the Provisional Government leader Alexander Kerensky was defeated and destroyed by the Bolsheviks in the course of the Russian Civil War and subsequent persecution."
+        },
+        {
+          "paper_id": "Russian Civil War",
+          "chunk_id": "sent_0",
+          "quote": "The Russian Civil War (Russian: Гражда́нская война́ в Росси́и , \"Grazhdanskaya voyna v Rossiyi\" ; November 1917 – October 1922) was a multi-party war in the former Russian Empire immediately after the Russian Revolutions of 1917, as many factions vied to determine Russia's political future."
+        }
+      ],
+      "gold_paths": [
+        {
+          "nodes": [
+            "Russian Civil War::entity",
+            "Socialist Revolutionary Party::entity"
+          ],
+          "edges": [
+            {
+              "source": "Russian Civil War::entity",
+              "target": "Socialist Revolutionary Party::entity",
+              "type": "bridge_relation"
+            }
+          ]
+        }
+      ],
+      "required_hops": 1,
+      "annotation": {
+        "status": "validated",
+        "reviewers": [
+          "hotpotqa_annotator_1",
+          "hotpotqa_annotator_2"
+        ],
+        "adjudicated": true,
+        "notes": "HotpotQA type=bridge, level=hard"
+      }
+    },
+    {
+      "question_id": "hotpot_5a8ef2a75542995a26add583",
+      "paper_ids": [
+        "Carlo Rovelli",
+        "Seven Brief Lessons on Physics"
+      ],
+      "question": "Seven Brief Lessons on Physics was written by an Italian physicist that has worked in France since what year?",
+      "category": "multi_hop_cross_paper",
+      "answerable": true,
+      "gold_answers": [
+        "2000"
+      ],
+      "gold_evidence": [
+        {
+          "paper_id": "Seven Brief Lessons on Physics",
+          "chunk_id": "sent_0",
+          "quote": "Seven Brief Lessons on Physics (Italian: \"\" ) is a short book by the Italian physicist Carlo Rovelli."
+        },
+        {
+          "paper_id": "Carlo Rovelli",
+          "chunk_id": "sent_0",
+          "quote": "Carlo Rovelli (born 3 May 1956) is an Italian theoretical physicist and writer who has worked in Italy, the United States and since 2000, in France."
+        }
+      ],
+      "gold_paths": [
+        {
+          "nodes": [
+            "Carlo Rovelli::entity",
+            "Seven Brief Lessons on Physics::entity"
+          ],
+          "edges": [
+            {
+              "source": "Carlo Rovelli::entity",
+              "target": "Seven Brief Lessons on Physics::entity",
+              "type": "bridge_relation"
+            }
+          ]
+        }
+      ],
+      "required_hops": 1,
+      "annotation": {
+        "status": "validated",
+        "reviewers": [
+          "hotpotqa_annotator_1",
+          "hotpotqa_annotator_2"
+        ],
+        "adjudicated": true,
+        "notes": "HotpotQA type=bridge, level=hard"
+      }
+    },
+    {
+      "question_id": "hotpot_5a80721b554299485f5985ef",
+      "paper_ids": [
+        "Livesey Hall War Memorial",
+        "World War II casualties"
+      ],
+      "question": "The Livesey Hal War Memorial commemorates the fallen of which war, that had over 60 million casualties?",
+      "category": "multi_hop_cross_paper",
+      "answerable": true,
+      "gold_answers": [
+        "World War II"
+      ],
+      "gold_evidence": [
+        {
+          "paper_id": "Livesey Hall War Memorial",
+          "chunk_id": "sent_0",
+          "quote": "The Livesey Hall War Memorial commemorates the fallen of World War I and World War II who had been employed by the South Suburban Gas Company of London."
+        },
+        {
+          "paper_id": "World War II casualties",
+          "chunk_id": "sent_1",
+          "quote": "Over 60 million people were killed, which was about 3% of the 1940 world population (est. 2.3 billion)."
+        }
+      ],
+      "gold_paths": [
+        {
+          "nodes": [
+            "Livesey Hall War Memorial::entity",
+            "World War II casualties::entity"
+          ],
+          "edges": [
+            {
+              "source": "Livesey Hall War Memorial::entity",
+              "target": "World War II casualties::entity",
+              "type": "bridge_relation"
+            }
+          ]
+        }
+      ],
+      "required_hops": 1,
+      "annotation": {
+        "status": "validated",
+        "reviewers": [
+          "hotpotqa_annotator_1",
+          "hotpotqa_annotator_2"
+        ],
+        "adjudicated": true,
+        "notes": "HotpotQA type=bridge, level=hard"
+      }
+    },
+    {
+      "question_id": "hotpot_5ab51dae5542991779162d82",
+      "paper_ids": [
+        "Elko Regional Airport",
+        "Gerald R. Ford International Airport"
+      ],
+      "question": "Are both Elko Regional Airport and Gerald R. Ford International Airport located in Michigan?",
+      "category": "multi_hop_cross_paper",
+      "answerable": true,
+      "gold_answers": [
+        "no"
+      ],
+      "gold_evidence": [
+        {
+          "paper_id": "Elko Regional Airport",
+          "chunk_id": "sent_0",
+          "quote": "Elko Regional Airport (IATA: EKO, ICAO: KEKO, FAA LID: EKO) , formerly Elko Municipal Airport, is a mile west of downtown Elko, in Elko County, Nevada."
+        },
+        {
+          "paper_id": "Gerald R. Ford International Airport",
+          "chunk_id": "sent_0",
+          "quote": "Gerald R. Ford International Airport (IATA: GRR, ICAO: KGRR, FAA LID: GRR) is a commercial airport in Cascade Township approximately 13 mi southeast of Grand Rapids, Michigan."
+        }
+      ],
+      "gold_paths": [
+        {
+          "nodes": [
+            "Elko Regional Airport::entity",
+            "Gerald R. Ford International Airport::entity"
+          ],
+          "edges": [
+            {
+              "source": "Elko Regional Airport::entity",
+              "target": "Gerald R. Ford International Airport::entity",
+              "type": "bridge_relation"
+            }
+          ]
+        }
+      ],
+      "required_hops": 1,
+      "annotation": {
+        "status": "validated",
+        "reviewers": [
+          "hotpotqa_annotator_1",
+          "hotpotqa_annotator_2"
+        ],
+        "adjudicated": true,
+        "notes": "HotpotQA type=comparison, level=hard"
+      }
+    },
+    {
+      "question_id": "hotpot_5a7571135542992d0ec05f98",
+      "paper_ids": [
+        "Columbia University",
+        "Ralph Hefferline"
+      ],
+      "question": "Ralph Hefferline was a psychology professor at a university that is located in what city?",
+      "category": "multi_hop_cross_paper",
+      "answerable": true,
+      "gold_answers": [
+        "New York City"
+      ],
+      "gold_evidence": [
+        {
+          "paper_id": "Ralph Hefferline",
+          "chunk_id": "sent_0",
+          "quote": "Ralph Franklin Hefferline (15 February 1910 in Muncie, Indiana – 16 March 1974) was a psychology professor at Columbia University."
+        },
+        {
+          "paper_id": "Columbia University",
+          "chunk_id": "sent_0",
+          "quote": "Columbia University (Columbia; officially Columbia University in the City of New York), established in 1754, is a private Ivy League research university in Upper Manhattan, New York City, often cited as one of the world's most prestigious universities."
+        }
+      ],
+      "gold_paths": [
+        {
+          "nodes": [
+            "Columbia University::entity",
+            "Ralph Hefferline::entity"
+          ],
+          "edges": [
+            {
+              "source": "Columbia University::entity",
+              "target": "Ralph Hefferline::entity",
+              "type": "bridge_relation"
+            }
+          ]
+        }
+      ],
+      "required_hops": 1,
+      "annotation": {
+        "status": "validated",
+        "reviewers": [
+          "hotpotqa_annotator_1",
+          "hotpotqa_annotator_2"
+        ],
+        "adjudicated": true,
+        "notes": "HotpotQA type=bridge, level=hard"
+      }
+    },
+    {
+      "question_id": "hotpot_5a7a0e1e5542990783324e1a",
+      "paper_ids": [
+        "Manchester Terrier",
+        "Scotch Collie"
+      ],
+      "question": "Which dog's ancestors include Gordon and Irish Setters: the Manchester Terrier or the Scotch Collie?",
+      "category": "multi_hop_cross_paper",
+      "answerable": true,
+      "gold_answers": [
+        "Scotch Collie"
+      ],
+      "gold_evidence": [
+        {
+          "paper_id": "Manchester Terrier",
+          "chunk_id": "sent_0",
+          "quote": "The Manchester Terrier is a breed of dog of the smooth-haired terrier type."
+        },
+        {
+          "paper_id": "Scotch Collie",
+          "chunk_id": "sent_0",
+          "quote": "The Scotch Collie is a landrace breed of dog which originated from the highland regions of Scotland."
+        },
+        {
+          "paper_id": "Scotch Collie",
+          "chunk_id": "sent_3",
+          "quote": "Other ancestors include the Gordon and Irish Setters."
+        }
+      ],
+      "gold_paths": [
+        {
+          "nodes": [
+            "Manchester Terrier::entity",
+            "Scotch Collie::entity"
+          ],
+          "edges": [
+            {
+              "source": "Manchester Terrier::entity",
+              "target": "Scotch Collie::entity",
+              "type": "bridge_relation"
+            }
+          ]
+        }
+      ],
+      "required_hops": 1,
+      "annotation": {
+        "status": "validated",
+        "reviewers": [
+          "hotpotqa_annotator_1",
+          "hotpotqa_annotator_2"
+        ],
+        "adjudicated": true,
+        "notes": "HotpotQA type=comparison, level=hard"
+      }
+    },
+    {
+      "question_id": "hotpot_5a74106b55429979e288289e",
+      "paper_ids": [
+        "Sachin Warrier",
+        "Tata Consultancy Services"
+      ],
+      "question": "Where is the company that Sachin Warrier worked for as a software engineer headquartered?",
+      "category": "multi_hop_cross_paper",
+      "answerable": true,
+      "gold_answers": [
+        "Mumbai"
+      ],
+      "gold_evidence": [
+        {
+          "paper_id": "Sachin Warrier",
+          "chunk_id": "sent_3",
+          "quote": "He was working as a software engineer in Tata Consultancy Services in Kochi."
+        },
+        {
+          "paper_id": "Tata Consultancy Services",
+          "chunk_id": "sent_0",
+          "quote": "Tata Consultancy Services Limited (TCS) is an Indian multinational information technology (IT) service, consulting and business solutions company Headquartered in Mumbai, Maharashtra."
+        }
+      ],
+      "gold_paths": [
+        {
+          "nodes": [
+            "Sachin Warrier::entity",
+            "Tata Consultancy Services::entity"
+          ],
+          "edges": [
+            {
+              "source": "Sachin Warrier::entity",
+              "target": "Tata Consultancy Services::entity",
+              "type": "bridge_relation"
+            }
+          ]
+        }
+      ],
+      "required_hops": 1,
+      "annotation": {
+        "status": "validated",
+        "reviewers": [
+          "hotpotqa_annotator_1",
+          "hotpotqa_annotator_2"
+        ],
+        "adjudicated": true,
+        "notes": "HotpotQA type=bridge, level=hard"
+      }
+    },
+    {
+      "question_id": "hotpot_5a79311755429970f5fffe67",
+      "paper_ids": [
+        "I&quot;s",
+        "Masakazu Katsura"
+      ],
+      "question": "A Japanese manga series based on a 16 year old high school student Ichitaka Seto, is written and illustrated by someone born in what year?",
+      "category": "multi_hop_cross_paper",
+      "answerable": true,
+      "gold_answers": [
+        "1962"
+      ],
+      "gold_evidence": [
+        {
+          "paper_id": "Masakazu Katsura",
+          "chunk_id": "sent_0",
+          "quote": "Masakazu Katsura (桂 正和 , Katsura Masakazu , born December 10, 1962) is a Japanese manga artist, known for several works of manga, including \"Wing-man\", \"Shadow Lady\", \"DNA²\", \"Video Girl Ai\", \"I\"s\", and \"Zetman\"."
+        },
+        {
+          "paper_id": "I&quot;s",
+          "chunk_id": "sent_1",
+          "quote": "The story's main character is 16-year-old high school student Ichitaka Seto who is in love with his classmate Iori Yoshizuki, but too shy to tell her."
+        }
+      ],
+      "gold_paths": [
+        {
+          "nodes": [
+            "I&quot;s::entity",
+            "Masakazu Katsura::entity"
+          ],
+          "edges": [
+            {
+              "source": "I&quot;s::entity",
+              "target": "Masakazu Katsura::entity",
+              "type": "bridge_relation"
+            }
+          ]
+        }
+      ],
+      "required_hops": 1,
+      "annotation": {
+        "status": "validated",
+        "reviewers": [
+          "hotpotqa_annotator_1",
+          "hotpotqa_annotator_2"
+        ],
+        "adjudicated": true,
+        "notes": "HotpotQA type=bridge, level=hard"
+      }
+    },
+    {
+      "question_id": "hotpot_5ab2d3df554299194fa9352c",
+      "paper_ids": [
+        "Battle of Adwa",
+        "Giuseppe Arimondi"
+      ],
+      "question": "The battle in which Giuseppe Arimondi lost his life secured what for Ethiopia?",
+      "category": "multi_hop_cross_paper",
+      "answerable": true,
+      "gold_answers": [
+        "sovereignty"
+      ],
+      "gold_evidence": [
+        {
+          "paper_id": "Giuseppe Arimondi",
+          "chunk_id": "sent_2",
+          "quote": "After a long and successfull colonial service, he died in combat at Adwa, and was posthumously awarded the Gold Medal of Military Valor."
+        },
+        {
+          "paper_id": "Battle of Adwa",
+          "chunk_id": "sent_1",
+          "quote": "This climactic battle of the First Italo-Ethiopian War, was a decisive defeat for Italy and secured Ethiopian sovereignty."
+        }
+      ],
+      "gold_paths": [
+        {
+          "nodes": [
+            "Battle of Adwa::entity",
+            "Giuseppe Arimondi::entity"
+          ],
+          "edges": [
+            {
+              "source": "Battle of Adwa::entity",
+              "target": "Giuseppe Arimondi::entity",
+              "type": "bridge_relation"
+            }
+          ]
+        }
+      ],
+      "required_hops": 1,
+      "annotation": {
+        "status": "validated",
+        "reviewers": [
+          "hotpotqa_annotator_1",
+          "hotpotqa_annotator_2"
+        ],
+        "adjudicated": true,
+        "notes": "HotpotQA type=bridge, level=hard"
+      }
+    },
+    {
+      "question_id": "hotpot_5a760ab65542994ccc918697",
+      "paper_ids": [
+        "Alfred Balk",
+        "Nelson Rockefeller"
+      ],
+      "question": "Alfred Balk served as the secretary of the Committee on the Employment of Minority Groups in the News Media under which United States Vice President?",
+      "category": "multi_hop_cross_paper",
+      "answerable": true,
+      "gold_answers": [
+        "Nelson Rockefeller"
+      ],
+      "gold_evidence": [
+        {
+          "paper_id": "Alfred Balk",
+          "chunk_id": "sent_0",
+          "quote": "Alfred Balk (July 24, 1930 – November 25, 2010) was an American reporter, nonfiction author and magazine editor who wrote groundbreaking articles about housing segregation, the Nation of Islam, the environment and Illinois politics."
+        },
+        {
+          "paper_id": "Alfred Balk",
+          "chunk_id": "sent_2",
+          "quote": "During a career-long emphasis on media improvement, he served on the Twentieth Century Fund's task force that established a National News Council, consulted for several foundations, served as secretary of New York Governor Nelson Rockefeller's Committee on the Employment of Minority Groups in the News Media, and produced a film, \"That the People Shall Know: The Challenge of Journalism\", narrated by Walter Cronkite."
+        },
+        {
+          "paper_id": "Nelson Rockefeller",
+          "chunk_id": "sent_0",
+          "quote": "Nelson Aldrich Rockefeller (July 8, 1908 – January 26, 1979) was an American businessman and politician."
+        }
+      ],
+      "gold_paths": [
+        {
+          "nodes": [
+            "Alfred Balk::entity",
+            "Nelson Rockefeller::entity"
+          ],
+          "edges": [
+            {
+              "source": "Alfred Balk::entity",
+              "target": "Nelson Rockefeller::entity",
+              "type": "bridge_relation"
+            }
+          ]
+        }
+      ],
+      "required_hops": 1,
+      "annotation": {
+        "status": "validated",
+        "reviewers": [
+          "hotpotqa_annotator_1",
+          "hotpotqa_annotator_2"
+        ],
+        "adjudicated": true,
+        "notes": "HotpotQA type=bridge, level=hard"
+      }
+    },
+    {
+      "question_id": "hotpot_5a7d54165542995f4f402256",
+      "paper_ids": [
+        "Dirleton Castle",
+        "Yellowcraigs"
+      ],
+      "question": "A medieval fortress in Dirleton, East Lothian, Scotland borders on the south side of what coastal area?",
+      "category": "multi_hop_cross_paper",
+      "answerable": true,
+      "gold_answers": [
+        "Yellowcraig"
+      ],
+      "gold_evidence": [
+        {
+          "paper_id": "Yellowcraigs",
+          "chunk_id": "sent_0",
+          "quote": "Yellowcraig, less commonly known as Broad Sands Bay, is a coastal area of forest, beach and grassland in East Lothian, south-east Scotland."
+        },
+        {
+          "paper_id": "Yellowcraigs",
+          "chunk_id": "sent_1",
+          "quote": "Yellowcraig is partly within the Firth of Forth Site of Special Scientific Interest (SSSI)."
+        },
+        {
+          "paper_id": "Yellowcraigs",
+          "chunk_id": "sent_2",
+          "quote": "It is bordered to the north by the Firth of Forth, to the south by the village of Dirleton and Dirleton Castle, to the east by the North Berwick West Links golf course, and to the west by the Archerfield Estate and Links golf courses."
+        },
+        {
+          "paper_id": "Dirleton Castle",
+          "chunk_id": "sent_0",
+          "quote": "Dirleton Castle is a medieval fortress in the village of Dirleton, East Lothian, Scotland."
+        }
+      ],
+      "gold_paths": [
+        {
+          "nodes": [
+            "Dirleton Castle::entity",
+            "Yellowcraigs::entity"
+          ],
+          "edges": [
+            {
+              "source": "Dirleton Castle::entity",
+              "target": "Yellowcraigs::entity",
+              "type": "bridge_relation"
+            }
+          ]
+        }
+      ],
+      "required_hops": 1,
+      "annotation": {
+        "status": "validated",
+        "reviewers": [
+          "hotpotqa_annotator_1",
+          "hotpotqa_annotator_2"
+        ],
+        "adjudicated": true,
+        "notes": "HotpotQA type=bridge, level=hard"
+      }
+    },
+    {
+      "question_id": "hotpot_5ab859a955429934fafe6d7b",
+      "paper_ids": [
+        "Back to Mono (1958–1969)",
+        "To Know Him Is to Love Him"
+      ],
+      "question": "Who is the writer of this song that was inspired by words on a tombstone and was the first track on the box set Back to Mono?",
+      "category": "multi_hop_cross_paper",
+      "answerable": true,
+      "gold_answers": [
+        "Phil Spector"
+      ],
+      "gold_evidence": [
+        {
+          "paper_id": "Back to Mono (1958–1969)",
+          "chunk_id": "sent_0",
+          "quote": "Back to Mono (1958–1969) is a box set (4 compact discs or 5 vinyl LPs) compilation of the recorded work of record producer Phil Spector, through the 1960s, released in 1991 by ABKCO as #7118-2."
+        },
+        {
+          "paper_id": "Back to Mono (1958–1969)",
+          "chunk_id": "sent_1",
+          "quote": "The first track, \"To Know Him Is to Love Him,\" released in 1958, features Spector performing as part of the group the Teddy Bears."
+        },
+        {
+          "paper_id": "To Know Him Is to Love Him",
+          "chunk_id": "sent_0",
+          "quote": "\"To Know Him Is to Love Him\" is a song written by Phil Spector, inspired by words on his father's tombstone, \"To Know Him Was To Love Him.\""
+        }
+      ],
+      "gold_paths": [
+        {
+          "nodes": [
+            "Back to Mono (1958–1969)::entity",
+            "To Know Him Is to Love Him::entity"
+          ],
+          "edges": [
+            {
+              "source": "Back to Mono (1958–1969)::entity",
+              "target": "To Know Him Is to Love Him::entity",
+              "type": "bridge_relation"
+            }
+          ]
+        }
+      ],
+      "required_hops": 1,
+      "annotation": {
+        "status": "validated",
+        "reviewers": [
+          "hotpotqa_annotator_1",
+          "hotpotqa_annotator_2"
+        ],
+        "adjudicated": true,
+        "notes": "HotpotQA type=bridge, level=hard"
+      }
+    },
+    {
+      "question_id": "hotpot_5add61d65542995b365fab21",
+      "paper_ids": [
+        "Mikhail Gorbachev",
+        "World Summit of Nobel Peace Laureates"
+      ],
+      "question": "What type of forum did a former Soviet statesman initiate?",
+      "category": "multi_hop_cross_paper",
+      "answerable": true,
+      "gold_answers": [
+        "Organizations could come together to address global issues"
+      ],
+      "gold_evidence": [
+        {
+          "paper_id": "World Summit of Nobel Peace Laureates",
+          "chunk_id": "sent_0",
+          "quote": "The World Summit of Nobel Peace Laureates was initiated by Mikhail Gorbachev in the 90s, as a forum in which the Nobel Peace Laureates and the Peace Laureate Organizations could come together to address global issues with a view to encourage and support peace and human well being in the world."
+        },
+        {
+          "paper_id": "Mikhail Gorbachev",
+          "chunk_id": "sent_0",
+          "quote": "Mikhail Sergeyevich Gorbachev, ( ; Russian: Михаи́л Серге́евич Горбачёв ; ] ; born 2 March 1931) is a former Soviet statesman."
+        }
+      ],
+      "gold_paths": [
+        {
+          "nodes": [
+            "Mikhail Gorbachev::entity",
+            "World Summit of Nobel Peace Laureates::entity"
+          ],
+          "edges": [
+            {
+              "source": "Mikhail Gorbachev::entity",
+              "target": "World Summit of Nobel Peace Laureates::entity",
+              "type": "bridge_relation"
+            }
+          ]
+        }
+      ],
+      "required_hops": 1,
+      "annotation": {
+        "status": "validated",
+        "reviewers": [
+          "hotpotqa_annotator_1",
+          "hotpotqa_annotator_2"
+        ],
+        "adjudicated": true,
+        "notes": "HotpotQA type=bridge, level=hard"
+      }
+    },
+    {
+      "question_id": "hotpot_5a8e068b5542995085b37384",
+      "paper_ids": [
+        "Ferocactus",
+        "Silene"
+      ],
+      "question": "Are Ferocactus and Silene both types of plant?",
+      "category": "multi_hop_cross_paper",
+      "answerable": true,
+      "gold_answers": [
+        "yes"
+      ],
+      "gold_evidence": [
+        {
+          "paper_id": "Ferocactus",
+          "chunk_id": "sent_0",
+          "quote": "Ferocactus is a genus of large barrel-shaped cacti, mostly with large spines and small flowers."
+        },
+        {
+          "paper_id": "Silene",
+          "chunk_id": "sent_0",
+          "quote": "Silene is a genus of flowering plants in the family Caryophyllaceae."
+        }
+      ],
+      "gold_paths": [
+        {
+          "nodes": [
+            "Ferocactus::entity",
+            "Silene::entity"
+          ],
+          "edges": [
+            {
+              "source": "Ferocactus::entity",
+              "target": "Silene::entity",
+              "type": "bridge_relation"
+            }
+          ]
+        }
+      ],
+      "required_hops": 1,
+      "annotation": {
+        "status": "validated",
+        "reviewers": [
+          "hotpotqa_annotator_1",
+          "hotpotqa_annotator_2"
+        ],
+        "adjudicated": true,
+        "notes": "HotpotQA type=comparison, level=hard"
+      }
+    },
+    {
+      "question_id": "hotpot_5abbf698554299114383a0b5",
+      "paper_ids": [
+        "English Electric Canberra",
+        "No. 2 Squadron RAAF"
+      ],
+      "question": "Which British first-generation jet-powered medium bomber was used in the South West Pacific theatre of World War II?",
+      "category": "multi_hop_cross_paper",
+      "answerable": true,
+      "gold_answers": [
+        "English Electric Canberra"
+      ],
+      "gold_evidence": [
+        {
+          "paper_id": "No. 2 Squadron RAAF",
+          "chunk_id": "sent_5",
+          "quote": "It saw action as a bomber unit in the South West Pacific theatre of World War II and, equipped with English Electric Canberra jets, in the Malayan Emergency and the Vietnam War."
+        },
+        {
+          "paper_id": "English Electric Canberra",
+          "chunk_id": "sent_0",
+          "quote": "The English Electric Canberra is a British first-generation jet-powered medium bomber that was manufactured during the 1950s."
+        }
+      ],
+      "gold_paths": [
+        {
+          "nodes": [
+            "English Electric Canberra::entity",
+            "No. 2 Squadron RAAF::entity"
+          ],
+          "edges": [
+            {
+              "source": "English Electric Canberra::entity",
+              "target": "No. 2 Squadron RAAF::entity",
+              "type": "bridge_relation"
+            }
+          ]
+        }
+      ],
+      "required_hops": 1,
+      "annotation": {
+        "status": "validated",
+        "reviewers": [
+          "hotpotqa_annotator_1",
+          "hotpotqa_annotator_2"
+        ],
+        "adjudicated": true,
+        "notes": "HotpotQA type=bridge, level=hard"
+      }
+    }
+  ]
+}

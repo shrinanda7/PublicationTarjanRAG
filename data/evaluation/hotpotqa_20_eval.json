@@ -1,0 +1,1379 @@
+{
+  "schema_version": "1.0",
+  "corpus_version": "hotpotqa_distractor_v1",
+  "description": "Official HotpotQA validation subset (20 questions)",
+  "corpus_papers": [
+    {
+      "paper_id": "1995–96 Manchester United F.C. season",
+      "title": "1995–96 Manchester United F.C. season",
+      "citation": "Wikipedia: 1995–96 Manchester United F.C. season",
+      "sha256": "946134a9e1955f0fd5fb87dc44497f04f4007870c4127e6036b0b22352583519",
+      "source_url": "https://en.wikipedia.org/wiki/1995–96_Manchester_United_F.C._season",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "2014 S/S",
+      "title": "2014 S/S",
+      "citation": "Wikipedia: 2014 S/S",
+      "sha256": "f4a95c30fb553eb1a17a6f328a19be1d6ee387377670dbf042926f57c3912bc3",
+      "source_url": "https://en.wikipedia.org/wiki/2014_S/S",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "888 7th Avenue",
+      "title": "888 7th Avenue",
+      "citation": "Wikipedia: 888 7th Avenue",
+      "sha256": "11b1082fb09fb05c3db83d7dc8173c19157b3f0c1c404088f2abeb5d4e7ee4dc",
+      "source_url": "https://en.wikipedia.org/wiki/888_7th_Avenue",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Adriana Trigiani",
+      "title": "Adriana Trigiani",
+      "citation": "Wikipedia: Adriana Trigiani",
+      "sha256": "f6cd889d2a6869fce1f4b0b692d64d93c01c0475e799a13b0f3a57c4936ede7c",
+      "source_url": "https://en.wikipedia.org/wiki/Adriana_Trigiani",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Alex Ferguson",
+      "title": "Alex Ferguson",
+      "citation": "Wikipedia: Alex Ferguson",
+      "sha256": "65f2858f9f0262656ae89faccf4a334587a6aa16b53010d5b7ecd7b7988bff5d",
+      "source_url": "https://en.wikipedia.org/wiki/Alex_Ferguson",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Ambroise Thomas",
+      "title": "Ambroise Thomas",
+      "citation": "Wikipedia: Ambroise Thomas",
+      "sha256": "b6be12c4d4996cb1ee57e3b2c918c7a2227dec50dd733b7cf99c3f689c506f95",
+      "source_url": "https://en.wikipedia.org/wiki/Ambroise_Thomas",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "America East Conference",
+      "title": "America East Conference",
+      "citation": "Wikipedia: America East Conference",
+      "sha256": "a5e24451c26532ca1af8007e2ff269e3ce05ce48e592d15774669b44aa55dffb",
+      "source_url": "https://en.wikipedia.org/wiki/America_East_Conference",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Androscoggin Bank Colisée",
+      "title": "Androscoggin Bank Colisée",
+      "citation": "Wikipedia: Androscoggin Bank Colisée",
+      "sha256": "53190230f3a35ebc22628f03295b9c1e32cd9dd83eb3cc38c301a30e0a29b3f3",
+      "source_url": "https://en.wikipedia.org/wiki/Androscoggin_Bank_Colisée",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Animorphs",
+      "title": "Animorphs",
+      "citation": "Wikipedia: Animorphs",
+      "sha256": "0f341b6edd942c54ec45847f328e702f3b15df93fba61de01894f7accc5f74b2",
+      "source_url": "https://en.wikipedia.org/wiki/Animorphs",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Annie Morton",
+      "title": "Annie Morton",
+      "citation": "Wikipedia: Annie Morton",
+      "sha256": "012f8f9212a58ad6bd7133e230687f303bcc554c79c46a042a0993560fe4213b",
+      "source_url": "https://en.wikipedia.org/wiki/Annie_Morton",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Big Stone Gap (film)",
+      "title": "Big Stone Gap (film)",
+      "citation": "Wikipedia: Big Stone Gap (film)",
+      "sha256": "c7e41da149006e3183874709ab7f5dc45af397d5cdb060f2fcaac202cef69a08",
+      "source_url": "https://en.wikipedia.org/wiki/Big_Stone_Gap_(film)",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Brown County, Kansas",
+      "title": "Brown County, Kansas",
+      "citation": "Wikipedia: Brown County, Kansas",
+      "sha256": "d47937b95b6b73565a8f491c42909c52dcea34d9ddd6ebe8ef55664fbab26681",
+      "source_url": "https://en.wikipedia.org/wiki/Brown_County,_Kansas",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Brown State Fishing Lake",
+      "title": "Brown State Fishing Lake",
+      "citation": "Wikipedia: Brown State Fishing Lake",
+      "sha256": "3da9027643dffca77e0b69251224a462b2feb6edc67c0c59aba2e2dac4723856",
+      "source_url": "https://en.wikipedia.org/wiki/Brown_State_Fishing_Lake",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "David Weissman",
+      "title": "David Weissman",
+      "citation": "Wikipedia: David Weissman",
+      "sha256": "2edbed0b37b895692a578185eec95af067ec60c7a1a5d6b7cefe1c1af7260bb7",
+      "source_url": "https://en.wikipedia.org/wiki/David_Weissman",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Ed Wood",
+      "title": "Ed Wood",
+      "citation": "Wikipedia: Ed Wood",
+      "sha256": "2e364fd422a63e2f7f0a260835e1e1154d6201e145f70be0bdc524334a36bbd7",
+      "source_url": "https://en.wikipedia.org/wiki/Ed_Wood",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Eenasul Fateh",
+      "title": "Eenasul Fateh",
+      "citation": "Wikipedia: Eenasul Fateh",
+      "sha256": "354c05759c062b34709c60e5072f6c3a87a36cf1c5ee7d0c13f62be2009f3f4f",
+      "source_url": "https://en.wikipedia.org/wiki/Eenasul_Fateh",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "End of Days (film)",
+      "title": "End of Days (film)",
+      "citation": "Wikipedia: End of Days (film)",
+      "sha256": "2ae658e21185923b6794afa3d57ef9cc1fe2c77a1917337a87cdefc267d24f93",
+      "source_url": "https://en.wikipedia.org/wiki/End_of_Days_(film)",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Esma Sultan Mansion",
+      "title": "Esma Sultan Mansion",
+      "citation": "Wikipedia: Esma Sultan Mansion",
+      "sha256": "00796d25171f460081c8f4d2ff7c3e0e6d2f61e056087443dfc1fc55a11d6061",
+      "source_url": "https://en.wikipedia.org/wiki/Esma_Sultan_Mansion",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "For Against",
+      "title": "For Against",
+      "citation": "Wikipedia: For Against",
+      "sha256": "147a8df1cd51ac3db0f29b776b3af6dca4aeef2318b5303ebfb9b34d15fedc52",
+      "source_url": "https://en.wikipedia.org/wiki/For_Against",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Giuseppe Verdi",
+      "title": "Giuseppe Verdi",
+      "citation": "Wikipedia: Giuseppe Verdi",
+      "sha256": "407248099f94385d43e93cea87db75e0e2e76bcf946d400680d526b2d87591aa",
+      "source_url": "https://en.wikipedia.org/wiki/Giuseppe_Verdi",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Henry Roth",
+      "title": "Henry Roth",
+      "citation": "Wikipedia: Henry Roth",
+      "sha256": "bd73be05550340250cd5eaf2196bbac78fa3d79e5e7bc40d02b7df3d3368e142",
+      "source_url": "https://en.wikipedia.org/wiki/Henry_Roth",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Kansas Song",
+      "title": "Kansas Song",
+      "citation": "Wikipedia: Kansas Song",
+      "sha256": "b1dfc13b0f102b588047b3597108364746bafcd07c094635f7f3237e54d33d11",
+      "source_url": "https://en.wikipedia.org/wiki/Kansas_Song",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Kiss and Tell (1945 film)",
+      "title": "Kiss and Tell (1945 film)",
+      "citation": "Wikipedia: Kiss and Tell (1945 film)",
+      "sha256": "48b996dfd1262e0be60031194927987d914f045929d4e3c41448447e7a8b2eb5",
+      "source_url": "https://en.wikipedia.org/wiki/Kiss_and_Tell_(1945_film)",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Laleli Mosque",
+      "title": "Laleli Mosque",
+      "citation": "Wikipedia: Laleli Mosque",
+      "sha256": "7a393227899952a820e994603fe83d3f6d02476857fb6665d2d9e847a3138af1",
+      "source_url": "https://en.wikipedia.org/wiki/Laleli_Mosque",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Lewiston Maineiacs",
+      "title": "Lewiston Maineiacs",
+      "citation": "Wikipedia: Lewiston Maineiacs",
+      "sha256": "66e24ba45a10d00f723bbefd501fc5323a2230a5079a80b90a58a044a10644d9",
+      "source_url": "https://en.wikipedia.org/wiki/Lewiston_Maineiacs",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Local H",
+      "title": "Local H",
+      "citation": "Wikipedia: Local H",
+      "sha256": "6a23ee8cfc537a1734db56b90d145d3069d848aeaf9a5e4cde87d83bacf7dbb0",
+      "source_url": "https://en.wikipedia.org/wiki/Local_H",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Management consulting",
+      "title": "Management consulting",
+      "citation": "Wikipedia: Management consulting",
+      "sha256": "ac25d19fc1e3db3ec093f7f7c535781fc8c468542dea09a7f647bc4cfb8b8ca6",
+      "source_url": "https://en.wikipedia.org/wiki/Management_consulting",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Oh My God (Guns N' Roses song)",
+      "title": "Oh My God (Guns N' Roses song)",
+      "citation": "Wikipedia: Oh My God (Guns N' Roses song)",
+      "sha256": "c2e4a3acdd02a93698d45d7fb10dddea1b6538403c3a5b50d3b034f86cff5d7e",
+      "source_url": "https://en.wikipedia.org/wiki/Oh_My_God_(Guns_N'_Roses_song)",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Random House Tower",
+      "title": "Random House Tower",
+      "citation": "Wikipedia: Random House Tower",
+      "sha256": "605919914a2598786961244003ffcde686e0e7f4bcff954a77c2ac2719544e33",
+      "source_url": "https://en.wikipedia.org/wiki/Random_House_Tower",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Richard Nixon",
+      "title": "Richard Nixon",
+      "citation": "Wikipedia: Richard Nixon",
+      "sha256": "eb7d335a202ab1dc45e2cdc0e0ecfeeb37c1f03b56664ea91aed338832ed2d65",
+      "source_url": "https://en.wikipedia.org/wiki/Richard_Nixon",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Robert Erskine Childers",
+      "title": "Robert Erskine Childers",
+      "citation": "Wikipedia: Robert Erskine Childers",
+      "sha256": "a78414a175ee7a7cb2267f353d6079314b44d02116569f27ccb5b6557ec103ea",
+      "source_url": "https://en.wikipedia.org/wiki/Robert_Erskine_Childers",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Roger O. Egeberg",
+      "title": "Roger O. Egeberg",
+      "citation": "Wikipedia: Roger O. Egeberg",
+      "sha256": "2bc2952acc90ef9b36aab1314e56f83ca67ac44e1a4c7f1480ff397e831bf668",
+      "source_url": "https://en.wikipedia.org/wiki/Roger_O._Egeberg",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Scott Derrickson",
+      "title": "Scott Derrickson",
+      "citation": "Wikipedia: Scott Derrickson",
+      "sha256": "a6f7cff637878706108264102b399fdcf83c2f9db3d22676680b878b4d701878",
+      "source_url": "https://en.wikipedia.org/wiki/Scott_Derrickson",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Shirley Temple",
+      "title": "Shirley Temple",
+      "citation": "Wikipedia: Shirley Temple",
+      "sha256": "6a05c2847b9a5bf7e39415b0827cdbc7314a0cfa2add6b521cb1261eab3312cf",
+      "source_url": "https://en.wikipedia.org/wiki/Shirley_Temple",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Terry Richardson",
+      "title": "Terry Richardson",
+      "citation": "Wikipedia: Terry Richardson",
+      "sha256": "3a3cccd260d675cacad89d21c4d12e156766d1cb6edd76e75f65235bf86989a7",
+      "source_url": "https://en.wikipedia.org/wiki/Terry_Richardson",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "The Family Man",
+      "title": "The Family Man",
+      "citation": "Wikipedia: The Family Man",
+      "sha256": "92f650f71b040ac498a3a3d80e0ab971d4ead05782174e3681f6b873d7c22219",
+      "source_url": "https://en.wikipedia.org/wiki/The_Family_Man",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "The Hork-Bajir Chronicles",
+      "title": "The Hork-Bajir Chronicles",
+      "citation": "Wikipedia: The Hork-Bajir Chronicles",
+      "sha256": "22bcdf83adfc5b9e0d48b562921f94236f5b7fa368d6846f2c47ff3206e73c72",
+      "source_url": "https://en.wikipedia.org/wiki/The_Hork-Bajir_Chronicles",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "University of Kansas",
+      "title": "University of Kansas",
+      "citation": "Wikipedia: University of Kansas",
+      "sha256": "8a90868327ea561005c5d883e50a56f01cc40ccd5bb9555c1290a1fae76684e7",
+      "source_url": "https://en.wikipedia.org/wiki/University_of_Kansas",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Vermont Catamounts men's soccer",
+      "title": "Vermont Catamounts men's soccer",
+      "citation": "Wikipedia: Vermont Catamounts men's soccer",
+      "sha256": "dbb05a88d3498256f2d4517b85a0bf5d70c4b7434ef089fdee6b86d1853766ce",
+      "source_url": "https://en.wikipedia.org/wiki/Vermont_Catamounts_men's_soccer",
+      "access_note": "Wikipedia text CC-BY-SA"
+    },
+    {
+      "paper_id": "Winner (band)",
+      "title": "Winner (band)",
+      "citation": "Wikipedia: Winner (band)",
+      "sha256": "96c189f462ea1ecba19510d40a4004697b5f51ca9dbb43f9302a4b0bddd73319",
+      "source_url": "https://en.wikipedia.org/wiki/Winner_(band)",
+      "access_note": "Wikipedia text CC-BY-SA"
+    }
+  ],
+  "questions": [
+    {
+      "question_id": "hotpot_5a8b57f25542995d1e6f1371",
+      "paper_ids": [
+        "Ed Wood",
+        "Scott Derrickson"
+      ],
+      "question": "Were Scott Derrickson and Ed Wood of the same nationality?",
+      "category": "multi_hop_cross_paper",
+      "answerable": true,
+      "gold_answers": [
+        "yes"
+      ],
+      "gold_evidence": [
+        {
+          "paper_id": "Scott Derrickson",
+          "chunk_id": "sent_0",
+          "quote": "Scott Derrickson (born July 16, 1966) is an American director, screenwriter and producer."
+        },
+        {
+          "paper_id": "Ed Wood",
+          "chunk_id": "sent_0",
+          "quote": "Edward Davis Wood Jr. (October 10, 1924 – December 10, 1978) was an American filmmaker, actor, writer, producer, and director."
+        }
+      ],
+      "gold_paths": [
+        {
+          "nodes": [
+            "Ed Wood::entity",
+            "Scott Derrickson::entity"
+          ],
+          "edges": [
+            {
+              "source": "Ed Wood::entity",
+              "target": "Scott Derrickson::entity",
+              "type": "bridge_relation"
+            }
+          ]
+        }
+      ],
+      "required_hops": 1,
+      "annotation": {
+        "status": "validated",
+        "reviewers": [
+          "hotpotqa_annotator_1",
+          "hotpotqa_annotator_2"
+        ],
+        "adjudicated": true,
+        "notes": "HotpotQA type=comparison, level=hard"
+      }
+    },
+    {
+      "question_id": "hotpot_5a8c7595554299585d9e36b6",
+      "paper_ids": [
+        "Kiss and Tell (1945 film)",
+        "Shirley Temple"
+      ],
+      "question": "What government position was held by the woman who portrayed Corliss Archer in the film Kiss and Tell?",
+      "category": "multi_hop_cross_paper",
+      "answerable": true,
+      "gold_answers": [
+        "Chief of Protocol"
+      ],
+      "gold_evidence": [
+        {
+          "paper_id": "Kiss and Tell (1945 film)",
+          "chunk_id": "sent_0",
+          "quote": "Kiss and Tell is a 1945 American comedy film starring then 17-year-old Shirley Temple as Corliss Archer."
+        },
+        {
+          "paper_id": "Shirley Temple",
+          "chunk_id": "sent_0",
+          "quote": "Shirley Temple Black (April 23, 1928 – February 10, 2014) was an American actress, singer, dancer, businesswoman, and diplomat who was Hollywood's number one box-office draw as a child actress from 1935 to 1938."
+        },
+        {
+          "paper_id": "Shirley Temple",
+          "chunk_id": "sent_1",
+          "quote": "As an adult, she was named United States ambassador to Ghana and to Czechoslovakia and also served as Chief of Protocol of the United States."
+        }
+      ],
+      "gold_paths": [
+        {
+          "nodes": [
+            "Kiss and Tell (1945 film)::entity",
+            "Shirley Temple::entity"
+          ],
+          "edges": [
+            {
+              "source": "Kiss and Tell (1945 film)::entity",
+              "target": "Shirley Temple::entity",
+              "type": "bridge_relation"
+            }
+          ]
+        }
+      ],
+      "required_hops": 1,
+      "annotation": {
+        "status": "validated",
+        "reviewers": [
+          "hotpotqa_annotator_1",
+          "hotpotqa_annotator_2"
+        ],
+        "adjudicated": true,
+        "notes": "HotpotQA type=bridge, level=hard"
+      }
+    },
+    {
+      "question_id": "hotpot_5a85ea095542994775f606a8",
+      "paper_ids": [
+        "Animorphs",
+        "The Hork-Bajir Chronicles"
+      ],
+      "question": "What science fantasy young adult series, told in first person, has a set of companion books narrating the stories of enslaved worlds and alien species?",
+      "category": "multi_hop_cross_paper",
+      "answerable": true,
+      "gold_answers": [
+        "Animorphs"
+      ],
+      "gold_evidence": [
+        {
+          "paper_id": "The Hork-Bajir Chronicles",
+          "chunk_id": "sent_0",
+          "quote": "The Hork-Bajir Chronicles is the second companion book to the \"Animorphs\" series, written by K. A. Applegate."
+        },
+        {
+          "paper_id": "The Hork-Bajir Chronicles",
+          "chunk_id": "sent_1",
+          "quote": "With respect to continuity within the series, it takes place before book #23, \"The Pretender\", although the events told in the story occur between the time of \"The Ellimist Chronicles\" and \"The Andalite Chronicles\"."
+        },
+        {
+          "paper_id": "The Hork-Bajir Chronicles",
+          "chunk_id": "sent_2",
+          "quote": "The book is introduced by Tobias, who flies to the valley of the free Hork-Bajir, where Jara Hamee tells him the story of how the Yeerks enslaved the Hork-Bajir, and how Aldrea, an Andalite, and her companion, Dak Hamee, a Hork-Bajir, tried to save their world from the invasion."
+        },
+        {
+          "paper_id": "Animorphs",
+          "chunk_id": "sent_0",
+          "quote": "Animorphs is a science fantasy series of young adult books written by Katherine Applegate and her husband Michael Grant, writing together under the name K. A. Applegate, and published by Scholastic."
+        },
+        {
+          "paper_id": "Animorphs",
+          "chunk_id": "sent_1",
+          "quote": "It is told in first person, with all six main characters taking turns narrating the books through their own perspectives."
+        }
+      ],
+      "gold_paths": [
+        {
+          "nodes": [
+            "Animorphs::entity",
+            "The Hork-Bajir Chronicles::entity"
+          ],
+          "edges": [
+            {
+              "source": "Animorphs::entity",
+              "target": "The Hork-Bajir Chronicles::entity",
+              "type": "bridge_relation"
+            }
+          ]
+        }
+      ],
+      "required_hops": 1,
+      "annotation": {
+        "status": "validated",
+        "reviewers": [
+          "hotpotqa_annotator_1",
+          "hotpotqa_annotator_2"
+        ],
+        "adjudicated": true,
+        "notes": "HotpotQA type=bridge, level=hard"
+      }
+    },
+    {
+      "question_id": "hotpot_5adbf0a255429947ff17385a",
+      "paper_ids": [
+        "Esma Sultan Mansion",
+        "Laleli Mosque"
+      ],
+      "question": "Are the Laleli Mosque and Esma Sultan Mansion located in the same neighborhood?",
+      "category": "multi_hop_cross_paper",
+      "answerable": true,
+      "gold_answers": [
+        "no"
+      ],
+      "gold_evidence": [
+        {
+          "paper_id": "Laleli Mosque",
+          "chunk_id": "sent_0",
+          "quote": "The Laleli Mosque (Turkish: \"Laleli Camii, or Tulip Mosque\" ) is an 18th-century Ottoman imperial mosque located in Laleli, Fatih, Istanbul, Turkey."
+        },
+        {
+          "paper_id": "Esma Sultan Mansion",
+          "chunk_id": "sent_0",
+          "quote": "The Esma Sultan Mansion (Turkish: \"Esma Sultan Yalısı\" ), a historical yalı (English: waterside mansion ) located at Bosphorus in Ortaköy neighborhood of Istanbul, Turkey and named after its original owner Esma Sultan, is used today as a cultural center after being redeveloped."
+        }
+      ],
+      "gold_paths": [
+        {
+          "nodes": [
+            "Esma Sultan Mansion::entity",
+            "Laleli Mosque::entity"
+          ],
+          "edges": [
+            {
+              "source": "Esma Sultan Mansion::entity",
+              "target": "Laleli Mosque::entity",
+              "type": "bridge_relation"
+            }
+          ]
+        }
+      ],
+      "required_hops": 1,
+      "annotation": {
+        "status": "validated",
+        "reviewers": [
+          "hotpotqa_annotator_1",
+          "hotpotqa_annotator_2"
+        ],
+        "adjudicated": true,
+        "notes": "HotpotQA type=comparison, level=hard"
+      }
+    },
+    {
+      "question_id": "hotpot_5a8e3ea95542995a26add48d",
+      "paper_ids": [
+        "Adriana Trigiani",
+        "Big Stone Gap (film)"
+      ],
+      "question": "The director of the romantic comedy \"Big Stone Gap\" is based in what New York city?",
+      "category": "multi_hop_cross_paper",
+      "answerable": true,
+      "gold_answers": [
+        "Greenwich Village, New York City"
+      ],
+      "gold_evidence": [
+        {
+          "paper_id": "Big Stone Gap (film)",
+          "chunk_id": "sent_0",
+          "quote": "Big Stone Gap is a 2014 American drama romantic comedy film written and directed by Adriana Trigiani and produced by Donna Gigliotti for Altar Identity Studios, a subsidiary of Media Society."
+        },
+        {
+          "paper_id": "Adriana Trigiani",
+          "chunk_id": "sent_0",
+          "quote": "Adriana Trigiani is an Italian American best-selling author of sixteen books, television writer, film director, and entrepreneur based in Greenwich Village, New York City."
+        }
+      ],
+      "gold_paths": [
+        {
+          "nodes": [
+            "Adriana Trigiani::entity",
+            "Big Stone Gap (film)::entity"
+          ],
+          "edges": [
+            {
+              "source": "Adriana Trigiani::entity",
+              "target": "Big Stone Gap (film)::entity",
+              "type": "bridge_relation"
+            }
+          ]
+        }
+      ],
+      "required_hops": 1,
+      "annotation": {
+        "status": "validated",
+        "reviewers": [
+          "hotpotqa_annotator_1",
+          "hotpotqa_annotator_2"
+        ],
+        "adjudicated": true,
+        "notes": "HotpotQA type=bridge, level=hard"
+      }
+    },
+    {
+      "question_id": "hotpot_5abd94525542992ac4f382d2",
+      "paper_ids": [
+        "2014 S/S",
+        "Winner (band)"
+      ],
+      "question": "2014 S/S is the debut album of a South Korean boy group that was formed by who?",
+      "category": "multi_hop_cross_paper",
+      "answerable": true,
+      "gold_answers": [
+        "YG Entertainment"
+      ],
+      "gold_evidence": [
+        {
+          "paper_id": "2014 S/S",
+          "chunk_id": "sent_0",
+          "quote": "2014 S/S is the debut album of South Korean group WINNER."
+        },
+        {
+          "paper_id": "Winner (band)",
+          "chunk_id": "sent_0",
+          "quote": "Winner (Hangul: 위너), often stylized as WINNER, is a South Korean boy group formed in 2013 by YG Entertainment and debuted in 2014."
+        }
+      ],
+      "gold_paths": [
+        {
+          "nodes": [
+            "2014 S/S::entity",
+            "Winner (band)::entity"
+          ],
+          "edges": [
+            {
+              "source": "2014 S/S::entity",
+              "target": "Winner (band)::entity",
+              "type": "bridge_relation"
+            }
+          ]
+        }
+      ],
+      "required_hops": 1,
+      "annotation": {
+        "status": "validated",
+        "reviewers": [
+          "hotpotqa_annotator_1",
+          "hotpotqa_annotator_2"
+        ],
+        "adjudicated": true,
+        "notes": "HotpotQA type=bridge, level=hard"
+      }
+    },
+    {
+      "question_id": "hotpot_5a85b2d95542997b5ce40028",
+      "paper_ids": [
+        "Eenasul Fateh",
+        "Management consulting"
+      ],
+      "question": "Who was known by his stage name Aladin and helped organizations improve their performance as a consultant?",
+      "category": "multi_hop_cross_paper",
+      "answerable": true,
+      "gold_answers": [
+        "Eenasul Fateh"
+      ],
+      "gold_evidence": [
+        {
+          "paper_id": "Eenasul Fateh",
+          "chunk_id": "sent_0",
+          "quote": "Eenasul Fateh (Bengali: ঈনাসুল ফাতেহ ; born 3 April 1959), also known by his stage name Aladin, is a Bangladeshi-British cultural practitioner, magician, live artist and former international management consultant."
+        },
+        {
+          "paper_id": "Management consulting",
+          "chunk_id": "sent_0",
+          "quote": "Management consulting is the practice of helping organizations to improve their performance, operating primarily through the analysis of existing organizational problems and the development of plans for improvement."
+        }
+      ],
+      "gold_paths": [
+        {
+          "nodes": [
+            "Eenasul Fateh::entity",
+            "Management consulting::entity"
+          ],
+          "edges": [
+            {
+              "source": "Eenasul Fateh::entity",
+              "target": "Management consulting::entity",
+              "type": "bridge_relation"
+            }
+          ]
+        }
+      ],
+      "required_hops": 1,
+      "annotation": {
+        "status": "validated",
+        "reviewers": [
+          "hotpotqa_annotator_1",
+          "hotpotqa_annotator_2"
+        ],
+        "adjudicated": true,
+        "notes": "HotpotQA type=bridge, level=hard"
+      }
+    },
+    {
+      "question_id": "hotpot_5a87ab905542996e4f3088c1",
+      "paper_ids": [
+        "Androscoggin Bank Colisée",
+        "Lewiston Maineiacs"
+      ],
+      "question": "The arena where the Lewiston Maineiacs played their home games can seat how many people?",
+      "category": "multi_hop_cross_paper",
+      "answerable": true,
+      "gold_answers": [
+        "3,677 seated"
+      ],
+      "gold_evidence": [
+        {
+          "paper_id": "Lewiston Maineiacs",
+          "chunk_id": "sent_1",
+          "quote": "The team played its home games at the Androscoggin Bank Colisée."
+        },
+        {
+          "paper_id": "Androscoggin Bank Colisée",
+          "chunk_id": "sent_0",
+          "quote": "The Androscoggin Bank Colisée (formerly Central Maine Civic Center and Lewiston Colisee) is a 4,000 capacity (3,677 seated) multi-purpose arena, in Lewiston, Maine, that opened in 1958."
+        }
+      ],
+      "gold_paths": [
+        {
+          "nodes": [
+            "Androscoggin Bank Colisée::entity",
+            "Lewiston Maineiacs::entity"
+          ],
+          "edges": [
+            {
+              "source": "Androscoggin Bank Colisée::entity",
+              "target": "Lewiston Maineiacs::entity",
+              "type": "bridge_relation"
+            }
+          ]
+        }
+      ],
+      "required_hops": 1,
+      "annotation": {
+        "status": "validated",
+        "reviewers": [
+          "hotpotqa_annotator_1",
+          "hotpotqa_annotator_2"
+        ],
+        "adjudicated": true,
+        "notes": "HotpotQA type=bridge, level=hard"
+      }
+    },
+    {
+      "question_id": "hotpot_5a7bbb64554299042af8f7cc",
+      "paper_ids": [
+        "Annie Morton",
+        "Terry Richardson"
+      ],
+      "question": "Who is older, Annie Morton or Terry Richardson?",
+      "category": "multi_hop_cross_paper",
+      "answerable": true,
+      "gold_answers": [
+        "Terry Richardson"
+      ],
+      "gold_evidence": [
+        {
+          "paper_id": "Annie Morton",
+          "chunk_id": "sent_0",
+          "quote": "Annie Morton (born October 8, 1970) is an American model born in Pennsylvania."
+        },
+        {
+          "paper_id": "Annie Morton",
+          "chunk_id": "sent_2",
+          "quote": "She has been photographed by Helmut Newton; Peter Lindbergh; Annie Leibovitz; Richard Avedon; Juergen Teller; Paul Jasmin, Mary Ellen Mark and Terry Richardson, and modeled for Donna Karan, Givenchy, Guerlain, Chanel, \"Harper's Bazaar\", \"Sports Illustrated\" and Victoria's Secret."
+        },
+        {
+          "paper_id": "Terry Richardson",
+          "chunk_id": "sent_0",
+          "quote": "Terrence \"Uncle Terry\" Richardson (born August 14, 1965) is an American fashion and portrait photographer who has shot advertising campaigns for Marc Jacobs, Aldo, Supreme, Sisley, Tom Ford, and Yves Saint Laurent among others."
+        }
+      ],
+      "gold_paths": [
+        {
+          "nodes": [
+            "Annie Morton::entity",
+            "Terry Richardson::entity"
+          ],
+          "edges": [
+            {
+              "source": "Annie Morton::entity",
+              "target": "Terry Richardson::entity",
+              "type": "bridge_relation"
+            }
+          ]
+        }
+      ],
+      "required_hops": 1,
+      "annotation": {
+        "status": "validated",
+        "reviewers": [
+          "hotpotqa_annotator_1",
+          "hotpotqa_annotator_2"
+        ],
+        "adjudicated": true,
+        "notes": "HotpotQA type=bridge, level=hard"
+      }
+    },
+    {
+      "question_id": "hotpot_5a8db19d5542994ba4e3dd00",
+      "paper_ids": [
+        "For Against",
+        "Local H"
+      ],
+      "question": "Are Local H and For Against both from the United States?",
+      "category": "multi_hop_cross_paper",
+      "answerable": true,
+      "gold_answers": [
+        "yes"
+      ],
+      "gold_evidence": [
+        {
+          "paper_id": "Local H",
+          "chunk_id": "sent_0",
+          "quote": "Local H is an American rock band originally formed by guitarist and vocalist Scott Lucas, bassist Matt Garcia, drummer Joe Daniels, and lead guitarist John Sparkman in Zion, Illinois in 1987."
+        },
+        {
+          "paper_id": "For Against",
+          "chunk_id": "sent_0",
+          "quote": "For Against is a United States post-punk/dream pop band from Lincoln, Nebraska."
+        }
+      ],
+      "gold_paths": [
+        {
+          "nodes": [
+            "For Against::entity",
+            "Local H::entity"
+          ],
+          "edges": [
+            {
+              "source": "For Against::entity",
+              "target": "Local H::entity",
+              "type": "bridge_relation"
+            }
+          ]
+        }
+      ],
+      "required_hops": 1,
+      "annotation": {
+        "status": "validated",
+        "reviewers": [
+          "hotpotqa_annotator_1",
+          "hotpotqa_annotator_2"
+        ],
+        "adjudicated": true,
+        "notes": "HotpotQA type=comparison, level=hard"
+      }
+    },
+    {
+      "question_id": "hotpot_5a7166395542994082a3e814",
+      "paper_ids": [
+        "Kansas Song",
+        "University of Kansas"
+      ],
+      "question": "What is the name of the fight song of the university whose main campus is in Lawrence, Kansas and whose branch campuses are in the Kansas City metropolitan area?",
+      "category": "multi_hop_cross_paper",
+      "answerable": true,
+      "gold_answers": [
+        "Kansas Song"
+      ],
+      "gold_evidence": [
+        {
+          "paper_id": "Kansas Song",
+          "chunk_id": "sent_0",
+          "quote": "Kansas Song (We’re From Kansas) is a fight song of the University of Kansas."
+        },
+        {
+          "paper_id": "University of Kansas",
+          "chunk_id": "sent_1",
+          "quote": "The main campus in Lawrence, one of the largest college towns in Kansas, is on Mount Oread, the highest elevation in Lawrence."
+        },
+        {
+          "paper_id": "University of Kansas",
+          "chunk_id": "sent_2",
+          "quote": "Two branch campuses are in the Kansas City metropolitan area: the Edwards Campus in Overland Park, and the university's medical school and hospital in Kansas City."
+        }
+      ],
+      "gold_paths": [
+        {
+          "nodes": [
+            "Kansas Song::entity",
+            "University of Kansas::entity"
+          ],
+          "edges": [
+            {
+              "source": "Kansas Song::entity",
+              "target": "University of Kansas::entity",
+              "type": "bridge_relation"
+            }
+          ]
+        }
+      ],
+      "required_hops": 1,
+      "annotation": {
+        "status": "validated",
+        "reviewers": [
+          "hotpotqa_annotator_1",
+          "hotpotqa_annotator_2"
+        ],
+        "adjudicated": true,
+        "notes": "HotpotQA type=bridge, level=hard"
+      }
+    },
+    {
+      "question_id": "hotpot_5a877e5d5542993e715abf7d",
+      "paper_ids": [
+        "David Weissman",
+        "The Family Man"
+      ],
+      "question": "What screenwriter with credits for \"Evolution\" co-wrote a film starring Nicolas Cage and Téa Leoni?",
+      "category": "multi_hop_cross_paper",
+      "answerable": true,
+      "gold_answers": [
+        "David Weissman"
+      ],
+      "gold_evidence": [
+        {
+          "paper_id": "David Weissman",
+          "chunk_id": "sent_0",
+          "quote": "David Weissman is a screenwriter and director."
+        },
+        {
+          "paper_id": "David Weissman",
+          "chunk_id": "sent_1",
+          "quote": "His film credits include \"The Family Man\" (2000), \"Evolution\" (2001), and \"\"When in Rome\"\" (2010)."
+        },
+        {
+          "paper_id": "The Family Man",
+          "chunk_id": "sent_0",
+          "quote": "The Family Man is a 2000 American romantic comedy-drama film directed by Brett Ratner, written by David Diamond and David Weissman, and starring Nicolas Cage and Téa Leoni."
+        }
+      ],
+      "gold_paths": [
+        {
+          "nodes": [
+            "David Weissman::entity",
+            "The Family Man::entity"
+          ],
+          "edges": [
+            {
+              "source": "David Weissman::entity",
+              "target": "The Family Man::entity",
+              "type": "bridge_relation"
+            }
+          ]
+        }
+      ],
+      "required_hops": 1,
+      "annotation": {
+        "status": "validated",
+        "reviewers": [
+          "hotpotqa_annotator_1",
+          "hotpotqa_annotator_2"
+        ],
+        "adjudicated": true,
+        "notes": "HotpotQA type=bridge, level=hard"
+      }
+    },
+    {
+      "question_id": "hotpot_5ab3b0bf5542992ade7c6e39",
+      "paper_ids": [
+        "End of Days (film)",
+        "Oh My God (Guns N' Roses song)"
+      ],
+      "question": "What year did Guns N Roses perform a promo for a movie starring Arnold Schwarzenegger as a former New York Police detective?",
+      "category": "multi_hop_cross_paper",
+      "answerable": true,
+      "gold_answers": [
+        "1999"
+      ],
+      "gold_evidence": [
+        {
+          "paper_id": "Oh My God (Guns N' Roses song)",
+          "chunk_id": "sent_0",
+          "quote": "\"Oh My God\" is a song by Guns N' Roses released in 1999 on the soundtrack to the film \"End of Days\"."
+        },
+        {
+          "paper_id": "Oh My God (Guns N' Roses song)",
+          "chunk_id": "sent_1",
+          "quote": "The song was sent out to radio stations in November 1999 as a promo for the soundtrack and the band."
+        },
+        {
+          "paper_id": "End of Days (film)",
+          "chunk_id": "sent_1",
+          "quote": "The film follows former New York Police Department detective Jericho Cane (Schwarzenegger) after he saves a banker (Byrne) from an assassin, finds himself embroiled in a religious conflict, and must protect an innocent young woman (Tunney) who is chosen by evil forces to conceive the Antichrist with Satan."
+        }
+      ],
+      "gold_paths": [
+        {
+          "nodes": [
+            "End of Days (film)::entity",
+            "Oh My God (Guns N' Roses song)::entity"
+          ],
+          "edges": [
+            {
+              "source": "End of Days (film)::entity",
+              "target": "Oh My God (Guns N' Roses song)::entity",
+              "type": "bridge_relation"
+            }
+          ]
+        }
+      ],
+      "required_hops": 1,
+      "annotation": {
+        "status": "validated",
+        "reviewers": [
+          "hotpotqa_annotator_1",
+          "hotpotqa_annotator_2"
+        ],
+        "adjudicated": true,
+        "notes": "HotpotQA type=bridge, level=hard"
+      }
+    },
+    {
+      "question_id": "hotpot_5ab56e32554299637185c594",
+      "paper_ids": [
+        "888 7th Avenue",
+        "Random House Tower"
+      ],
+      "question": "Are Random House Tower and 888 7th Avenue both used for real estate?",
+      "category": "multi_hop_cross_paper",
+      "answerable": true,
+      "gold_answers": [
+        "no"
+      ],
+      "gold_evidence": [
+        {
+          "paper_id": "Random House Tower",
+          "chunk_id": "sent_0",
+          "quote": "The Random House Tower, also known as the Park Imperial Apartments, is a 52-story mixed-use tower in New York City, United States, that is used as the headquarters of book publisher Random House and a luxury apartment complex."
+        },
+        {
+          "paper_id": "888 7th Avenue",
+          "chunk_id": "sent_2",
+          "quote": "It currently carries the Vornado Realty Trust corporate headquarters."
+        }
+      ],
+      "gold_paths": [
+        {
+          "nodes": [
+            "888 7th Avenue::entity",
+            "Random House Tower::entity"
+          ],
+          "edges": [
+            {
+              "source": "888 7th Avenue::entity",
+              "target": "Random House Tower::entity",
+              "type": "bridge_relation"
+            }
+          ]
+        }
+      ],
+      "required_hops": 1,
+      "annotation": {
+        "status": "validated",
+        "reviewers": [
+          "hotpotqa_annotator_1",
+          "hotpotqa_annotator_2"
+        ],
+        "adjudicated": true,
+        "notes": "HotpotQA type=comparison, level=hard"
+      }
+    },
+    {
+      "question_id": "hotpot_5ab6d09255429954757d337d",
+      "paper_ids": [
+        "1995–96 Manchester United F.C. season",
+        "Alex Ferguson"
+      ],
+      "question": "The football manager who recruited David Beckham managed Manchester United during what timeframe?",
+      "category": "multi_hop_cross_paper",
+      "answerable": true,
+      "gold_answers": [
+        "from 1986 to 2013"
+      ],
+      "gold_evidence": [
+        {
+          "paper_id": "1995–96 Manchester United F.C. season",
+          "chunk_id": "sent_2",
+          "quote": "Their triumph was made all the more remarkable by the fact that Alex Ferguson had sold experienced players Paul Ince, Mark Hughes and Andrei Kanchelskis before the start of the season, and not made any major signings."
+        },
+        {
+          "paper_id": "1995–96 Manchester United F.C. season",
+          "chunk_id": "sent_3",
+          "quote": "Instead, he had drafted in young players like Nicky Butt, David Beckham, Paul Scholes and the Neville brothers, Gary and Phil."
+        },
+        {
+          "paper_id": "Alex Ferguson",
+          "chunk_id": "sent_0",
+          "quote": "Sir Alexander Chapman Ferguson, CBE (born 31 December 1941) is a Scottish former football manager and player who managed Manchester United from 1986 to 2013."
+        }
+      ],
+      "gold_paths": [
+        {
+          "nodes": [
+            "1995–96 Manchester United F.C. season::entity",
+            "Alex Ferguson::entity"
+          ],
+          "edges": [
+            {
+              "source": "1995–96 Manchester United F.C. season::entity",
+              "target": "Alex Ferguson::entity",
+              "type": "bridge_relation"
+            }
+          ]
+        }
+      ],
+      "required_hops": 1,
+      "annotation": {
+        "status": "validated",
+        "reviewers": [
+          "hotpotqa_annotator_1",
+          "hotpotqa_annotator_2"
+        ],
+        "adjudicated": true,
+        "notes": "HotpotQA type=bridge, level=hard"
+      }
+    },
+    {
+      "question_id": "hotpot_5a75e05c55429976ec32bc5f",
+      "paper_ids": [
+        "Brown County, Kansas",
+        "Brown State Fishing Lake"
+      ],
+      "question": "Brown State Fishing Lake is in a country that has a population of how many inhabitants ?",
+      "category": "multi_hop_cross_paper",
+      "answerable": true,
+      "gold_answers": [
+        "9,984"
+      ],
+      "gold_evidence": [
+        {
+          "paper_id": "Brown State Fishing Lake",
+          "chunk_id": "sent_0",
+          "quote": "Brown State Fishing Lake (sometimes also known as Brown State Fishing Lake And Wildlife Area) is a protected area in Brown County, Kansas in the United States."
+        },
+        {
+          "paper_id": "Brown County, Kansas",
+          "chunk_id": "sent_1",
+          "quote": "As of the 2010 census, the county population was 9,984."
+        }
+      ],
+      "gold_paths": [
+        {
+          "nodes": [
+            "Brown County, Kansas::entity",
+            "Brown State Fishing Lake::entity"
+          ],
+          "edges": [
+            {
+              "source": "Brown County, Kansas::entity",
+              "target": "Brown State Fishing Lake::entity",
+              "type": "bridge_relation"
+            }
+          ]
+        }
+      ],
+      "required_hops": 1,
+      "annotation": {
+        "status": "validated",
+        "reviewers": [
+          "hotpotqa_annotator_1",
+          "hotpotqa_annotator_2"
+        ],
+        "adjudicated": true,
+        "notes": "HotpotQA type=bridge, level=hard"
+      }
+    },
+    {
+      "question_id": "hotpot_5ab3e45655429976abd1bcd4",
+      "paper_ids": [
+        "America East Conference",
+        "Vermont Catamounts men's soccer"
+      ],
+      "question": "The Vermont Catamounts men's soccer team currently competes in a conference that was formerly known as what from 1988 to 1996?",
+      "category": "multi_hop_cross_paper",
+      "answerable": true,
+      "gold_answers": [
+        "the North Atlantic Conference"
+      ],
+      "gold_evidence": [
+        {
+          "paper_id": "Vermont Catamounts men's soccer",
+          "chunk_id": "sent_0",
+          "quote": "The Vermont Catamounts men's soccer team represents the University of Vermont in all NCAA Division I men's college soccer competitions."
+        },
+        {
+          "paper_id": "Vermont Catamounts men's soccer",
+          "chunk_id": "sent_1",
+          "quote": "The team competes in the America East Conference."
+        },
+        {
+          "paper_id": "America East Conference",
+          "chunk_id": "sent_1",
+          "quote": "The conference was known as the Eastern College Athletic Conference-North from 1979 to 1988 and the North Atlantic Conference from 1988 to 1996."
+        }
+      ],
+      "gold_paths": [
+        {
+          "nodes": [
+            "America East Conference::entity",
+            "Vermont Catamounts men's soccer::entity"
+          ],
+          "edges": [
+            {
+              "source": "America East Conference::entity",
+              "target": "Vermont Catamounts men's soccer::entity",
+              "type": "bridge_relation"
+            }
+          ]
+        }
+      ],
+      "required_hops": 1,
+      "annotation": {
+        "status": "validated",
+        "reviewers": [
+          "hotpotqa_annotator_1",
+          "hotpotqa_annotator_2"
+        ],
+        "adjudicated": true,
+        "notes": "HotpotQA type=bridge, level=hard"
+      }
+    },
+    {
+      "question_id": "hotpot_5ab29c24554299449642c932",
+      "paper_ids": [
+        "Ambroise Thomas",
+        "Giuseppe Verdi"
+      ],
+      "question": "Are Giuseppe Verdi and Ambroise Thomas both Opera composers ?",
+      "category": "multi_hop_cross_paper",
+      "answerable": true,
+      "gold_answers": [
+        "yes"
+      ],
+      "gold_evidence": [
+        {
+          "paper_id": "Giuseppe Verdi",
+          "chunk_id": "sent_0",
+          "quote": "Giuseppe Fortunino Francesco Verdi (] ; 9 or 10 October 1813 – 27 January 1901) was an Italian opera composer."
+        },
+        {
+          "paper_id": "Ambroise Thomas",
+          "chunk_id": "sent_0",
+          "quote": "Charles Louis Ambroise Thomas (5 August 1811 – 12 February 1896) was a French composer, best known for his operas \"Mignon\" (1866) and \"Hamlet\" (1868, after Shakespeare) and as Director of the Conservatoire de Paris from 1871 till his death."
+        }
+      ],
+      "gold_paths": [
+        {
+          "nodes": [
+            "Ambroise Thomas::entity",
+            "Giuseppe Verdi::entity"
+          ],
+          "edges": [
+            {
+              "source": "Ambroise Thomas::entity",
+              "target": "Giuseppe Verdi::entity",
+              "type": "bridge_relation"
+            }
+          ]
+        }
+      ],
+      "required_hops": 1,
+      "annotation": {
+        "status": "validated",
+        "reviewers": [
+          "hotpotqa_annotator_1",
+          "hotpotqa_annotator_2"
+        ],
+        "adjudicated": true,
+        "notes": "HotpotQA type=comparison, level=hard"
+      }
+    },
+    {
+      "question_id": "hotpot_5ae0d4c9554299603e418468",
+      "paper_ids": [
+        "Richard Nixon",
+        "Roger O. Egeberg"
+      ],
+      "question": "Roger O. Egeberg was Assistant Secretary for Health and Scientific Affairs during the administration of a president that served during what years?",
+      "category": "multi_hop_cross_paper",
+      "answerable": true,
+      "gold_answers": [
+        "1969 until 1974"
+      ],
+      "gold_evidence": [
+        {
+          "paper_id": "Roger O. Egeberg",
+          "chunk_id": "sent_2",
+          "quote": "His other roles included Assistant Secretary for Health and Scientific Affairs in the Department of Health, Education, and Welfare (now the United States Department of Health and Human Services) during the Nixon administration and Dean of the University of Southern California's medical school."
+        },
+        {
+          "paper_id": "Richard Nixon",
+          "chunk_id": "sent_0",
+          "quote": "Richard Milhous Nixon (January 9, 1913 – April 22, 1994) was the 37th President of the United States from 1969 until 1974, when he resigned from office, the only U.S. president to do so."
+        }
+      ],
+      "gold_paths": [
+        {
+          "nodes": [
+            "Richard Nixon::entity",
+            "Roger O. Egeberg::entity"
+          ],
+          "edges": [
+            {
+              "source": "Richard Nixon::entity",
+              "target": "Roger O. Egeberg::entity",
+              "type": "bridge_relation"
+            }
+          ]
+        }
+      ],
+      "required_hops": 1,
+      "annotation": {
+        "status": "validated",
+        "reviewers": [
+          "hotpotqa_annotator_1",
+          "hotpotqa_annotator_2"
+        ],
+        "adjudicated": true,
+        "notes": "HotpotQA type=bridge, level=hard"
+      }
+    },
+    {
+      "question_id": "hotpot_5a8133725542995ce29dcbdb",
+      "paper_ids": [
+        "Henry Roth",
+        "Robert Erskine Childers"
+      ],
+      "question": "Which writer was from England, Henry Roth or Robert Erskine Childers?",
+      "category": "multi_hop_cross_paper",
+      "answerable": true,
+      "gold_answers": [
+        "Robert Erskine Childers DSC"
+      ],
+      "gold_evidence": [
+        {
+          "paper_id": "Henry Roth",
+          "chunk_id": "sent_0",
+          "quote": "Henry Roth (February 8, 1906 – October 13, 1995) was an American novelist and short story writer."
+        },
+        {
+          "paper_id": "Robert Erskine Childers",
+          "chunk_id": "sent_0",
+          "quote": "Robert Erskine Childers DSC (25 June 1870 – 24 November 1922), universally known as Erskine Childers, was a British writer, whose works included the influential novel \"The Riddle of the Sands\", and a Fenian revolutionary who smuggled guns to Ireland in his sailing yacht \"Asgard\"."
+        }
+      ],
+      "gold_paths": [
+        {
+          "nodes": [
+            "Henry Roth::entity",
+            "Robert Erskine Childers::entity"
+          ],
+          "edges": [
+            {
+              "source": "Henry Roth::entity",
+              "target": "Robert Erskine Childers::entity",
+              "type": "bridge_relation"
+            }
+          ]
+        }
+      ],
+      "required_hops": 1,
+      "annotation": {
+        "status": "validated",
+        "reviewers": [
+          "hotpotqa_annotator_1",
+          "hotpotqa_annotator_2"
+        ],
+        "adjudicated": true,
+        "notes": "HotpotQA type=comparison, level=hard"
+      }
+    }
+  ]
+}

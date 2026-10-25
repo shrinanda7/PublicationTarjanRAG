@@ -1,0 +1,889 @@
+{
+  "original_graph": {
+    "nodes": [
+      {
+        "id": "arxiv_2211_12792v2_e1",
+        "name": "MECCH",
+        "type": "Architecture",
+        "description": "Metapath Context Convolution-based Heterogeneous Graph Neural Network"
+      },
+      {
+        "id": "arxiv_2211_12792v2_e2",
+        "name": "Metapath Context",
+        "type": "Concept",
+        "description": "Graph structure that captures full metapath information without redundancy"
+      },
+      {
+        "id": "arxiv_2211_12792v2_e3",
+        "name": "Metapath Context Construction",
+        "type": "Architecture",
+        "description": "Module that builds metapath contexts for each node"
+      },
+      {
+        "id": "arxiv_2211_12792v2_e4",
+        "name": "Metapath Context Encoder",
+        "type": "Architecture",
+        "description": "Component that encodes constructed metapath contexts into embeddings"
+      },
+      {
+        "id": "arxiv_2211_12792v2_e5",
+        "name": "Convolutional Metapath Fusion",
+        "type": "Architecture",
+        "description": "Layer that fuses encoded contexts using 1‑D convolution"
+      },
+      {
+        "id": "arxiv_2211_12792v2_e6",
+        "name": "1‑D Convolution Kernel",
+        "type": "Concept",
+        "description": "Efficient convolution operation applied across metapath dimensions"
+      },
+      {
+        "id": "arxiv_2211_12792v2_e7",
+        "name": "HAN",
+        "type": "Method",
+        "description": "Heterogeneous Attention Network, a metapath‑based HGNN"
+      },
+      {
+        "id": "arxiv_2211_12792v2_e8",
+        "name": "MAGNN",
+        "type": "Method",
+        "description": "Metapath Aggregated Graph Neural Network"
+      },
+      {
+        "id": "arxiv_2211_12792v2_e9",
+        "name": "GTN",
+        "type": "Method",
+        "description": "Graph Transformer Network that learns metapath weights"
+      },
+      {
+        "id": "arxiv_2211_12792v2_e10",
+        "name": "Relation‑based HGNNs",
+        "type": "Concept",
+        "description": "HGNNs that aggregate directly over edge types"
+      },
+      {
+        "id": "arxiv_2211_12792v2_e11",
+        "name": "Metapath‑based HGNNs",
+        "type": "Concept",
+        "description": "HGNNs that propagate information along predefined metapaths"
+      },
+      {
+        "id": "arxiv_2211_12792v2_e12",
+        "name": "Node Classification",
+        "type": "Task",
+        "description": "Predicting node labels in heterogeneous graphs"
+      },
+      {
+        "id": "arxiv_2211_12792v2_e13",
+        "name": "Link Prediction",
+        "type": "Task",
+        "description": "Predicting missing edges between nodes"
+      },
+      {
+        "id": "arxiv_2211_12792v2_e14",
+        "name": "Prediction Accuracy",
+        "type": "Metric",
+        "description": "Correctness of classification or link prediction"
+      },
+      {
+        "id": "arxiv_2211_12792v2_e15",
+        "name": "Computational Efficiency",
+        "type": "Metric",
+        "description": "Runtime and resource usage of the model"
+      },
+      {
+        "id": "arxiv_2211_12792v2_e16",
+        "name": "Memory Footprint",
+        "type": "Metric",
+        "description": "Amount of memory required during training/inference"
+      },
+      {
+        "id": "arxiv_2211_12792v2_e17",
+        "name": "Five Heterogeneous Graph Datasets",
+        "type": "Dataset",
+        "description": "Five real‑world heterogeneous graph benchmarks used for evaluation"
+      }
+    ],
+    "edges": [
+      {
+        "source": "arxiv_2211_12792v2_e1",
+        "target": "arxiv_2211_12792v2_e3",
+        "type": "PROPOSES",
+        "weight": 0.9,
+        "provenance": "paper_extraction",
+        "validation_status": "unvalidated_extraction",
+        "is_bridge": false
+      },
+      {
+        "source": "arxiv_2211_12792v2_e1",
+        "target": "arxiv_2211_12792v2_e4",
+        "type": "PROPOSES",
+        "weight": 0.9,
+        "provenance": "paper_extraction",
+        "validation_status": "unvalidated_extraction",
+        "is_bridge": false
+      },
+      {
+        "source": "arxiv_2211_12792v2_e1",
+        "target": "arxiv_2211_12792v2_e5",
+        "type": "PROPOSES",
+        "weight": 0.9,
+        "provenance": "paper_extraction",
+        "validation_status": "unvalidated_extraction",
+        "is_bridge": false
+      },
+      {
+        "source": "arxiv_2211_12792v2_e3",
+        "target": "arxiv_2211_12792v2_e2",
+        "type": "PRODUCES",
+        "weight": 0.85,
+        "provenance": "paper_extraction",
+        "validation_status": "unvalidated_extraction",
+        "is_bridge": false
+      },
+      {
+        "source": "arxiv_2211_12792v2_e4",
+        "target": "arxiv_2211_12792v2_e2",
+        "type": "ENCODES",
+        "weight": 0.88,
+        "provenance": "paper_extraction",
+        "validation_status": "unvalidated_extraction",
+        "is_bridge": false
+      },
+      {
+        "source": "arxiv_2211_12792v2_e5",
+        "target": "arxiv_2211_12792v2_e6",
+        "type": "USES",
+        "weight": 0.87,
+        "provenance": "paper_extraction",
+        "validation_status": "unvalidated_extraction",
+        "is_bridge": true
+      },
+      {
+        "source": "arxiv_2211_12792v2_e5",
+        "target": "arxiv_2211_12792v2_e4",
+        "type": "FUSES",
+        "weight": 0.86,
+        "provenance": "paper_extraction",
+        "validation_status": "unvalidated_extraction",
+        "is_bridge": false
+      },
+      {
+        "source": "arxiv_2211_12792v2_e1",
+        "target": "arxiv_2211_12792v2_e7",
+        "type": "IMPROVES_UPON",
+        "weight": 0.92,
+        "provenance": "paper_extraction",
+        "validation_status": "unvalidated_extraction",
+        "is_bridge": false
+      },
+      {
+        "source": "arxiv_2211_12792v2_e1",
+        "target": "arxiv_2211_12792v2_e8",
+        "type": "IMPROVES_UPON",
+        "weight": 0.91,
+        "provenance": "paper_extraction",
+        "validation_status": "unvalidated_extraction",
+        "is_bridge": false
+      },
+      {
+        "source": "arxiv_2211_12792v2_e1",
+        "target": "arxiv_2211_12792v2_e9",
+        "type": "IMPROVES_UPON",
+        "weight": 0.9,
+        "provenance": "paper_extraction",
+        "validation_status": "unvalidated_extraction",
+        "is_bridge": false
+      },
+      {
+        "source": "arxiv_2211_12792v2_e7",
+        "target": "arxiv_2211_12792v2_e11",
+        "type": "RELIES_ON",
+        "weight": 0.7,
+        "provenance": "paper_extraction",
+        "validation_status": "unvalidated_extraction",
+        "is_bridge": false
+      },
+      {
+        "source": "arxiv_2211_12792v2_e8",
+        "target": "arxiv_2211_12792v2_e11",
+        "type": "RELIES_ON",
+        "weight": 0.7,
+        "provenance": "paper_extraction",
+        "validation_status": "unvalidated_extraction",
+        "is_bridge": false
+      },
+      {
+        "source": "arxiv_2211_12792v2_e9",
+        "target": "arxiv_2211_12792v2_e11",
+        "type": "RELIES_ON",
+        "weight": 0.7,
+        "provenance": "paper_extraction",
+        "validation_status": "unvalidated_extraction",
+        "is_bridge": false
+      },
+      {
+        "source": "arxiv_2211_12792v2_e10",
+        "target": "arxiv_2211_12792v2_e11",
+        "type": "COMPARES_WITH",
+        "weight": 0.65,
+        "provenance": "paper_extraction",
+        "validation_status": "unvalidated_extraction",
+        "is_bridge": true
+      },
+      {
+        "source": "arxiv_2211_12792v2_e1",
+        "target": "arxiv_2211_12792v2_e17",
+        "type": "EVALUATED_ON",
+        "weight": 0.95,
+        "provenance": "paper_extraction",
+        "validation_status": "unvalidated_extraction",
+        "is_bridge": false
+      },
+      {
+        "source": "arxiv_2211_12792v2_e1",
+        "target": "arxiv_2211_12792v2_e12",
+        "type": "EVALUATED_FOR",
+        "weight": 0.94,
+        "provenance": "paper_extraction",
+        "validation_status": "unvalidated_extraction",
+        "is_bridge": true
+      },
+      {
+        "source": "arxiv_2211_12792v2_e1",
+        "target": "arxiv_2211_12792v2_e13",
+        "type": "EVALUATED_FOR",
+        "weight": 0.94,
+        "provenance": "paper_extraction",
+        "validation_status": "unvalidated_extraction",
+        "is_bridge": true
+      },
+      {
+        "source": "arxiv_2211_12792v2_e1",
+        "target": "arxiv_2211_12792v2_e14",
+        "type": "OPTIMIZES_METRIC",
+        "weight": 0.93,
+        "provenance": "paper_extraction",
+        "validation_status": "unvalidated_extraction",
+        "is_bridge": true
+      },
+      {
+        "source": "arxiv_2211_12792v2_e1",
+        "target": "arxiv_2211_12792v2_e15",
+        "type": "OPTIMIZES_METRIC",
+        "weight": 0.92,
+        "provenance": "paper_extraction",
+        "validation_status": "unvalidated_extraction",
+        "is_bridge": true
+      },
+      {
+        "source": "arxiv_2211_12792v2_e1",
+        "target": "arxiv_2211_12792v2_e16",
+        "type": "OPTIMIZES_METRIC",
+        "weight": 0.91,
+        "provenance": "paper_extraction",
+        "validation_status": "unvalidated_extraction",
+        "is_bridge": true
+      },
+      {
+        "source": "arxiv_2211_12792v2_e7",
+        "target": "arxiv_2211_12792v2_e17",
+        "type": "EVALUATED_ON",
+        "weight": 0.8,
+        "provenance": "paper_extraction",
+        "validation_status": "unvalidated_extraction",
+        "is_bridge": false
+      }
+    ],
+    "node_count": 17,
+    "edge_count": 21,
+    "articulation_points": [
+      "arxiv_2211_12792v2_e5",
+      "arxiv_2211_12792v2_e11",
+      "arxiv_2211_12792v2_e1"
+    ],
+    "bridges": [
+      [
+        "arxiv_2211_12792v2_e5",
+        "arxiv_2211_12792v2_e6"
+      ],
+      [
+        "arxiv_2211_12792v2_e11",
+        "arxiv_2211_12792v2_e10"
+      ],
+      [
+        "arxiv_2211_12792v2_e1",
+        "arxiv_2211_12792v2_e12"
+      ],
+      [
+        "arxiv_2211_12792v2_e1",
+        "arxiv_2211_12792v2_e13"
+      ],
+      [
+        "arxiv_2211_12792v2_e1",
+        "arxiv_2211_12792v2_e14"
+      ],
+      [
+        "arxiv_2211_12792v2_e1",
+        "arxiv_2211_12792v2_e15"
+      ],
+      [
+        "arxiv_2211_12792v2_e1",
+        "arxiv_2211_12792v2_e16"
+      ]
+    ]
+  },
+  "compressed_graph": {
+    "nodes": [
+      {
+        "id": "arxiv_2211_12792v2_e2",
+        "name": "Metapath Context",
+        "type": "Concept",
+        "description": "Graph structure that captures full metapath information without redundancy"
+      },
+      {
+        "id": "arxiv_2211_12792v2_e3",
+        "name": "Metapath Context Construction",
+        "type": "Architecture",
+        "description": "Module that builds metapath contexts for each node"
+      },
+      {
+        "id": "arxiv_2211_12792v2_e4",
+        "name": "Metapath Context Encoder",
+        "type": "Architecture",
+        "description": "Component that encodes constructed metapath contexts into embeddings"
+      },
+      {
+        "id": "arxiv_2211_12792v2_e6",
+        "name": "1‑D Convolution Kernel",
+        "type": "Concept",
+        "description": "Efficient convolution operation applied across metapath dimensions"
+      },
+      {
+        "id": "arxiv_2211_12792v2_e5",
+        "name": "Convolutional Metapath Fusion",
+        "type": "Architecture",
+        "description": "Layer that fuses encoded contexts using 1‑D convolution",
+        "is_connector": true
+      },
+      {
+        "id": "arxiv_2211_12792v2_e11",
+        "name": "Metapath‑based HGNNs",
+        "type": "Concept",
+        "description": "HGNNs that propagate information along predefined metapaths",
+        "is_connector": true
+      },
+      {
+        "id": "arxiv_2211_12792v2_e17",
+        "name": "Five Heterogeneous Graph Datasets",
+        "type": "Dataset",
+        "description": "Five real‑world heterogeneous graph benchmarks used for evaluation"
+      },
+      {
+        "id": "arxiv_2211_12792v2_e7",
+        "name": "HAN",
+        "type": "Method",
+        "description": "Heterogeneous Attention Network, a metapath‑based HGNN"
+      },
+      {
+        "id": "arxiv_2211_12792v2_e8",
+        "name": "MAGNN",
+        "type": "Method",
+        "description": "Metapath Aggregated Graph Neural Network"
+      },
+      {
+        "id": "arxiv_2211_12792v2_e9",
+        "name": "GTN",
+        "type": "Method",
+        "description": "Graph Transformer Network that learns metapath weights"
+      },
+      {
+        "id": "arxiv_2211_12792v2_e12",
+        "name": "Node Classification",
+        "type": "Task",
+        "description": "Predicting node labels in heterogeneous graphs"
+      },
+      {
+        "id": "arxiv_2211_12792v2_e13",
+        "name": "Link Prediction",
+        "type": "Task",
+        "description": "Predicting missing edges between nodes"
+      },
+      {
+        "id": "arxiv_2211_12792v2_e14",
+        "name": "Prediction Accuracy",
+        "type": "Metric",
+        "description": "Correctness of classification or link prediction"
+      },
+      {
+        "id": "arxiv_2211_12792v2_e15",
+        "name": "Computational Efficiency",
+        "type": "Metric",
+        "description": "Runtime and resource usage of the model"
+      },
+      {
+        "id": "arxiv_2211_12792v2_e16",
+        "name": "Memory Footprint",
+        "type": "Metric",
+        "description": "Amount of memory required during training/inference"
+      },
+      {
+        "id": "arxiv_2211_12792v2_e1",
+        "name": "MECCH",
+        "type": "Architecture",
+        "description": "Metapath Context Convolution-based Heterogeneous Graph Neural Network",
+        "is_connector": true
+      },
+      {
+        "id": "arxiv_2211_12792v2_e10",
+        "name": "Relation‑based HGNNs",
+        "type": "Concept",
+        "description": "HGNNs that aggregate directly over edge types"
+      }
+    ],
+    "edges": [
+      {
+        "source": "arxiv_2211_12792v2_e1",
+        "target": "arxiv_2211_12792v2_e3",
+        "type": "PROPOSES",
+        "weight": 0.9,
+        "is_bridge": false,
+        "original_relations": [
+          {
+            "source": "arxiv_2211_12792v2_e1",
+            "target": "arxiv_2211_12792v2_e3",
+            "type": "PROPOSES",
+            "weight": 0.9,
+            "provenance": "paper_extraction",
+            "validation_status": "unvalidated_extraction",
+            "is_bridge": false
+          }
+        ]
+      },
+      {
+        "source": "arxiv_2211_12792v2_e1",
+        "target": "arxiv_2211_12792v2_e4",
+        "type": "PROPOSES",
+        "weight": 0.9,
+        "is_bridge": false,
+        "original_relations": [
+          {
+            "source": "arxiv_2211_12792v2_e1",
+            "target": "arxiv_2211_12792v2_e4",
+            "type": "PROPOSES",
+            "weight": 0.9,
+            "provenance": "paper_extraction",
+            "validation_status": "unvalidated_extraction",
+            "is_bridge": false
+          }
+        ]
+      },
+      {
+        "source": "arxiv_2211_12792v2_e1",
+        "target": "arxiv_2211_12792v2_e5",
+        "type": "PROPOSES",
+        "weight": 0.9,
+        "is_bridge": false,
+        "original_relations": [
+          {
+            "source": "arxiv_2211_12792v2_e1",
+            "target": "arxiv_2211_12792v2_e5",
+            "type": "PROPOSES",
+            "weight": 0.9,
+            "provenance": "paper_extraction",
+            "validation_status": "unvalidated_extraction",
+            "is_bridge": false
+          }
+        ]
+      },
+      {
+        "source": "arxiv_2211_12792v2_e3",
+        "target": "arxiv_2211_12792v2_e2",
+        "type": "PRODUCES",
+        "weight": 0.85,
+        "is_bridge": false,
+        "original_relations": [
+          {
+            "source": "arxiv_2211_12792v2_e3",
+            "target": "arxiv_2211_12792v2_e2",
+            "type": "PRODUCES",
+            "weight": 0.85,
+            "provenance": "paper_extraction",
+            "validation_status": "unvalidated_extraction",
+            "is_bridge": false
+          }
+        ]
+      },
+      {
+        "source": "arxiv_2211_12792v2_e4",
+        "target": "arxiv_2211_12792v2_e2",
+        "type": "ENCODES",
+        "weight": 0.88,
+        "is_bridge": false,
+        "original_relations": [
+          {
+            "source": "arxiv_2211_12792v2_e4",
+            "target": "arxiv_2211_12792v2_e2",
+            "type": "ENCODES",
+            "weight": 0.88,
+            "provenance": "paper_extraction",
+            "validation_status": "unvalidated_extraction",
+            "is_bridge": false
+          }
+        ]
+      },
+      {
+        "source": "arxiv_2211_12792v2_e5",
+        "target": "arxiv_2211_12792v2_e6",
+        "type": "USES",
+        "weight": 0.87,
+        "is_bridge": true,
+        "original_relations": [
+          {
+            "source": "arxiv_2211_12792v2_e5",
+            "target": "arxiv_2211_12792v2_e6",
+            "type": "USES",
+            "weight": 0.87,
+            "provenance": "paper_extraction",
+            "validation_status": "unvalidated_extraction",
+            "is_bridge": true
+          }
+        ]
+      },
+      {
+        "source": "arxiv_2211_12792v2_e5",
+        "target": "arxiv_2211_12792v2_e4",
+        "type": "FUSES",
+        "weight": 0.86,
+        "is_bridge": false,
+        "original_relations": [
+          {
+            "source": "arxiv_2211_12792v2_e5",
+            "target": "arxiv_2211_12792v2_e4",
+            "type": "FUSES",
+            "weight": 0.86,
+            "provenance": "paper_extraction",
+            "validation_status": "unvalidated_extraction",
+            "is_bridge": false
+          }
+        ]
+      },
+      {
+        "source": "arxiv_2211_12792v2_e1",
+        "target": "arxiv_2211_12792v2_e7",
+        "type": "IMPROVES_UPON",
+        "weight": 0.92,
+        "is_bridge": false,
+        "original_relations": [
+          {
+            "source": "arxiv_2211_12792v2_e1",
+            "target": "arxiv_2211_12792v2_e7",
+            "type": "IMPROVES_UPON",
+            "weight": 0.92,
+            "provenance": "paper_extraction",
+            "validation_status": "unvalidated_extraction",
+            "is_bridge": false
+          }
+        ]
+      },
+      {
+        "source": "arxiv_2211_12792v2_e1",
+        "target": "arxiv_2211_12792v2_e8",
+        "type": "IMPROVES_UPON",
+        "weight": 0.91,
+        "is_bridge": false,
+        "original_relations": [
+          {
+            "source": "arxiv_2211_12792v2_e1",
+            "target": "arxiv_2211_12792v2_e8",
+            "type": "IMPROVES_UPON",
+            "weight": 0.91,
+            "provenance": "paper_extraction",
+            "validation_status": "unvalidated_extraction",
+            "is_bridge": false
+          }
+        ]
+      },
+      {
+        "source": "arxiv_2211_12792v2_e1",
+        "target": "arxiv_2211_12792v2_e9",
+        "type": "IMPROVES_UPON",
+        "weight": 0.9,
+        "is_bridge": false,
+        "original_relations": [
+          {
+            "source": "arxiv_2211_12792v2_e1",
+            "target": "arxiv_2211_12792v2_e9",
+            "type": "IMPROVES_UPON",
+            "weight": 0.9,
+            "provenance": "paper_extraction",
+            "validation_status": "unvalidated_extraction",
+            "is_bridge": false
+          }
+        ]
+      },
+      {
+        "source": "arxiv_2211_12792v2_e7",
+        "target": "arxiv_2211_12792v2_e11",
+        "type": "RELIES_ON",
+        "weight": 0.7,
+        "is_bridge": false,
+        "original_relations": [
+          {
+            "source": "arxiv_2211_12792v2_e7",
+            "target": "arxiv_2211_12792v2_e11",
+            "type": "RELIES_ON",
+            "weight": 0.7,
+            "provenance": "paper_extraction",
+            "validation_status": "unvalidated_extraction",
+            "is_bridge": false
+          }
+        ]
+      },
+      {
+        "source": "arxiv_2211_12792v2_e8",
+        "target": "arxiv_2211_12792v2_e11",
+        "type": "RELIES_ON",
+        "weight": 0.7,
+        "is_bridge": false,
+        "original_relations": [
+          {
+            "source": "arxiv_2211_12792v2_e8",
+            "target": "arxiv_2211_12792v2_e11",
+            "type": "RELIES_ON",
+            "weight": 0.7,
+            "provenance": "paper_extraction",
+            "validation_status": "unvalidated_extraction",
+            "is_bridge": false
+          }
+        ]
+      },
+      {
+        "source": "arxiv_2211_12792v2_e9",
+        "target": "arxiv_2211_12792v2_e11",
+        "type": "RELIES_ON",
+        "weight": 0.7,
+        "is_bridge": false,
+        "original_relations": [
+          {
+            "source": "arxiv_2211_12792v2_e9",
+            "target": "arxiv_2211_12792v2_e11",
+            "type": "RELIES_ON",
+            "weight": 0.7,
+            "provenance": "paper_extraction",
+            "validation_status": "unvalidated_extraction",
+            "is_bridge": false
+          }
+        ]
+      },
+      {
+        "source": "arxiv_2211_12792v2_e10",
+        "target": "arxiv_2211_12792v2_e11",
+        "type": "COMPARES_WITH",
+        "weight": 0.65,
+        "is_bridge": true,
+        "original_relations": [
+          {
+            "source": "arxiv_2211_12792v2_e10",
+            "target": "arxiv_2211_12792v2_e11",
+            "type": "COMPARES_WITH",
+            "weight": 0.65,
+            "provenance": "paper_extraction",
+            "validation_status": "unvalidated_extraction",
+            "is_bridge": true
+          }
+        ]
+      },
+      {
+        "source": "arxiv_2211_12792v2_e1",
+        "target": "arxiv_2211_12792v2_e17",
+        "type": "EVALUATED_ON",
+        "weight": 0.95,
+        "is_bridge": false,
+        "original_relations": [
+          {
+            "source": "arxiv_2211_12792v2_e1",
+            "target": "arxiv_2211_12792v2_e17",
+            "type": "EVALUATED_ON",
+            "weight": 0.95,
+            "provenance": "paper_extraction",
+            "validation_status": "unvalidated_extraction",
+            "is_bridge": false
+          }
+        ]
+      },
+      {
+        "source": "arxiv_2211_12792v2_e1",
+        "target": "arxiv_2211_12792v2_e12",
+        "type": "EVALUATED_FOR",
+        "weight": 0.94,
+        "is_bridge": true,
+        "original_relations": [
+          {
+            "source": "arxiv_2211_12792v2_e1",
+            "target": "arxiv_2211_12792v2_e12",
+            "type": "EVALUATED_FOR",
+            "weight": 0.94,
+            "provenance": "paper_extraction",
+            "validation_status": "unvalidated_extraction",
+            "is_bridge": true
+          }
+        ]
+      },
+      {
+        "source": "arxiv_2211_12792v2_e1",
+        "target": "arxiv_2211_12792v2_e13",
+        "type": "EVALUATED_FOR",
+        "weight": 0.94,
+        "is_bridge": true,
+        "original_relations": [
+          {
+            "source": "arxiv_2211_12792v2_e1",
+            "target": "arxiv_2211_12792v2_e13",
+            "type": "EVALUATED_FOR",
+            "weight": 0.94,
+            "provenance": "paper_extraction",
+            "validation_status": "unvalidated_extraction",
+            "is_bridge": true
+          }
+        ]
+      },
+      {
+        "source": "arxiv_2211_12792v2_e1",
+        "target": "arxiv_2211_12792v2_e14",
+        "type": "OPTIMIZES_METRIC",
+        "weight": 0.93,
+        "is_bridge": true,
+        "original_relations": [
+          {
+            "source": "arxiv_2211_12792v2_e1",
+            "target": "arxiv_2211_12792v2_e14",
+            "type": "OPTIMIZES_METRIC",
+            "weight": 0.93,
+            "provenance": "paper_extraction",
+            "validation_status": "unvalidated_extraction",
+            "is_bridge": true
+          }
+        ]
+      },
+      {
+        "source": "arxiv_2211_12792v2_e1",
+        "target": "arxiv_2211_12792v2_e15",
+        "type": "OPTIMIZES_METRIC",
+        "weight": 0.92,
+        "is_bridge": true,
+        "original_relations": [
+          {
+            "source": "arxiv_2211_12792v2_e1",
+            "target": "arxiv_2211_12792v2_e15",
+            "type": "OPTIMIZES_METRIC",
+            "weight": 0.92,
+            "provenance": "paper_extraction",
+            "validation_status": "unvalidated_extraction",
+            "is_bridge": true
+          }
+        ]
+      },
+      {
+        "source": "arxiv_2211_12792v2_e1",
+        "target": "arxiv_2211_12792v2_e16",
+        "type": "OPTIMIZES_METRIC",
+        "weight": 0.91,
+        "is_bridge": true,
+        "original_relations": [
+          {
+            "source": "arxiv_2211_12792v2_e1",
+            "target": "arxiv_2211_12792v2_e16",
+            "type": "OPTIMIZES_METRIC",
+            "weight": 0.91,
+            "provenance": "paper_extraction",
+            "validation_status": "unvalidated_extraction",
+            "is_bridge": true
+          }
+        ]
+      },
+      {
+        "source": "arxiv_2211_12792v2_e7",
+        "target": "arxiv_2211_12792v2_e17",
+        "type": "EVALUATED_ON",
+        "weight": 0.8,
+        "is_bridge": false,
+        "original_relations": [
+          {
+            "source": "arxiv_2211_12792v2_e7",
+            "target": "arxiv_2211_12792v2_e17",
+            "type": "EVALUATED_ON",
+            "weight": 0.8,
+            "provenance": "paper_extraction",
+            "validation_status": "unvalidated_extraction",
+            "is_bridge": false
+          }
+        ]
+      }
+    ],
+    "node_count": 17,
+    "edge_count": 21,
+    "articulation_points": [
+      "arxiv_2211_12792v2_e5",
+      "arxiv_2211_12792v2_e11",
+      "arxiv_2211_12792v2_e1"
+    ],
+    "bridges": [
+      [
+        "arxiv_2211_12792v2_e5",
+        "arxiv_2211_12792v2_e6"
+      ],
+      [
+        "arxiv_2211_12792v2_e11",
+        "arxiv_2211_12792v2_e10"
+      ],
+      [
+        "arxiv_2211_12792v2_e1",
+        "arxiv_2211_12792v2_e12"
+      ],
+      [
+        "arxiv_2211_12792v2_e1",
+        "arxiv_2211_12792v2_e13"
+      ],
+      [
+        "arxiv_2211_12792v2_e1",
+        "arxiv_2211_12792v2_e14"
+      ],
+      [
+        "arxiv_2211_12792v2_e1",
+        "arxiv_2211_12792v2_e15"
+      ],
+      [
+        "arxiv_2211_12792v2_e1",
+        "arxiv_2211_12792v2_e16"
+      ]
+    ],
+    "compression_ratio": 1,
+    "diagnostics": {
+      "total_nodes": 17,
+      "num_sccs": 17,
+      "scc_sizes": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "max_scc_size": 1,
+      "max_scc_ratio": 0.059,
+      "has_giant_scc": false
+    }
+  }
+}

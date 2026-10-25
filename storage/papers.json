@@ -1,0 +1,44 @@
+[
+  {
+    "paper_id": "web_1792477493161_63re",
+    "title": "Artificial intelligence - Wikipedia",
+    "filename": "en.wikipedia.org.html",
+    "file_size_kb": 2214,
+    "content_hash": "4364685aa2876858af0c5d6f06e703cc2fb562a978cc89b077aa464b4b1fea45",
+    "is_preloaded": false,
+    "status": "ready",
+    "source_url": "https://en.wikipedia.org/wiki/Artificial_intelligence",
+    "num_entities": 18,
+    "num_relations": 15,
+    "num_communities": 18,
+    "summary": "Toggle the table of contents \n\n Artificial intelligence \n\n 183 languages \n\n Afrikaans \n\n Alemannisch \n\n አማርኛ \n\n Aragonés \n\n अंगिका \n\n العربية \n\n الدارجة \n\n مصرى \n\n অসমীয়া \n\n Asturianu \n\n Azərbaycanca \n\n تۆرکجه \n\n Башҡортса \n\n Boarisch \n\n Žemaitėška \n\n Bikol Central \n\n Беларуская"
+  },
+  {
+    "paper_id": "arxiv_2211.12792v2",
+    "title": "MECCH: Metapath Context Convolution-based Heterogeneous Graph Neural Networks",
+    "filename": "2211.12792v2.pdf",
+    "file_size_kb": 2833,
+    "content_hash": "3922fadccc9200f20d0894b28647f3fdbcf80aa91fc4d90d133fa227736a95fa",
+    "is_preloaded": false,
+    "status": "ready",
+    "source_url": "https://arxiv.org/abs/2211.12792v2",
+    "num_entities": 17,
+    "num_relations": 21,
+    "num_communities": 17,
+    "summary": "Authors: Xinyu Fu, Irwin King. Published: 2022-11-23. Heterogeneous graph neural networks (HGNNs) were proposed for representation learning on structural data with multiple types of nodes and edges. To deal with the performance degradation issue when HGNNs become deep, researcher"
+  },
+  {
+    "paper_id": "arxiv_math_0602191v4",
+    "title": "On the maximum number of cliques in a graph",
+    "filename": "math/0602191v4.pdf",
+    "file_size_kb": 231,
+    "content_hash": "45b3a8c1c4e391c3a24f8d79b9a080d78849e5ee619ecc43f0284144ac872ecf",
+    "is_preloaded": false,
+    "status": "ready",
+    "source_url": "https://arxiv.org/abs/math/0602191v4",
+    "num_entities": 18,
+    "num_relations": 19,
+    "num_communities": 18,
+    "summary": "Authors: David R. Wood. Published: 2006-02-09. A \\emph{clique} is a set of pairwise adjacent vertices in a graph. We determine the maximum number of cliques in a graph for the following graph classes: (1) graphs with $n$ vertices and $m$ edges; (2) graphs with $n$ vertices, $m$ e"
+  }
+]

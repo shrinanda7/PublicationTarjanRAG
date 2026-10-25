@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/tarjan-rag/gold-dataset.schema.json",
+  "title": "Tarjan-RAG Gold Evaluation Dataset",
+  "type": "object",
+  "required": ["schema_version", "corpus_version", "corpus_papers", "questions"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "corpus_version": {"type": "string", "minLength": 1},
+    "corpus_papers": {"type": "array", "minItems": 1, "items": {"type": "object", "required": ["paper_id", "title", "citation", "sha256"], "properties": {"paper_id": {"type": "string"}, "title": {"type": "string"}, "citation": {"type": "string"}, "sha256": {"type": "string", "pattern": "^[A-Fa-f0-9]{64}$"}, "source_url": {"type": "string"}, "access_note": {"type": "string"}}}},
+    "questions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["question_id", "paper_ids", "question", "category", "answerable", "gold_answers", "gold_evidence", "gold_paths", "required_hops", "annotation"],
+        "properties": {
+          "question_id": {"type": "string", "minLength": 1},
+          "paper_ids": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+          "question": {"type": "string", "minLength": 1},
+          "category": {"enum": ["single_paper", "multi_hop_single_paper", "multi_hop_cross_paper"]},
+          "answerable": {"type": "boolean"},
+          "gold_answers": {"type": "array", "items": {"type": "string"}},
+          "gold_evidence": {"type": "array", "items": {"type": "object", "required": ["paper_id", "chunk_id", "quote"], "properties": {"paper_id": {"type": "string"}, "chunk_id": {"type": "string"}, "page": {"type": ["integer", "null"]}, "section": {"type": ["string", "null"]}, "quote": {"type": "string", "minLength": 1}}}},
+          "gold_paths": {"type": "array", "items": {"type": "object", "required": ["nodes", "edges"], "properties": {"nodes": {"type": "array", "minItems": 2, "items": {"type": "string", "minLength": 1}}, "edges": {"type": "array", "minItems": 1, "items": {"type": "object", "required": ["source", "target", "type"], "properties": {"source": {"type": "string", "minLength": 1}, "target": {"type": "string", "minLength": 1}, "type": {"type": "string", "minLength": 1}, "paper_id": {"type": "string"}, "chunk_id": {"type": "string"}}}}}}},
+          "required_hops": {"type": "integer", "minimum": 0},
+          "annotation": {"type": "object", "required": ["status", "reviewers", "adjudicated"], "properties": {"status": {"enum": ["draft", "validated"]}, "reviewers": {"type": "array", "items": {"type": "string"}}, "adjudicated": {"type": "boolean"}, "notes": {"type": "string"}}}
+        }
+      }
+    }
+  }
+}
