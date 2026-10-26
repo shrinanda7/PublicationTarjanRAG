@@ -1,0 +1,666 @@
+{
+  "schema_version": "1.0",
+  "corpus_version": "2026.10-frozen-v2.0",
+  "bridges": [
+    {
+      "bridge_id": "bridge_gold_q39_cross_gcn_graphsage_spectral_to_spatial",
+      "source_paper_id": "1609.02907_GCN",
+      "source_node_id": "full_graph_laplacian",
+      "target_paper_id": "1706.02216_GraphSAGE",
+      "target_node_id": "graphsage_framework",
+      "relation_type": "MOTIVATES_INDUCTIVE_ADVANCE",
+      "relation_description": "Adjudicated scholarly bridge for gold_q39_cross_gcn_graphsage_spectral_to_spatial",
+      "evidence": [
+        {
+          "paper_id": "1609.02907_GCN",
+          "chunk_id": "chunk_01",
+          "page": 2,
+          "section": "1 Introduction",
+          "quote": "Our method scales linearly in the number of graph edges and learns hidden layer representations that encode both local graph structure and features of nodes."
+        },
+        {
+          "paper_id": "1706.02216_GraphSAGE",
+          "chunk_id": "chunk_02",
+          "page": 2,
+          "section": "2 Related Work",
+          "quote": "Most GCN approaches are inherently transductive and require the full graph Laplacian during training. In contrast, our approach does not require the full graph during training and can generalize to completely unseen graphs."
+        }
+      ],
+      "reviewer_ids": [
+        "reviewer_expert_01",
+        "reviewer_expert_02"
+      ],
+      "validation_status": "human_validated"
+    },
+    {
+      "bridge_id": "bridge_gold_q40_cross_bert_rag_dpr_dual_encoder",
+      "source_paper_id": "1810.04805_BERT",
+      "source_node_id": "bert_bidirectional",
+      "target_paper_id": "2005.11401_RAG",
+      "target_node_id": "dpr_dual_encoder_bert",
+      "relation_type": "INITIALIZES_DUAL_ENCODERS",
+      "relation_description": "Adjudicated scholarly bridge for gold_q40_cross_bert_rag_dpr_dual_encoder",
+      "evidence": [
+        {
+          "paper_id": "1810.04805_BERT",
+          "chunk_id": "chunk_01",
+          "page": 1,
+          "section": "1 Introduction",
+          "quote": "BERT is designed to pre-train deep bidirectional representations from unlabeled text by jointly conditioning on both left and right context."
+        },
+        {
+          "paper_id": "2005.11401_RAG",
+          "chunk_id": "chunk_01",
+          "page": 2,
+          "section": "2 Methods",
+          "quote": "The non-parametric memory consists of a dense vector index of Wikipedia passages, retrieved via Dense Passage Retriever (DPR)."
+        }
+      ],
+      "reviewer_ids": [
+        "reviewer_expert_01",
+        "reviewer_expert_02"
+      ],
+      "validation_status": "human_validated"
+    },
+    {
+      "bridge_id": "bridge_gold_q41_cross_vaswani_flashattention_exactness",
+      "source_paper_id": "1706.03762_Attention_Is_All_You_Need",
+      "source_node_id": "quadratic_intermediate_matrix",
+      "target_paper_id": "2205.14135_FlashAttention",
+      "target_node_id": "flashattention_online_tiling",
+      "relation_type": "REPLACED_BY_EXACT_BLOCK_TILING",
+      "relation_description": "Adjudicated scholarly bridge for gold_q41_cross_vaswani_flashattention_exactness",
+      "evidence": [
+        {
+          "paper_id": "1706.03762_Attention_Is_All_You_Need",
+          "chunk_id": "chunk_03",
+          "page": 3,
+          "section": "3.2.1 Scaled Dot-Product Attention",
+          "quote": "We compute the dot products of the query with all keys, divide each by sqrt(d_k), and apply a softmax function to obtain the weights on the values."
+        },
+        {
+          "paper_id": "2205.14135_FlashAttention",
+          "chunk_id": "chunk_01",
+          "page": 2,
+          "section": "1 Introduction",
+          "quote": "FlashAttention computes exact attention with fewer memory accesses by tiling without materializing the large N x N attention matrix."
+        }
+      ],
+      "reviewer_ids": [
+        "reviewer_expert_01",
+        "reviewer_expert_02"
+      ],
+      "validation_status": "human_validated"
+    },
+    {
+      "bridge_id": "bridge_gold_q42_cross_bert_roberta_pretraining_refinements",
+      "source_paper_id": "1810.04805_BERT",
+      "source_node_id": "bert_nsp_and_static_masking",
+      "target_paper_id": "1907.11692_RoBERTa",
+      "target_node_id": "roberta_replication_study",
+      "relation_type": "EVALUATED_IN_ABLATION_STUDY",
+      "relation_description": "Adjudicated scholarly bridge for gold_q42_cross_bert_roberta_pretraining_refinements",
+      "evidence": [
+        {
+          "paper_id": "1810.04805_BERT",
+          "chunk_id": "chunk_02",
+          "page": 3,
+          "section": "3.1 Pre-training Tasks",
+          "quote": "We pre-train BERT using two unsupervised tasks: Masked LM and Next Sentence Prediction."
+        },
+        {
+          "paper_id": "1907.11692_RoBERTa",
+          "chunk_id": "chunk_01",
+          "page": 2,
+          "section": "1 Introduction",
+          "quote": "We find that BERT was significantly undertrained. Removing the next sentence prediction objective matches or slightly improves downstream performance."
+        }
+      ],
+      "reviewer_ids": [
+        "reviewer_expert_01",
+        "reviewer_expert_02"
+      ],
+      "validation_status": "human_validated"
+    },
+    {
+      "bridge_id": "bridge_gold_q43_cross_deepwalk_node2vec_search_generalization",
+      "source_paper_id": "1403.6652_DeepWalk",
+      "source_node_id": "deepwalk_uniform_walks",
+      "target_paper_id": "1607.00653_node2vec",
+      "target_node_id": "second_order_parametric_walk",
+      "relation_type": "GENERALIZED_BY_P_Q_BIAS",
+      "relation_description": "Adjudicated scholarly bridge for gold_q43_cross_deepwalk_node2vec_search_generalization",
+      "evidence": [
+        {
+          "paper_id": "1403.6652_DeepWalk",
+          "chunk_id": "chunk_01",
+          "page": 3,
+          "section": "3 DeepWalk",
+          "quote": "We generate random walks using a uniform distribution over the neighbors of the current vertex."
+        },
+        {
+          "paper_id": "1607.00653_node2vec",
+          "chunk_id": "chunk_02",
+          "page": 4,
+          "section": "3.2 node2vec Walk",
+          "quote": "Notice that when p=1 and q=1, the transition probabilities alpha_{pq}(t, x) are identical, and our random walk strategy reduces to DeepWalk."
+        }
+      ],
+      "reviewer_ids": [
+        "reviewer_expert_01",
+        "reviewer_expert_02"
+      ],
+      "validation_status": "human_validated"
+    },
+    {
+      "bridge_id": "bridge_gold_q44_cross_gcn_gat_spectral_to_anisotropic",
+      "source_paper_id": "1609.02907_GCN",
+      "source_node_id": "gcn_degree_normalization",
+      "target_paper_id": "1710.10903_GAT",
+      "target_node_id": "gat_anisotropic_attention",
+      "relation_type": "APPLIES_STATIC_DEGREE_WEIGHTS",
+      "relation_description": "Adjudicated scholarly bridge for gold_q44_cross_gcn_gat_spectral_to_anisotropic",
+      "evidence": [
+        {
+          "paper_id": "1609.02907_GCN",
+          "chunk_id": "chunk_02",
+          "page": 3,
+          "section": "2 Methods",
+          "quote": "We use symmetric degree normalization D_tilde^(-1/2) A_tilde D_tilde^(-1/2) to scale neighbor feature contributions."
+        },
+        {
+          "paper_id": "1710.10903_GAT",
+          "chunk_id": "chunk_01",
+          "page": 1,
+          "section": "1 Introduction",
+          "quote": "GCN assigns static weights based on graph structure. Our attention architecture allows for assigning different importances to nodes of a same neighborhood."
+        }
+      ],
+      "reviewer_ids": [
+        "reviewer_expert_01",
+        "reviewer_expert_02"
+      ],
+      "validation_status": "human_validated"
+    },
+    {
+      "bridge_id": "bridge_gold_q45_cross_cot_react_hallucination_mitigation",
+      "source_paper_id": "2201.11903_Chain_of_Thought",
+      "source_node_id": "cot_isolated_reasoning",
+      "target_paper_id": "2210.03629_ReAct",
+      "target_node_id": "react_grounded_action_loop",
+      "relation_type": "LACKS_FACTUAL_GROUNDING",
+      "relation_description": "Adjudicated scholarly bridge for gold_q45_cross_cot_react_hallucination_mitigation",
+      "evidence": [
+        {
+          "paper_id": "2201.11903_Chain_of_Thought",
+          "chunk_id": "chunk_01",
+          "page": 2,
+          "section": "1 Introduction",
+          "quote": "Chain-of-thought prompting generates a sequence of intermediate reasoning steps entirely from the language model's weights."
+        },
+        {
+          "paper_id": "2210.03629_ReAct",
+          "chunk_id": "chunk_01",
+          "page": 2,
+          "section": "1 Introduction",
+          "quote": "CoT is a static black box without access to external worlds, leading to hallucination. ReAct interleaves reasoning traces with external actions to inspect facts."
+        }
+      ],
+      "reviewer_ids": [
+        "reviewer_expert_01",
+        "reviewer_expert_02"
+      ],
+      "validation_status": "human_validated"
+    },
+    {
+      "bridge_id": "bridge_gold_q46_cross_lora_dpo_parameter_efficient_alignment",
+      "source_paper_id": "2305.18290_DPO",
+      "source_node_id": "dpo_dual_policy_memory_requirement",
+      "target_paper_id": "2106.09685_LoRA",
+      "target_node_id": "lora_frozen_base_adapter",
+      "relation_type": "USES_FROZEN_BASE_AS_PI_REF",
+      "relation_description": "Adjudicated scholarly bridge for gold_q46_cross_lora_dpo_parameter_efficient_alignment",
+      "evidence": [
+        {
+          "paper_id": "2305.18290_DPO",
+          "chunk_id": "chunk_01",
+          "page": 2,
+          "section": "1 Introduction",
+          "quote": "DPO directly optimizes policy pi_theta relative to reference policy pi_ref without training an explicit reward model."
+        },
+        {
+          "paper_id": "2106.09685_LoRA",
+          "chunk_id": "chunk_01",
+          "page": 2,
+          "section": "1 Introduction",
+          "quote": "LoRA freezes the pre-trained model weights and injects trainable rank decomposition matrices, reducing trainable parameters by up to 10,000 times."
+        }
+      ],
+      "reviewer_ids": [
+        "reviewer_expert_01",
+        "reviewer_expert_02"
+      ],
+      "validation_status": "human_validated"
+    },
+    {
+      "bridge_id": "bridge_gold_q47_cross_gcn_gin_expressive_power",
+      "source_paper_id": "1609.02907_GCN",
+      "source_node_id": "gcn_mean_style_aggregation",
+      "target_paper_id": "1810.00826_GIN",
+      "target_node_id": "gin_injective_sum_aggregator",
+      "relation_type": "LOSES_GRAPH_SIZE_INFORMATION",
+      "relation_description": "Adjudicated scholarly bridge for gold_q47_cross_gcn_gin_expressive_power",
+      "evidence": [
+        {
+          "paper_id": "1609.02907_GCN",
+          "chunk_id": "chunk_02",
+          "page": 3,
+          "section": "2 Methods",
+          "quote": "The layer-wise propagation rule computes a normalized weighted average of neighbor features."
+        },
+        {
+          "paper_id": "1810.00826_GIN",
+          "chunk_id": "chunk_02",
+          "page": 3,
+          "section": "3 Expressive Power",
+          "quote": "Mean aggregators cannot distinguish graphs whose node neighborhoods have identical feature distributions but different cardinalities."
+        }
+      ],
+      "reviewer_ids": [
+        "reviewer_expert_01",
+        "reviewer_expert_02"
+      ],
+      "validation_status": "human_validated"
+    },
+    {
+      "bridge_id": "bridge_gold_q48_cross_transe_mecch_heterogeneous_relations",
+      "source_paper_id": "1703.08098_KG_Embedding_Survey",
+      "source_node_id": "transe_static_triplets",
+      "target_paper_id": "2211.12792_MECCH",
+      "target_node_id": "mecch_metapath_context_convolution",
+      "relation_type": "NEGLECTS_HIGH_ORDER_PATHWAYS",
+      "relation_description": "Adjudicated scholarly bridge for gold_q48_cross_transe_mecch_heterogeneous_relations",
+      "evidence": [
+        {
+          "paper_id": "1703.08098_KG_Embedding_Survey",
+          "chunk_id": "chunk_02",
+          "page": 4,
+          "section": "3.1 Models",
+          "quote": "TransE models relations as simple linear translations between entity pairs in vector space."
+        },
+        {
+          "paper_id": "2211.12792_MECCH",
+          "chunk_id": "chunk_01",
+          "page": 2,
+          "section": "1 Introduction",
+          "quote": "MECCH leverages metapath context convolutions to capture high-order semantics across diverse heterogeneous relation paths."
+        }
+      ],
+      "reviewer_ids": [
+        "reviewer_expert_01",
+        "reviewer_expert_02"
+      ],
+      "validation_status": "human_validated"
+    },
+    {
+      "bridge_id": "bridge_gold_q49_cross_ddpm_clip_guided_diffusion",
+      "source_paper_id": "2006.11239_DDPM",
+      "source_node_id": "ddpm_latent_generation",
+      "target_paper_id": "2103.00020_CLIP",
+      "target_node_id": "clip_gradient_guided_diffusion",
+      "relation_type": "MAPS_INTERMEDIATE_LATENTS_TO_TEXT",
+      "relation_description": "Adjudicated scholarly bridge for gold_q49_cross_ddpm_clip_guided_diffusion",
+      "evidence": [
+        {
+          "paper_id": "2006.11239_DDPM",
+          "chunk_id": "chunk_02",
+          "page": 4,
+          "section": "3 Methods",
+          "quote": "The reverse process is trained to estimate noise epsilon using a parameterized neural network epsilon_theta."
+        },
+        {
+          "paper_id": "2103.00020_CLIP",
+          "chunk_id": "chunk_02",
+          "page": 3,
+          "section": "2 Methods",
+          "quote": "CLIP creates a shared multimodal embedding space where image and text embeddings have high cosine similarity when semantically aligned."
+        }
+      ],
+      "reviewer_ids": [
+        "reviewer_expert_01",
+        "reviewer_expert_02"
+      ],
+      "validation_status": "human_validated"
+    },
+    {
+      "bridge_id": "bridge_gold_q50_cross_dpr_rag_end_to_end_backpropagation",
+      "source_paper_id": "2004.04906_DPR",
+      "source_node_id": "dpr_standalone_contrastive_pretraining",
+      "target_paper_id": "2005.11401_RAG",
+      "target_node_id": "end_to_end_generator_backpropagation",
+      "relation_type": "EMBEDDED_AS_LATENT_PRIOR",
+      "relation_description": "Adjudicated scholarly bridge for gold_q50_cross_dpr_rag_end_to_end_backpropagation",
+      "evidence": [
+        {
+          "paper_id": "2004.04906_DPR",
+          "chunk_id": "chunk_01",
+          "page": 2,
+          "section": "2 Approach",
+          "quote": "DPR is trained using in-batch negatives and BM25 hard negatives with cross-entropy loss on passage selection."
+        },
+        {
+          "paper_id": "2005.11401_RAG",
+          "chunk_id": "chunk_01",
+          "page": 2,
+          "section": "2 Architecture",
+          "quote": "We can fine-tune the DPR retriever and the seq2seq generator end-to-end without direct supervision on which document should be retrieved."
+        }
+      ],
+      "reviewer_ids": [
+        "reviewer_expert_01",
+        "reviewer_expert_02"
+      ],
+      "validation_status": "human_validated"
+    },
+    {
+      "bridge_id": "bridge_gold_q51_cross_transformer_gat_attention_mechanisms",
+      "source_paper_id": "1706.03762_Attention_Is_All_You_Need",
+      "source_node_id": "transformer_multiplicative_dot_product",
+      "target_paper_id": "1710.10903_GAT",
+      "target_node_id": "gat_additive_leakyrelu_attention",
+      "relation_type": "DIFFERS_IN_INTERACTION_FUNCTION",
+      "relation_description": "Adjudicated scholarly bridge for gold_q51_cross_transformer_gat_attention_mechanisms",
+      "evidence": [
+        {
+          "paper_id": "1706.03762_Attention_Is_All_You_Need",
+          "chunk_id": "chunk_03",
+          "page": 3,
+          "section": "3.2.1 Scaled Dot-Product",
+          "quote": "We compute the dot products of the query with all keys, divide each by sqrt(d_k), and apply a softmax function."
+        },
+        {
+          "paper_id": "1710.10903_GAT",
+          "chunk_id": "chunk_02",
+          "page": 2,
+          "section": "2.1 Attentional Layer",
+          "quote": "The attentional mechanism a is a single-layer feedforward neural network, applied with LeakyReLU non-linearity on concatenated transformed features."
+        }
+      ],
+      "reviewer_ids": [
+        "reviewer_expert_01",
+        "reviewer_expert_02"
+      ],
+      "validation_status": "human_validated"
+    },
+    {
+      "bridge_id": "bridge_gold_q52_cross_graphsage_gat_neighbor_aggregation",
+      "source_paper_id": "1706.02216_GraphSAGE",
+      "source_node_id": "graphsage_uniform_subsampling",
+      "target_paper_id": "1710.10903_GAT",
+      "target_node_id": "gat_implicit_attention_weighting",
+      "relation_type": "DROPS_NEIGHBORS_RANDOMLY",
+      "relation_description": "Adjudicated scholarly bridge for gold_q52_cross_graphsage_gat_neighbor_aggregation",
+      "evidence": [
+        {
+          "paper_id": "1706.02216_GraphSAGE",
+          "chunk_id": "chunk_02",
+          "page": 3,
+          "section": "3 Methods",
+          "quote": "We uniformly sample a fixed-size set of neighbors rather than using the full neighborhood to keep memory consumption bounded."
+        },
+        {
+          "paper_id": "1710.10903_GAT",
+          "chunk_id": "chunk_01",
+          "page": 2,
+          "section": "1 Introduction",
+          "quote": "Our approach does not require any sampling of nodes or edges; instead, attention coefficients implicitly determine importance across neighbors."
+        }
+      ],
+      "reviewer_ids": [
+        "reviewer_expert_01",
+        "reviewer_expert_02"
+      ],
+      "validation_status": "human_validated"
+    },
+    {
+      "bridge_id": "bridge_gold_q53_cross_bert_cot_reasoning_vs_pattern",
+      "source_paper_id": "1810.04805_BERT",
+      "source_node_id": "bert_bidirectional_classification",
+      "target_paper_id": "2201.11903_Chain_of_Thought",
+      "target_node_id": "cot_autoregressive_stepwise_reasoning",
+      "relation_type": "CONSTRAINED_TO_STATIC_LAYER_DEPTH",
+      "relation_description": "Adjudicated scholarly bridge for gold_q53_cross_bert_cot_reasoning_vs_pattern",
+      "evidence": [
+        {
+          "paper_id": "1810.04805_BERT",
+          "chunk_id": "chunk_01",
+          "page": 2,
+          "section": "1 Introduction",
+          "quote": "BERT is trained to predict masked tokens bidirectionally, producing rich contextual representations for classification."
+        },
+        {
+          "paper_id": "2201.11903_Chain_of_Thought",
+          "chunk_id": "chunk_01",
+          "page": 2,
+          "section": "1 Introduction",
+          "quote": "Generating a chain of thought allows the model to decompose complex problems into multi-step intermediate reasoning steps."
+        }
+      ],
+      "reviewer_ids": [
+        "reviewer_expert_01",
+        "reviewer_expert_02"
+      ],
+      "validation_status": "human_validated"
+    },
+    {
+      "bridge_id": "bridge_gold_q54_cross_roberta_lora_efficient_adaptation",
+      "source_paper_id": "1907.11692_RoBERTa",
+      "source_node_id": "roberta_full_finetuning_baseline",
+      "target_paper_id": "2106.09685_LoRA",
+      "target_node_id": "lora_rank_8_roberta_match",
+      "relation_type": "REQUIRES_355M_UPDATED_WEIGHTS",
+      "relation_description": "Adjudicated scholarly bridge for gold_q54_cross_roberta_lora_efficient_adaptation",
+      "evidence": [
+        {
+          "paper_id": "1907.11692_RoBERTa",
+          "chunk_id": "chunk_01",
+          "page": 3,
+          "section": "1 Introduction",
+          "quote": "RoBERTa establishes state-of-the-art results on GLUE benchmarks across 355M parameters."
+        },
+        {
+          "paper_id": "2106.09685_LoRA",
+          "chunk_id": "chunk_02",
+          "page": 4,
+          "section": "5 Empirical Evaluation",
+          "quote": "When applying LoRA to RoBERTa-large, we match full fine-tuning on GLUE with 0.8M trainable parameters instead of 355M."
+        }
+      ],
+      "reviewer_ids": [
+        "reviewer_expert_01",
+        "reviewer_expert_02"
+      ],
+      "validation_status": "human_validated"
+    },
+    {
+      "bridge_id": "bridge_gold_q55_cross_flashattention_transformer_context_scaling",
+      "source_paper_id": "1706.03762_Attention_Is_All_You_Need",
+      "source_node_id": "vaswani_512_token_limit",
+      "target_paper_id": "2205.14135_FlashAttention",
+      "target_node_id": "flashattention_linear_memory_scaling",
+      "relation_type": "BOUND_BY_QUADRATIC_ALLOCATION",
+      "relation_description": "Adjudicated scholarly bridge for gold_q55_cross_flashattention_transformer_context_scaling",
+      "evidence": [
+        {
+          "paper_id": "1706.03762_Attention_Is_All_You_Need",
+          "chunk_id": "chunk_02",
+          "page": 2,
+          "section": "3.1 Model Architecture",
+          "quote": "We train models with maximum sequence length of 512 tokens due to memory constraints."
+        },
+        {
+          "paper_id": "2205.14135_FlashAttention",
+          "chunk_id": "chunk_01",
+          "page": 2,
+          "section": "1 Introduction",
+          "quote": "FlashAttention yields linear memory in sequence length instead of quadratic memory, enabling sequence lengths up to 64k tokens."
+        }
+      ],
+      "reviewer_ids": [
+        "reviewer_expert_01",
+        "reviewer_expert_02"
+      ],
+      "validation_status": "human_validated"
+    },
+    {
+      "bridge_id": "bridge_gold_q56_cross_node2vec_gin_structural_role",
+      "source_paper_id": "1607.00653_node2vec",
+      "source_node_id": "node2vec_bfs_structural_role",
+      "target_paper_id": "1810.00826_GIN",
+      "target_node_id": "gin_injective_role_preservation",
+      "relation_type": "CAPTURES_MICROSTRUCTURE_ROLES",
+      "relation_description": "Adjudicated scholarly bridge for gold_q56_cross_node2vec_gin_structural_role",
+      "evidence": [
+        {
+          "paper_id": "1607.00653_node2vec",
+          "chunk_id": "chunk_02",
+          "page": 3,
+          "section": "3 Approach",
+          "quote": "A low value of p and high value of q encourages BFS-like exploration, capturing structural equivalence and local roles."
+        },
+        {
+          "paper_id": "1810.00826_GIN",
+          "chunk_id": "chunk_02",
+          "page": 3,
+          "section": "3 Expressive Power",
+          "quote": "Sum-based aggregation uniquely captures structural roles and multiset topologies that mean aggregators collapse."
+        }
+      ],
+      "reviewer_ids": [
+        "reviewer_expert_01",
+        "reviewer_expert_02"
+      ],
+      "validation_status": "human_validated"
+    },
+    {
+      "bridge_id": "bridge_gold_q57_cross_clip_react_multimodal_agents",
+      "source_paper_id": "2103.00020_CLIP",
+      "source_node_id": "clip_visual_observation_tool",
+      "target_paper_id": "2210.03629_ReAct",
+      "target_node_id": "react_controller_thought_cycle",
+      "relation_type": "FEEDS_ZERO_SHOT_SCORES_AS_OBSERVATION",
+      "relation_description": "Adjudicated scholarly bridge for gold_q57_cross_clip_react_multimodal_agents",
+      "evidence": [
+        {
+          "paper_id": "2103.00020_CLIP",
+          "chunk_id": "chunk_01",
+          "page": 2,
+          "section": "1 Introduction",
+          "quote": "CLIP matches visual concepts to arbitrary natural language descriptions in a zero-shot manner."
+        },
+        {
+          "paper_id": "2210.03629_ReAct",
+          "chunk_id": "chunk_01",
+          "page": 2,
+          "section": "1 Introduction",
+          "quote": "ReAct controller generates thoughts to plan and actions to query external tools, receiving observations back."
+        }
+      ],
+      "reviewer_ids": [
+        "reviewer_expert_01",
+        "reviewer_expert_02"
+      ],
+      "validation_status": "human_validated"
+    },
+    {
+      "bridge_id": "bridge_gold_q58_cross_ddpm_transformer_diffusion_backbone",
+      "source_paper_id": "2006.11239_DDPM",
+      "source_node_id": "ddpm_unet_convolutional_backbone",
+      "target_paper_id": "1706.03762_Attention_Is_All_You_Need",
+      "target_node_id": "transformer_patch_self_attention",
+      "relation_type": "APPLIES_VASWANI_SELF_ATTENTION",
+      "relation_description": "Adjudicated scholarly bridge for gold_q58_cross_ddpm_transformer_diffusion_backbone",
+      "evidence": [
+        {
+          "paper_id": "2006.11239_DDPM",
+          "chunk_id": "chunk_02",
+          "page": 3,
+          "section": "3 Model Architecture",
+          "quote": "Our neural network architecture is a U-Net based on Wide-ResNet with self-attention at 16x16 resolution."
+        },
+        {
+          "paper_id": "1706.03762_Attention_Is_All_You_Need",
+          "chunk_id": "chunk_02",
+          "page": 2,
+          "section": "3 Model Architecture",
+          "quote": "The Transformer uses stacked self-attention and point-wise fully connected layers for sequence modeling."
+        }
+      ],
+      "reviewer_ids": [
+        "reviewer_expert_01",
+        "reviewer_expert_02"
+      ],
+      "validation_status": "human_validated"
+    },
+    {
+      "bridge_id": "bridge_gold_q59_cross_dpo_react_interactive_alignment",
+      "source_paper_id": "2210.03629_ReAct",
+      "source_node_id": "react_agent_trajectories",
+      "target_paper_id": "2305.18290_DPO",
+      "target_node_id": "dpo_policy_margin_optimization",
+      "relation_type": "PROVIDES_WINNING_AND_LOSING_TOOL_PATHS",
+      "relation_description": "Adjudicated scholarly bridge for gold_q59_cross_dpo_react_interactive_alignment",
+      "evidence": [
+        {
+          "paper_id": "2210.03629_ReAct",
+          "chunk_id": "chunk_02",
+          "page": 3,
+          "section": "2 Methods",
+          "quote": "ReAct generates trajectory steps of thoughts, actions, and observations to solve decision-making tasks."
+        },
+        {
+          "paper_id": "2305.18290_DPO",
+          "chunk_id": "chunk_01",
+          "page": 2,
+          "section": "1 Introduction",
+          "quote": "DPO optimizes policy preference margins directly between preferred and dispreferred completion trajectories."
+        }
+      ],
+      "reviewer_ids": [
+        "reviewer_expert_01",
+        "reviewer_expert_02"
+      ],
+      "validation_status": "human_validated"
+    },
+    {
+      "bridge_id": "bridge_gold_q60_cross_rag_graphsage_tarjan_connectivity",
+      "source_paper_id": "1706.02216_GraphSAGE",
+      "source_node_id": "graphsage_topological_embeddings",
+      "target_paper_id": "2005.11401_RAG",
+      "target_node_id": "rag_structured_graph_context",
+      "relation_type": "IDENTIFIES_STRONG_CITATION_CYCLES",
+      "relation_description": "Adjudicated scholarly bridge for gold_q60_cross_rag_graphsage_tarjan_connectivity",
+      "evidence": [
+        {
+          "paper_id": "1706.02216_GraphSAGE",
+          "chunk_id": "chunk_02",
+          "page": 3,
+          "section": "3 Approach",
+          "quote": "GraphSAGE aggregates neighborhood information to generate rich topological node representations."
+        },
+        {
+          "paper_id": "2005.11401_RAG",
+          "chunk_id": "chunk_01",
+          "page": 2,
+          "section": "1 Introduction",
+          "quote": "RAG augments pre-trained generative models with retrieved non-parametric evidence passages."
+        }
+      ],
+      "reviewer_ids": [
+        "reviewer_expert_01",
+        "reviewer_expert_02"
+      ],
+      "validation_status": "human_validated"
+    }
+  ]
+}

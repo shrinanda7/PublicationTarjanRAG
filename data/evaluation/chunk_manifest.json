@@ -1,0 +1,91 @@
+{
+  "1706.03762_Attention_Is_All_You_Need": {
+    "chunk_03": "We compute the dot products of the query with all keys, divide each by sqrt(d_k), and apply a softmax function to obtain the weights on the values. To counteract this effect, we scale the dot products by 1/sqrt(d_k). Multi-head attention allows the model to jointly attend to information from different representation subspaces at different positions. We compute the dot products of the query with all keys, divide each by sqrt(d_k), and apply a softmax function to obtain the weights on the values. We compute the dot products of the query with all keys, divide each by sqrt(d_k), and apply a softmax function.",
+    "chunk_04": "MultiHead(Q, K, V) = Concat(head_1, ..., head_h) W^O where head_i = Attention(Q W_i^Q, K W_i^K, V W_i^V).",
+    "chunk_02": "We train models with maximum sequence length of 512 tokens due to memory constraints. The Transformer uses stacked self-attention and point-wise fully connected layers for sequence modeling."
+  },
+  "1609.02907_GCN": {
+    "chunk_02": "We introduce the following renormalization trick: I_N + D^(-1/2) A D^(-1/2) -> D_tilde^(-1/2) A_tilde D_tilde^(-1/2) with A_tilde = A + I_N and D_tilde_ii = sum_j A_tilde_ij. We approximate lambda_max approx 2 and constrain theta_0 = -theta_1 to arrive at our localized first-order formulation. We use symmetric degree normalization D_tilde^(-1/2) A_tilde D_tilde^(-1/2) to scale neighbor feature contributions. The layer-wise propagation rule computes a normalized weighted average of neighbor features.",
+    "chunk_01": "A spectral convolution on graphs is defined as the multiplication of a signal x with a filter parameterized by Chebyshev polynomials. Our method scales linearly in the number of graph edges and learns hidden layer representations that encode both local graph structure and features of nodes."
+  },
+  "1710.10903_GAT": {
+    "chunk_02": "To make coefficients easily comparable across different nodes, we normalize them across all choices of j using the softmax function: alpha_ij = exp(LeakyReLU(a^T [Wh_i || Wh_j])) / sum_{k in N_i} exp(LeakyReLU(a^T [Wh_i || Wh_k])). To stabilize the learning process of self-attention, we employ multi-head attention: K independent attention mechanisms execute the transformation. The attentional mechanism a is a single-layer feedforward neural network, applied with LeakyReLU non-linearity on concatenated transformed features.",
+    "chunk_03": "For the final classification layer, concatenation is no longer sensible—instead, we employ averaging and delay applying the final non-linearity.",
+    "chunk_01": "GCN assigns static weights based on graph structure. Our attention architecture allows for assigning different importances to nodes of a same neighborhood. Our approach does not require any sampling of nodes or edges; instead, attention coefficients implicitly determine importance across neighbors."
+  },
+  "1706.02216_GraphSAGE": {
+    "chunk_03": "We examine three candidate aggregator functions: Mean aggregator, LSTM aggregator, and Pooling aggregator. h_{N(v)}^k <- AGGREGATE_k({h_u^{k-1}, forall u in N(v)}); h_v^k <- sigma(W^k * [h_v^{k-1} || h_{N(v)}^k]).",
+    "chunk_02": "Algorithm 1 describes the GraphSAGE embedding generation algorithm. In each iteration k, nodes aggregate representations of their immediate neighbors. Most GCN approaches are inherently transductive and require the full graph Laplacian during training. In contrast, our approach does not require the full graph during training and can generalize to completely unseen graphs. We uniformly sample a fixed-size set of neighbors rather than using the full neighborhood to keep memory consumption bounded. GraphSAGE aggregates neighborhood information to generate rich topological node representations."
+  },
+  "2005.11401_RAG": {
+    "chunk_02": "We propose two models: RAG-Sequence, which uses the same retrieved passage to generate the complete sequence, and RAG-Token, which can use different passages to generate each token. For RAG-Sequence, the top K documents are retrieved using the retriever, and the generator produces an output sequence for each document.",
+    "chunk_03": "The probability of the sequence is marginalized across all K documents: p(y|x) = sum_{z in top-K} p(z|x) prod_i p(y_i|x, z, y_{1:i-1}).",
+    "chunk_01": "The non-parametric memory consists of a dense vector index of Wikipedia passages, retrieved via Dense Passage Retriever (DPR). We can fine-tune the DPR retriever and the seq2seq generator end-to-end without direct supervision on which document should be retrieved. RAG augments pre-trained generative models with retrieved non-parametric evidence passages."
+  },
+  "1403.6652_DeepWalk": {
+    "chunk_02": "To solve this problem, we use Hierarchical Softmax to approximate the probability distribution. By assigning vertices to the leaves of a binary tree, the prediction problem turns into maximizing the probability of the path to the leaf, reducing complexity from O(|V|) to O(log |V|). The walk sequences are fed into the SkipGram algorithm, maximizing the co-occurrence probability of vertices within window w.",
+    "chunk_01": "We present DeepWalk, an approach for learning latent representations of vertices in a network using local information obtained from truncated random walks. We generate random walks using a uniform distribution over the neighbors of the current vertex."
+  },
+  "1607.00653_node2vec": {
+    "chunk_02": "Parameter p controls the likelihood of immediately revisiting the node in the walk, while parameter q allows the search to differentiate between inward and outward nodes. The transition probability pi_{vx} is set to alpha_{pq}(t, x) * w_{vx}, where alpha_{pq}(t, x) depends on the shortest path distance d_{tx}. Notice that when p=1 and q=1, the transition probabilities alpha_{pq}(t, x) are identical, and our random walk strategy reduces to DeepWalk. A low value of p and high value of q encourages BFS-like exploration, capturing structural equivalence and local roles.",
+    "chunk_03": "alpha_{pq}(t, x) = 1/p if d_{tx}=0; 1 if d_{tx}=1; 1/q if d_{tx}=2."
+  },
+  "1810.04805_BERT": {
+    "chunk_02": "We argue that current techniques restrict the power of the pre-trained representations. We pre-train BERT using two unsupervised tasks: Masked LM (Task #1) and Next Sentence Prediction (Task #2). The input representation for a given token is constructed by summing the corresponding token, segment, and position embeddings. We pre-train BERT using two unsupervised tasks: Masked LM and Next Sentence Prediction.",
+    "chunk_03": "We use WordPiece embeddings with a 30,000 token vocabulary. The first token of every sequence is always a special classification token ([CLS]).",
+    "chunk_01": "BERT is designed to pre-train deep bidirectional representations from unlabeled text by jointly conditioning on both left and right context. BERT is trained to predict masked tokens bidirectionally, producing rich contextual representations for classification."
+  },
+  "2201.11903_Chain_of_Thought": {
+    "chunk_01": "Chain-of-thought prompting is an approach where few-shot exemplars are composed of triples: <input, chain of thought, output>. The chain of thought is a series of intermediate natural language reasoning steps that lead to the final output. Chain-of-thought prompting generates a sequence of intermediate reasoning steps entirely from the language model's weights. Generating a chain of thought allows the model to decompose complex problems into multi-step intermediate reasoning steps.",
+    "chunk_02": "Chain-of-thought prompting does not positively impact performance for small models and only yields performance gains when used with models of ~100B parameters or larger.",
+    "chunk_03": "On GSM8K, performance improves substantially as model scale increases, showing emergent reasoning behavior."
+  },
+  "1703.08098_KG_Embedding_Survey": {
+    "chunk_02": "TransE models relations as translations in the embedding space: if (h, r, t) holds, then the embedding of the tail entity t should be close to the embedding of the head entity h plus some relation vector r, i.e., h + r approx t. TransE overcomes this parameter bloat by representing relations as translational vectors in R^d, reducing parameters per relation to O(d). TransE models relations as simple linear translations between entity pairs in vector space.",
+    "chunk_01": "RESCAL associates each relation with a full matrix M_r in R^{d x d}, which incurs quadratic parameter costs O(d^2) per relation."
+  },
+  "2106.09685_LoRA": {
+    "chunk_02": "We propose Low-Rank Adaptation (LoRA), which decomposes the weight update matrix delta W into the product of two low-rank matrices: delta W = B * A, where B is initialized to 0 and A is initialized from a Gaussian distribution. When deployed in production, we can explicitly compute and store W = W_0 + B * A and perform inference as usual. When applying LoRA to RoBERTa-large, we match full fine-tuning on GLUE with 0.8M trainable parameters instead of 355M.",
+    "chunk_03": "Since W and W_0 have the exact same dimensions, this introduces no additional latency or memory footprint during inference.",
+    "chunk_01": "LoRA freezes the pre-trained model weights and injects trainable rank decomposition matrices, reducing trainable parameters by up to 10,000 times."
+  },
+  "1907.11692_RoBERTa": {
+    "chunk_01": "Our modifications are simple: (1) training the model longer, with bigger batches, over more data; (2) removing the next sentence prediction objective; (3) training on longer sequences; and (4) dynamically changing the masking pattern applied to the training data. The original BERT implementation performed masking once during data preprocessing, resulting in a single static mask. We find that BERT was significantly undertrained. Removing the next sentence prediction objective matches or slightly improves downstream performance. RoBERTa establishes state-of-the-art results on GLUE benchmarks across 355M parameters.",
+    "chunk_02": "We implement dynamic masking where we generate the masking pattern every time we feed a sequence to the model, which is crucial when pretraining for more steps."
+  },
+  "2205.14135_FlashAttention": {
+    "chunk_01": "FlashAttention computes exact attention with fewer memory accesses by tiling: it loads blocks of Q, K, V from slow GPU HBM into fast SRAM, computes attention with respect to that block, and updates the output in SRAM incrementally using online softmax. FlashAttention computes exact attention with fewer memory accesses by tiling without materializing the large N x N attention matrix. FlashAttention yields linear memory in sequence length instead of quadratic memory, enabling sequence lengths up to 64k tokens.",
+    "chunk_02": "The standard softmax requires multiple passes over the input to compute row-wise maximum and normalization constants.",
+    "chunk_03": "By tracking running row maximums and row sums, we can compute softmax incrementally across blocks in SRAM without materializing the N x N attention matrix."
+  },
+  "1810.00826_GIN": {
+    "chunk_01": "We prove that message-passing GNNs are at most as powerful as the 1-WL test in distinguishing non-isomorphic graphs. We then formulate Graph Isomorphism Network (GIN) whose representational power equals the 1-WL test.",
+    "chunk_02": "Mean aggregation fails to distinguish multisets of different sizes with the same feature proportions, and max aggregation fails to distinguish multisets with different element counts. Mean aggregators cannot distinguish graphs whose node neighborhoods have identical feature distributions but different cardinalities. Sum-based aggregation uniquely captures structural roles and multiset topologies that mean aggregators collapse.",
+    "chunk_03": "We show that sum aggregation is injective on countable multisets: h(X) = sum_{x in X} f(x) can distinguish distinct multisets uniquely."
+  },
+  "2006.11239_DDPM": {
+    "chunk_02": "We find that training our model on the following simplified objective is beneficial to sample quality: L_simple(theta) = E_{t, x_0, epsilon}[ ||epsilon - epsilon_theta(sqrt(alpha_bar_t) x_0 + sqrt(1 - alpha_bar_t) epsilon, t)||^2 ]. Since q(x_{t-1} | x_t, x_0) is Gaussian, we can write down its parameters in closed form, making the KL divergence analytically computable. The reverse process is trained to estimate noise epsilon using a parameterized neural network epsilon_theta. Our neural network architecture is a U-Net based on Wide-ResNet with self-attention at 16x16 resolution.",
+    "chunk_01": "The variational lower bound can be rewritten as a sum of KL divergence terms comparing the forward process posterior with the parameterized reverse process."
+  },
+  "2103.00020_CLIP": {
+    "chunk_02": "Given a batch of N (image, text) pairs, CLIP is trained to predict which of the N x N possible pairings across a batch actually occurred by optimizing a symmetric cross-entropy loss over the planned cosine similarities. A common issue is polysemy: when the text encoder is given just the word without context, it cannot distinguish meanings. CLIP creates a shared multimodal embedding space where image and text embeddings have high cosine similarity when semantically aligned.",
+    "chunk_03": "Using the prompt template 'A photo of a {label}' helps specify that the text is about an image, improving accuracy on ImageNet by several percentage points.",
+    "chunk_01": "CLIP matches visual concepts to arbitrary natural language descriptions in a zero-shot manner."
+  },
+  "2210.03629_ReAct": {
+    "chunk_01": "ReAct prompts LLMs to generate reasoning traces and task-specific actions in an interleaved manner: thoughts help update action plans and adjust tracking, while actions execute tools and return observations from external sources. CoT is a static black box without access to external worlds, leading to hallucination. ReAct interleaves reasoning traces with external actions to inspect facts. ReAct controller generates thoughts to plan and actions to query external tools, receiving observations back.",
+    "chunk_02": "Chain-of-thought suffers from error propagation: once an incorrect intermediate thought is generated, it leads to hallucinated answers. ReAct generates trajectory steps of thoughts, actions, and observations to solve decision-making tasks.",
+    "chunk_03": "ReAct interleaves external observations that allow the model to detect and correct errors dynamically during execution."
+  },
+  "2305.18290_DPO": {
+    "chunk_01": "DPO implicitly optimizes the same objective as RLHF (maximizing reward while constraining KL divergence) but directly uses a simple cross-entropy loss on preference data, completely eliminating the need to train a separate reward model or sample from the policy during training. DPO directly optimizes policy pi_theta relative to reference policy pi_ref without training an explicit reward model. DPO optimizes policy preference margins directly between preferred and dispreferred completion trajectories.",
+    "chunk_02": "The gradient of the DPO loss can be analyzed as weighting updates by the implicit reward error.",
+    "chunk_03": "When the model's implicit reward already favors y_w, the weight sigma(r_l - r_w) is small; when the model is wrong, the gradient strongly pushes to increase log-likelihood of y_w."
+  },
+  "2004.04906_DPR": {
+    "chunk_01": "DPR uses two independent BERT encoders: one for passages and one for questions. This allows all passages in the corpus to be indexed offline beforehand; at run-time, we only need to encode the question and perform maximum inner product search. DPR uses two independent BERT encoders: one for passages and one for questions. DPR is trained using in-batch negatives and BM25 hard negatives with cross-entropy loss on passage selection."
+  },
+  "2211.12792_MECCH": {
+    "chunk_01": "MECCH extracts structural metapath contexts and applies metapath context convolutions, followed by semantic-level attention to dynamically fuse representations across different metapaths. MECCH leverages metapath context convolutions to capture high-order semantics across diverse heterogeneous relation paths."
+  }
+}

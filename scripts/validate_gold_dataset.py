@@ -1,6 +1,10 @@
 """Validate human-authored gold question annotations before evaluation."""
 import argparse
 import sys
+from pathlib import Path
+
+# Ensure project root is in sys.path
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from backend.evaluation.gold_dataset import load_dataset
 

@@ -1,12 +1,23 @@
 """Central configuration module for Knowledge-Graph RAG."""
 import os
 from pathlib import Path
-from pydantic import BaseModel, Field
-from dotenv import load_dotenv
+try:
+    from pydantic import BaseModel, Field
+except ImportError:
+    class BaseModel:
+        def __init__(self, **kwargs):
+            for k, v in kwargs.items():
+                setattr(self, k, v)
+    def Field(default=None, **kwargs):
+        return default
 
-# Load .env file with absolute path
-_env_path = Path(__file__).resolve().parent.parent / ".env"
-load_dotenv(_env_path, override=True)
+try:
+    from dotenv import load_dotenv
+    # Load .env file with absolute path
+    _env_path = Path(__file__).resolve().parent.parent / ".env"
+    load_dotenv(_env_path, override=True)
+except ImportError:
+    pass
 
 class Settings(BaseModel):
     # Base paths
@@ -17,7 +28,14 @@ class Settings(BaseModel):
 
     # Groq Cloud LLM
     GROQ_API_KEY: str = os.getenv("GROQ_API_KEY", "")
-    GROQ_MODEL: str = os.getenv("GROQ_MODEL", "openai/gpt-oss-120b")
+    GROQ_MODEL: str = os.getenv("GROQ_MODEL", "llama-3.3-70b-versatile")
+
+    # Gemini Cloud LLM
+    GEMINI_API_KEY: str = os.getenv("GEMINI_API_KEY", "")
+    GEMINI_MODEL: str = os.getenv("GEMINI_MODEL", "gemini-2.5-flash")
+
+    # Three-Tier Fallback Priority Order: Groq -> Gemini -> Ollama
+    LLM_PROVIDER_ORDER: str = os.getenv("LLM_PROVIDER_ORDER", "groq,gemini,ollama")
 
     # Ollama Configuration
     OLLAMA_BASE_URL: str = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")

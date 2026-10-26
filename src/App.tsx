@@ -57,7 +57,7 @@ const [isQuerying, setIsQuerying] = useState(false);
 const [queryResult, setQueryResult] = useState<QueryResult | null>(null);
 const [streamedAnswer, setStreamedAnswer] = useState("");
 const [activeEngine, setActiveEngine] = useState(
-"Groq (openai/gpt-oss-120b)"
+"Groq (llama-3.3-70b-versatile)"
 );
 
 // Neo4j modal state

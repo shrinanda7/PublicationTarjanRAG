@@ -16,6 +16,9 @@ import sys
 from pathlib import Path
 from typing import Any, Dict, List
 
+# Ensure project root is in sys.path
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
+
 from backend.evaluation.gold_dataset import load_dataset
 from backend.evaluation.metrics import (
     abstention_accuracy,

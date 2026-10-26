@@ -4,7 +4,7 @@ import { buildQuotientGraph, findBridgesAndArticulationPoints } from "./graphEng
 export interface ExtractedGraphResult {
   original_graph: GraphTopology;
   compressed_graph: GraphTopology;
-  source: "groq" | "ollama" | "heuristic";
+  source: "groq" | "gemini" | "ollama" | "heuristic";
 }
 
 interface RawLLMNode {
@@ -29,7 +29,7 @@ interface RawExtractionResponse {
 
 /**
  * Extracts a structured scientific knowledge graph from research paper text.
- * Multi-tier engine: Groq (ultra-fast) -> Local Ollama -> Heuristic domain parser.
+ * Multi-tier engine: Groq (ultra-fast) -> Gemini (cloud reasoning) -> Local Ollama -> Heuristic domain parser.
  */
 export async function extractPaperKnowledgeGraph(
   paperId: string,
@@ -41,7 +41,7 @@ export async function extractPaperKnowledgeGraph(
   // Prepare focused context window (first ~6000 chars covers title, abstract, intro, and methodology)
   const sampleText = fullText.slice(0, 7500);
 
-  // 1. Try Groq Cloud LLM (openai/gpt-oss-120b or qwen/qwen3.8-27b)
+  // 1. Try Groq Cloud LLM (llama-3.3-70b-versatile or llama-3.1-8b-instant)
   const groqKey = process.env.GROQ_API_KEY;
   if (groqKey && sampleText.length > 80) {
     try {
@@ -52,11 +52,26 @@ export async function extractPaperKnowledgeGraph(
         return { ...finalized, source: "groq" };
       }
     } catch (err: any) {
-      console.warn(`[Extractor] Groq extraction warning: ${err?.message?.slice(0, 100)}. Trying fallback...`);
+      console.warn(`[Extractor] Groq extraction warning: ${err?.message?.slice(0, 100)}. Trying Gemini...`);
     }
   }
 
-  // 2. Try Local Ollama
+  // 2. Try Gemini Cloud LLM (gemini-2.5-flash)
+  const geminiKey = process.env.GEMINI_API_KEY;
+  if (geminiKey && sampleText.length > 80) {
+    try {
+      const geminiResult = await extractWithGemini(geminiKey, title, sampleText, slug);
+      if (geminiResult && geminiResult.nodes.length >= 6) {
+        console.log(`[Extractor] Gemini extracted ${geminiResult.nodes.length} entities & ${geminiResult.edges.length} relations for paper '${title}'`);
+        const finalized = finalizeGraph(geminiResult.nodes, geminiResult.edges, title);
+        return { ...finalized, source: "gemini" };
+      }
+    } catch (err: any) {
+      console.warn(`[Extractor] Gemini extraction warning: ${err?.message?.slice(0, 100)}. Falling to Ollama...`);
+    }
+  }
+
+  // 3. Try Local Ollama
   const ollamaBaseUrl = process.env.OLLAMA_BASE_URL || "http://localhost:11434";
   if (sampleText.length > 80) {
     try {
@@ -71,7 +86,7 @@ export async function extractPaperKnowledgeGraph(
     }
   }
 
-  // 3. Fallback: High-precision semantic heuristic extractor from actual text
+  // 4. Fallback: High-precision semantic heuristic extractor from actual text
   console.log(`[Extractor] Using heuristic extraction from actual document text for '${title}'`);
   const heuristicResult = extractHeuristically(title, fullText, slug);
   const finalized = finalizeGraph(heuristicResult.nodes, heuristicResult.edges, title);
@@ -85,9 +100,9 @@ async function extractWithGroq(
   slug: string
 ): Promise<{ nodes: GraphNode[]; edges: GraphEdge[] } | null> {
   const models = [
-    process.env.GROQ_MODEL || "openai/gpt-oss-120b",
-    "qwen/qwen3.8-27b",
-    "openai/gpt-oss-20b"
+    process.env.GROQ_MODEL || "llama-3.3-70b-versatile",
+    "llama-3.1-8b-instant",
+    "mixtral-8x7b-32768"
   ];
 
   const prompt = `Extract a comprehensive, interconnected scientific knowledge graph from the research paper text below.
@@ -157,6 +172,80 @@ ${text}`;
     }
   }
 
+  return null;
+}
+
+async function extractWithGemini(
+  apiKey: string,
+  title: string,
+  text: string,
+  slug: string
+): Promise<{ nodes: GraphNode[]; edges: GraphEdge[] } | null> {
+  const model = process.env.GEMINI_MODEL || "gemini-2.5-flash";
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`;
+
+  const prompt = `Extract a comprehensive, interconnected scientific knowledge graph from the research paper text below.
+
+PAPER TITLE: "${title}"
+
+REQUIREMENTS:
+1. Extract 12 to 20 key domain entities:
+   - Types must be one of: "Architecture", "Method", "Dataset", "Metric", "Concept", "Theory", "Task"
+   - Include the core model/architecture, specific sub-modules, datasets, evaluation metrics, and comparative baseline models.
+2. Extract 15 to 25 directed relationships connecting these entities:
+   - Predicates in UPPER_SNAKE_CASE (e.g., USES, EVALUATED_ON, PROPOSES, IMPROVES_UPON, TRAINED_ON, OPTIMIZES_METRIC, CROSS_ATTENTION, FEEDS_INTO).
+   - Include bidirectional/cyclic interaction loops between internal processing layers.
+   - Mark evaluation links to datasets and metrics.
+
+OUTPUT FORMAT:
+Strict JSON only with this schema:
+{
+  "entities": [
+    {"id": "e1", "name": "Exact Entity Name", "type": "Architecture", "description": "Concise summary"}
+  ],
+  "relationships": [
+    {"source": "e1", "target": "e2", "type": "USES", "description": "Details", "weight": 0.9}
+  ]
+}
+
+RESEARCH TEXT:
+${text}`;
+
+  try {
+    const response = await fetch(url, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "User-Agent": "aistudio-build",
+      },
+      body: JSON.stringify({
+        contents: [{ role: "user", parts: [{ text: prompt }] }],
+        systemInstruction: {
+          parts: [{ text: "You are an expert scientific knowledge graph constructor. Output ONLY valid JSON matching the requested schema." }],
+        },
+        generationConfig: {
+          temperature: 0.1,
+          responseMimeType: "application/json",
+        },
+      }),
+    });
+
+    if (!response.ok) return null;
+    const data = (await response.json()) as any;
+    const candidates = data.candidates || [];
+    if (!candidates.length) return null;
+    const parts = candidates[0].content?.parts || [];
+    const rawContent = parts.map((p: any) => p.text || "").join("");
+    if (!rawContent) return null;
+
+    const parsed: RawExtractionResponse = JSON.parse(rawContent);
+    const graph = processRawExtraction(parsed, slug, title);
+    if (graph && graph.nodes.length >= 6) {
+      return graph;
+    }
+  } catch (err) {
+    console.warn(`[Gemini Extract Error] ${err}`);
+  }
   return null;
 }
 

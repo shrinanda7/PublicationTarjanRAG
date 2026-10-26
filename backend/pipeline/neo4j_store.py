@@ -382,16 +382,15 @@ class Neo4jStore:
                 except Exception as e:
                     logger.warning(f"Neo4j query error: {e}. Falling back to memory.")
 
-        # Fallback to in-memory representation
-        if not self._in_memory_mode:
-            local_graph = local_research_store.get_graph(paper_id)
-            if local_graph and local_graph.get("nodes"):
-                return {
-                    **local_graph,
-                    "compressed": compressed,
-                    "storage_mode": "sqlite",
-                    "durable": True,
-                }
+        # Fallback to durable local SQLite store
+        local_graph = local_research_store.get_graph(paper_id)
+        if local_graph and local_graph.get("nodes"):
+            return {
+                **local_graph,
+                "compressed": compressed,
+                "storage_mode": "sqlite",
+                "durable": True,
+            }
 
         # Fallback to pre-extracted disk graphs in storage/graphs/<paper_id>.json
         candidate_graph_files = [
@@ -474,9 +473,8 @@ class Neo4jStore:
                     )
 
         # Keep a durable local chunk copy so retrieval survives Neo4j outages/restarts.
-        if not self._in_memory_mode:
-            for chunk in local_research_store.get_chunks(paper_id, requested_ids or None):
-                by_id.setdefault(str(chunk["chunk_id"]), chunk)
+        for chunk in local_research_store.get_chunks(paper_id, requested_ids or None):
+            by_id.setdefault(str(chunk["chunk_id"]), chunk)
 
         # Support in-memory fallback when the store retains original chunks.
         memory_chunks = getattr(self, "_memory_chunks", {})

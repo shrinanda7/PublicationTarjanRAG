@@ -721,9 +721,9 @@ async function streamFromGroq(
   signal?: AbortSignal
 ): Promise<string> {
   const models = [
-    process.env.GROQ_MODEL || "openai/gpt-oss-120b",
-    "qwen/qwen3.8-27b",
-    "openai/gpt-oss-20b",
+    process.env.GROQ_MODEL || "llama-3.3-70b-versatile",
+    "llama-3.1-8b-instant",
+    "mixtral-8x7b-32768",
   ];
 
   let lastError = "";
@@ -1806,7 +1806,7 @@ Separate each paper's own methods and results from methods mentioned in its rela
 Cite sources inline as [E1], [E2], etc., in passage order. Do not invent citations, quotes, or findings.
 If evidence does not establish a relationship, say so briefly. Do not add headings for synthesis, uncertainty, agreement, disagreement, missing evidence, key takeaways, cited passages, or graph connections.`;
 
-  // 7. Multi-tier LLM generation: Tier 1 (Groq) -> Tier 2 (xAI Grok) -> Tier 3 (Gemini) -> Tier 4 (Ollama) -> Tier 5 (Grounded Synthesis)
+  // 7. Strict Multi-tier LLM priority: Groq -> Gemini -> Ollama (with Grounded Dynamic Synthesis safeguard)
   const groqKey = process.env.GROQ_API_KEY;
   const ai = getGenAI();
   const xaiKey = process.env.XAI_API_KEY;
@@ -1814,7 +1814,7 @@ If evidence does not establish a relationship, say so briefly. Do not add headin
   let fullAnswerText = "";
   let activeEngine = "";
 
-  // Tier 1: Groq Cloud LLM (openai/gpt-oss-120b / qwen/qwen3.8-27b - Sub-Second Streaming)
+  // Tier 1: Groq Cloud LLM (llama-3.3-70b-versatile - Sub-Second Streaming)
   if (groqKey) {
     try {
       console.log(`[LLM Engine] Tier 1: Attempting Groq streaming...`);
@@ -1844,49 +1844,15 @@ If evidence does not establish a relationship, say so briefly. Do not add headin
         console.log(`[LLM Engine] Tier 1 (Groq) streamed successfully (${fullAnswerText.length} chars).`);
       }
     } catch (err: any) {
-      console.warn(`[LLM Engine] Tier 1 (Groq) skipped (${err?.message?.slice(0, 100) || "error"}). Falling to next tier...`);
+      console.warn(`[LLM Engine] Tier 1 (Groq) skipped (${err?.message?.slice(0, 100) || "error"}). Falling to Gemini...`);
     }
   }
 
-  // Tier 2: xAI Grok (only if the previous engine produced no answer)
-  if (!streamedSuccessfully && xaiKey) {
-    try {
-      console.log("[LLM Engine] Tier 1: Attempting xAI Grok (grok-2-latest)...");
-      const controller = new AbortController();
-      let firstToken = true;
-      const initialTimeout = setTimeout(() => {
-        if (firstToken) controller.abort();
-      }, 5000);
-
-      fullAnswerText = await streamFromGrok(
-        xaiKey,
-        prompt,
-        (token) => {
-          if (firstToken) {
-            clearTimeout(initialTimeout);
-            activeEngine = "xAI Grok (grok-2-latest)";
-            res.write(`event: engine\ndata: ${JSON.stringify({ engine: activeEngine })}\n\n`);
-            firstToken = false;
-          }
-        },
-        controller.signal
-      );
-      clearTimeout(initialTimeout);
-
-      if (fullAnswerText.trim().length > 0) {
-        streamedSuccessfully = true;
-        console.log(`[LLM Engine] Tier 1 (xAI Grok) streamed successfully (${fullAnswerText.length} chars).`);
-      }
-    } catch (err: any) {
-      console.warn(`[LLM Engine] Tier 1 (xAI Grok) unavailable (${err?.message?.slice(0, 100) || "error"}). Falling to next tier...`);
-    }
-  }
-
-  // Tier 3: Gemini 2.5 Flash (Fast streaming via @google/genai SDK)
+  // Tier 2: Gemini 2.5 Flash (Fast streaming via @google/genai SDK)
   if (!streamedSuccessfully && ai) {
     try {
       const geminiModel = process.env.GEMINI_MODEL || "gemini-2.5-flash";
-      console.log(`[LLM Engine] Tier 3: Attempting Gemini (${geminiModel})...`);
+      console.log(`[LLM Engine] Tier 2: Attempting Gemini (${geminiModel})...`);
       const timeoutPromise = new Promise<never>((_, reject) =>
         setTimeout(() => reject(new Error("Gemini timeout exceeded (10s)")), 10000)
       );
@@ -1910,10 +1876,44 @@ If evidence does not establish a relationship, say so briefly. Do not add headin
         }
       }
       if (streamedSuccessfully) {
-        console.log(`[LLM Engine] Gemini (${geminiModel}) streamed successfully.`);
+        console.log(`[LLM Engine] Tier 2 (Gemini: ${geminiModel}) streamed successfully.`);
       }
     } catch (err: any) {
-      console.warn(`[LLM Engine] Tier 3 (Gemini) skipped (${err?.message ? err.message.slice(0, 120) : "unavailable"}). Falling back to next tier...`);
+      console.warn(`[LLM Engine] Tier 2 (Gemini) skipped (${err?.message ? err.message.slice(0, 120) : "unavailable"}). Falling to Ollama...`);
+    }
+  }
+
+  // Tier 2b: Auxiliary Cloud Fallback (xAI Grok if key configured)
+  if (!streamedSuccessfully && xaiKey) {
+    try {
+      console.log("[LLM Engine] Tier 2b: Attempting xAI Grok (grok-2-latest)...");
+      const controller = new AbortController();
+      let firstToken = true;
+      const initialTimeout = setTimeout(() => {
+        if (firstToken) controller.abort();
+      }, 5000);
+
+      fullAnswerText = await streamFromGrok(
+        xaiKey,
+        prompt,
+        (token) => {
+          if (firstToken) {
+            clearTimeout(initialTimeout);
+            activeEngine = "xAI Grok (grok-2-latest)";
+            res.write(`event: engine\ndata: ${JSON.stringify({ engine: activeEngine })}\n\n`);
+            firstToken = false;
+          }
+        },
+        controller.signal
+      );
+      clearTimeout(initialTimeout);
+
+      if (fullAnswerText.trim().length > 0) {
+        streamedSuccessfully = true;
+        console.log(`[LLM Engine] Tier 2b (xAI Grok) streamed successfully (${fullAnswerText.length} chars).`);
+      }
+    } catch (err: any) {
+      console.warn(`[LLM Engine] Tier 2b (xAI Grok) unavailable (${err?.message?.slice(0, 100) || "error"}). Falling to Ollama...`);
     }
   }
 

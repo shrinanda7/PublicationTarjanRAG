@@ -56,12 +56,12 @@ Rules:
         if not groq_key:
             return None
         models = [
-            settings.GROQ_MODEL or os.getenv("GROQ_MODEL", "openai/gpt-oss-120b"),
-            "qwen/qwen3.8-27b",
-            "openai/gpt-oss-20b"
+            settings.GROQ_MODEL or "llama-3.3-70b-versatile",
+            "llama-3.1-8b-instant",
+            "mixtral-8x7b-32768",
         ]
         try:
-            async with httpx.AsyncClient(timeout=20.0) as client:
+            async with httpx.AsyncClient(timeout=25.0) as client:
                 for model in models:
                     try:
                         res = await client.post(
@@ -95,6 +95,45 @@ Rules:
             logger.warning(f"[Groq Extract] Client error: {e}")
         return None
 
+    async def _extract_with_gemini(self, prompt: str) -> Optional[str]:
+        import os
+        import httpx
+        gemini_key = settings.GEMINI_API_KEY or os.getenv("GEMINI_API_KEY")
+        if not gemini_key:
+            return None
+        gemini_model = settings.GEMINI_MODEL or "gemini-2.5-flash"
+        url = f"https://generativelanguage.googleapis.com/v1beta/models/{gemini_model}:generateContent?key={gemini_key}"
+        try:
+            async with httpx.AsyncClient(timeout=30.0) as client:
+                res = await client.post(
+                    url,
+                    headers={
+                        "Content-Type": "application/json",
+                        "User-Agent": "aistudio-build",
+                    },
+                    json={
+                        "contents": [{"role": "user", "parts": [{"text": prompt}]}],
+                        "systemInstruction": {"parts": [{"text": self.SYSTEM_PROMPT}]},
+                        "generationConfig": {
+                            "temperature": 0.1,
+                            "responseMimeType": "application/json",
+                        },
+                    },
+                )
+                if res.status_code == 200:
+                    data = res.json()
+                    candidates = data.get("candidates", [])
+                    if candidates:
+                        parts = candidates[0].get("content", {}).get("parts", [])
+                        text = "".join(p.get("text", "") for p in parts if "text" in p)
+                        if text and len(text.strip()) > 10:
+                            return text
+                else:
+                    logger.warning(f"[Gemini Extract] HTTP {res.status_code}: {res.text[:150]}")
+        except Exception as e:
+            logger.warning(f"[Gemini Extract] Client error: {e}")
+        return None
+
     async def extract_from_chunk(self, chunk: Dict[str, Any], max_retries: int = 2) -> Dict[str, Any]:
         """Extract entities and directed relationships from a single chunk with retry and validation."""
         chunk_id = chunk["chunk_id"]
@@ -115,7 +154,19 @@ Rules:
                 except ValidationError:
                     pass
 
-        # 2. Tier 2: Try Local Ollama
+        # 2. Tier 2: Try Gemini Cloud LLM
+        gemini_text = await self._extract_with_gemini(prompt)
+        if gemini_text:
+            parsed = self._clean_and_parse_json(gemini_text)
+            if parsed:
+                try:
+                    validated = ExtractionResult(**parsed)
+                    if validated.entities:
+                        return self._format_result(validated, chunk_id)
+                except ValidationError:
+                    pass
+
+        # 3. Tier 3: Try Local Ollama (or unified client fallback)
         for attempt in range(max_retries + 1):
             raw_text, call_log = await self.client.generate(
                 prompt=prompt,

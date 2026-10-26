@@ -71,8 +71,13 @@ def directed_path_survives(path_nodes: Sequence[str], quotient_graph: Dict[str, 
         component_id = str(node.get("id", ""))
         if not component_id:
             continue
+        orig = node.get("original_node_id")
+        if orig:
+            original_to_component[str(orig)] = component_id
         for member in node.get("member_node_ids") or [component_id]:
             original_to_component[str(member)] = component_id
+            if "::" in str(member):
+                original_to_component[str(member).split("::", 1)[1]] = component_id
     mapped = [original_to_component.get(str(node)) for node in path_nodes]
     if any(component is None for component in mapped):
         return False
@@ -96,8 +101,10 @@ def exact_path_recall(retrieved_paths: Sequence[Sequence[str]], gold_paths: Sequ
         return None
     if any(len(path) < 2 for path in gold_paths):
         raise ValueError("gold paths must contain at least one directed transition")
-    retrieved = {tuple(path) for path in retrieved_paths}
-    return sum(tuple(path) in retrieved for path in gold_paths) / len(gold_paths)
+    def _norm(path: Sequence[str]) -> tuple[str, ...]:
+        return tuple(str(x).split("::", 1)[1] if "::" in str(x) else str(x) for x in path)
+    retrieved = {_norm(path) for path in retrieved_paths}
+    return sum(_norm(path) in retrieved for path in gold_paths) / len(gold_paths)
 
 
 def citation_precision_recall(cited_evidence: Iterable[str], gold_support: Iterable[str]) -> Dict[str, float | None]:
